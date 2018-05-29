@@ -7,20 +7,10 @@
     <generator>Hugo -- gohugo.io</generator>
     <managingEditor>abhishekarya102@gmail.com (Abhishek Arya)</managingEditor>
     <webMaster>abhishekarya102@gmail.com (Abhishek Arya)</webMaster>
-    <lastBuildDate>Mon, 28 May 2018 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 27 May 2018 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://abyssaltech.xyz/tags/security/index.xml" rel="self" type="application/rss+xml" />
     
-    
-    <item>
-      <title>Are we really secure ? Part-3</title>
-      <link>https://abyssaltech.xyz/post/2018-05-28-are-we-really-secure-3/</link>
-      <pubDate>Mon, 28 May 2018 00:00:00 +0000</pubDate>
-      <author>abhishekarya102@gmail.com (Abhishek Arya)</author>
-      <guid>https://abyssaltech.xyz/post/2018-05-28-are-we-really-secure-3/</guid>
-      <description>In the last post, I talked about how people unknowingly give away the data which can be used to draw statistical inferences to a large degree of accuracy for a particular region or a country. There is another bigger threat to our data - &amp;lsquo;Data Breaches&amp;rsquo;.
-Conclusion As I already said, you cannot do much after it happens, but to choose the safest store or platform is always in your hands, you may call it some precautionary measures.</description>
-    </item>
     
     <item>
       <title>Are we really secure ? Part-2</title>
