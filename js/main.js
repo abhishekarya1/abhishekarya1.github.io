@@ -75,24 +75,24 @@ var main = {
           // 2fc73a3a967e97599c9763d05e564189
     // set an initial image
     var imgInfo = main.getImgInfo();
-    var  = imgInfo.;
+    var src = imgInfo.src;
     var desc = imgInfo.desc;
     var position = imgInfo.position;
-      main.setImg(, desc, position);
+      main.setImg(src, desc, position);
 
     // For better UX, prefetch the next image so that it will already be loaded when we want to show it
       var getNextImg = function() {
       var imgInfo = main.getImgInfo();
-      var  = imgInfo.;
+      var src = imgInfo.src;
       var desc = imgInfo.desc;
       var position = imgInfo.position;
 
     var prefetchImg = new Image();
-      prefetchImg. = ;
+      prefetchImg.src = src;
     // if I want to do something once the image is ready: `prefetchImg.onload = function(){}`
 
       setTimeout(function(){
-                  var img = $("<div></div>").addClass("big-img-transition").css("background-image", 'url(' +  + ')');
+                  var img = $("<div></div>").addClass("big-img-transition").css("background-image", 'url(' + src + ')');
         if (position !== undefined) {
           img.css("background-position", position);
         }
@@ -102,7 +102,7 @@ var main = {
       // after the animation of fading in the new image is done, prefetch the next one
         //img.one("transitioned webkitTransitionEnd oTransitionEnd MSTransitionEnd", function(){
       setTimeout(function() {
-        main.setImg(, desc, position);
+        main.setImg(src, desc, position);
       img.remove();
         getNextImg();
       }, 1000);
@@ -119,19 +119,19 @@ var main = {
 
   getImgInfo : function() {
     var randNum = Math.floor((Math.random() * main.numImgs) + 1);
-    var  = main.bigImgEl.attr("data-img--" + randNum);
+    var src = main.bigImgEl.attr("data-img-src-" + randNum);
   var desc = main.bigImgEl.attr("data-img-desc-" + randNum);
   var position = main.bigImgEl.attr("data-img-position-" + randNum);
 
   return {
-     : ,
+    src : src,
     desc : desc,
     position : position
   }
   },
 
-  setImg : function(, desc, position) {
-  $(".intro-header.big-img").css("background-image", 'url(' +  + ')');
+  setImg : function(src, desc, position) {
+  $(".intro-header.big-img").css("background-image", 'url(' + src + ')');
   if (position !== undefined) {
     $(".intro-header.big-img").css("background-position", position);
   }
