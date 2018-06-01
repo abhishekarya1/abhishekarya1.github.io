@@ -7,15 +7,24 @@
     <generator>Hugo -- gohugo.io</generator>
     <managingEditor>abhishekarya102@gmail.com (Abhishek Arya)</managingEditor>
     <webMaster>abhishekarya102@gmail.com (Abhishek Arya)</webMaster>
-    <lastBuildDate>Sun, 27 May 2018 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 01 Jun 2018 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://abyssaltech.xyz/tags/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
+      <title>Apps</title>
+      <link>https://abyssaltech.xyz/tags/apps/</link>
+      <pubDate>Fri, 01 Jun 2018 00:00:00 +0000</pubDate>
+      <author>abhishekarya102@gmail.com (Abhishek Arya)</author>
+      <guid>https://abyssaltech.xyz/tags/apps/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Hacking</title>
       <link>https://abyssaltech.xyz/tags/hacking/</link>
-      <pubDate>Sun, 27 May 2018 00:00:00 +0000</pubDate>
+      <pubDate>Fri, 01 Jun 2018 00:00:00 +0000</pubDate>
       <author>abhishekarya102@gmail.com (Abhishek Arya)</author>
       <guid>https://abyssaltech.xyz/tags/hacking/</guid>
       <description></description>
@@ -24,7 +33,7 @@
     <item>
       <title>Security</title>
       <link>https://abyssaltech.xyz/tags/security/</link>
-      <pubDate>Sun, 27 May 2018 00:00:00 +0000</pubDate>
+      <pubDate>Fri, 01 Jun 2018 00:00:00 +0000</pubDate>
       <author>abhishekarya102@gmail.com (Abhishek Arya)</author>
       <guid>https://abyssaltech.xyz/tags/security/</guid>
       <description></description>

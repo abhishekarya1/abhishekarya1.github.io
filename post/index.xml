@@ -7,10 +7,19 @@
     <generator>Hugo -- gohugo.io</generator>
     <managingEditor>abhishekarya102@gmail.com (Abhishek Arya)</managingEditor>
     <webMaster>abhishekarya102@gmail.com (Abhishek Arya)</webMaster>
-    <lastBuildDate>Sun, 27 May 2018 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 01 Jun 2018 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://abyssaltech.xyz/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Apps and Permissions - Are we really secure ? Part-3</title>
+      <link>https://abyssaltech.xyz/post/2018-06-01-are-we-really-secure-3/</link>
+      <pubDate>Fri, 01 Jun 2018 00:00:00 +0000</pubDate>
+      <author>abhishekarya102@gmail.com (Abhishek Arya)</author>
+      <guid>https://abyssaltech.xyz/post/2018-06-01-are-we-really-secure-3/</guid>
+      <description>Android is an operating system for handheld devices like smartphones. It was announced in 2007 and was the first commercial device was released in 2008. Today, after exactly a decade in the future, it has more than 2 billion monthly active devices. With such level of userbase, sure comes a lot of prying eyes on your data. Though Google Play Store has restrictions on what you can install and what data your apps see, it is just a matter of a few permissions before these apps can start harvesting your data.</description>
+    </item>
     
     <item>
       <title>Data Breaches - Are we really secure ? Part-2</title>
