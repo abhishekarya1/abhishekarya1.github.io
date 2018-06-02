@@ -7,13 +7,22 @@
     <generator>Hugo -- gohugo.io</generator>
     <managingEditor>abhishekarya102@gmail.com (Abhishek Arya)</managingEditor>
     <webMaster>abhishekarya102@gmail.com (Abhishek Arya)</webMaster>
-    <lastBuildDate>Fri, 01 Jun 2018 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 02 Jun 2018 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://abyssaltech.xyz/post/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>Apps and Permissions - Are we really secure ? Part-3</title>
+      <title>Bugs and Vulnerabilities</title>
+      <link>https://abyssaltech.xyz/post/2018-06-02-are-we-really-secure-4/</link>
+      <pubDate>Sat, 02 Jun 2018 00:00:00 +0000</pubDate>
+      <author>abhishekarya102@gmail.com (Abhishek Arya)</author>
+      <guid>https://abyssaltech.xyz/post/2018-06-02-are-we-really-secure-4/</guid>
+      <description>No matter how much time is devoted to developing an app or a website, or under how many eyes it passes through during its development stages, they still have vulnerabilities. Some have more so than others and some are just unusable. Every vendor on this planet has a security issue with their product. It has now become a fact of modern-day life. Take Microsoft for instance. CVE Details, a site that chronicles publicly disclosed vulnerabilities shows that in the 10 years starting with 2006 the company has disclosed an astonishing 3,157 security flaws.</description>
+    </item>
+    
+    <item>
+      <title>Apps and Permissions</title>
       <link>https://abyssaltech.xyz/post/2018-06-01-are-we-really-secure-3/</link>
       <pubDate>Fri, 01 Jun 2018 00:00:00 +0000</pubDate>
       <author>abhishekarya102@gmail.com (Abhishek Arya)</author>
@@ -22,7 +31,7 @@
     </item>
     
     <item>
-      <title>Data Breaches - Are we really secure ? Part-2</title>
+      <title>Data Breaches</title>
       <link>https://abyssaltech.xyz/post/2018-05-27-are-we-really-secure-2/</link>
       <pubDate>Sun, 27 May 2018 00:00:00 +0000</pubDate>
       <author>abhishekarya102@gmail.com (Abhishek Arya)</author>
@@ -32,7 +41,7 @@ You store photos in the cloud and you save storage, you use online platforms tha
     </item>
     
     <item>
-      <title>Data Protection - Are we really secure ? Part-1</title>
+      <title>Data Protection</title>
       <link>https://abyssaltech.xyz/post/2018-05-26-are-we-really-secure-1/</link>
       <pubDate>Sat, 26 May 2018 00:00:00 +0000</pubDate>
       <author>abhishekarya102@gmail.com (Abhishek Arya)</author>

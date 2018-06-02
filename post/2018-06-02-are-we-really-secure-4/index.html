@@ -5,23 +5,23 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
 
-  <title>Data Protection</title>
-  <meta property="og:title" content="Data Protection" />
-  <meta name="twitter:title" content="Data Protection" />
-  <meta name="description" content="Are we really secure? (Part-1) - A look at what worries me the most">
-  <meta property="og:description" content="Are we really secure? (Part-1) - A look at what worries me the most">
-  <meta name="twitter:description" content="Are we really secure? (Part-1) - A look at what worries me the most">
+  <title>Bugs and Vulnerabilities</title>
+  <meta property="og:title" content="Bugs and Vulnerabilities" />
+  <meta name="twitter:title" content="Bugs and Vulnerabilities" />
+  <meta name="description" content="Are we really secure? (Part-4) - Understanding bugs and vulnerabilities">
+  <meta property="og:description" content="Are we really secure? (Part-4) - Understanding bugs and vulnerabilities">
+  <meta name="twitter:description" content="Are we really secure? (Part-4) - Understanding bugs and vulnerabilities">
   <meta name="author" content="Abhishek Arya"/>
   <link href='https://abyssaltech.xyz/img/favicon.ico' rel='icon' type='image/x-icon'/>
   <meta property="og:image" content="https://abyssaltech.xyz/img/avatar-icon.png" />
   <meta name="twitter:image" content="https://abyssaltech.xyz/img/avatar-icon.png" />
   <meta name="twitter:card" content="summary" />
-  <meta property="og:url" content="https://abyssaltech.xyz/post/2018-05-26-are-we-really-secure-1/" />
+  <meta property="og:url" content="https://abyssaltech.xyz/post/2018-06-02-are-we-really-secure-4/" />
   <meta property="og:type" content="website" />
   <meta property="og:site_name" content="Abhishek Arya | Blog" />
 
   <meta name="generator" content="Hugo 0.40.1" />
-  <link rel="canonical" href="https://abyssaltech.xyz/post/2018-05-26-are-we-really-secure-1/" />
+  <link rel="canonical" href="https://abyssaltech.xyz/post/2018-06-02-are-we-really-secure-4/" />
   <link rel="alternate" href="https://abyssaltech.xyz/index.xml" type="application/rss+xml" title="Abhishek Arya | Blog">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.7.1/katex.min.css" integrity="sha384-wITovz90syo1dJWVh32uuETPVEtGigN07tkttEqPv+uR2SE/mbQcG7ATL28aI9H0" crossorigin="anonymous">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
@@ -170,7 +170,7 @@ ga('send', 'pageview');
 
 
   
-    <div id="header-big-imgs" data-num-img=1 data-img-src-1="https://abyssaltech.xyz/img/postimg/dataservers.jpg" data-img-desc-1="Security"></div>
+    <div id="header-big-imgs" data-num-img=1 data-img-src-1="https://abyssaltech.xyz/img/postimg/bugs.jpg" data-img-desc-1="Security"></div>
   
 
   <header class="header-section has-img">
@@ -181,21 +181,21 @@ ga('send', 'pageview');
           <div class="row">
             <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
               <div class="post-heading">
-                <h1>Data Protection</h1>
+                <h1>Bugs and Vulnerabilities</h1>
                   
                     
-                      <h2 class="post-subheading">Are we really secure? (Part-1) - A look at what worries me the most</h2>
+                      <h2 class="post-subheading">Are we really secure? (Part-4) - Understanding bugs and vulnerabilities</h2>
                     
                   
                   
                     <span class="post-meta">
   
   
-  <i class="fa fa-calendar-o"></i>&nbsp;Posted on May 26, 2018
+  <i class="fa fa-calendar-o"></i>&nbsp;Posted on June 2, 2018
   
   
   &nbsp;|&nbsp;
-  <i class="fa fa-clock-o"></i> 6 minutes (1135 words)
+  <i class="fa fa-clock-o"></i> 5 minutes (1021 words)
   
   
 </span>
@@ -215,21 +215,21 @@ ga('send', 'pageview');
         <div class="row">
           <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
             <div class="post-heading">
-              <h1>Data Protection</h1>
+              <h1>Bugs and Vulnerabilities</h1>
                 
                   
-                    <h2 class="post-subheading">Are we really secure? (Part-1) - A look at what worries me the most</h2>
+                    <h2 class="post-subheading">Are we really secure? (Part-4) - Understanding bugs and vulnerabilities</h2>
                   
                 
                 
                   <span class="post-meta">
   
   
-  <i class="fa fa-calendar-o"></i>&nbsp;Posted on May 26, 2018
+  <i class="fa fa-calendar-o"></i>&nbsp;Posted on June 2, 2018
   
   
   &nbsp;|&nbsp;
-  <i class="fa fa-clock-o"></i> 6 minutes (1135 words)
+  <i class="fa fa-clock-o"></i> 5 minutes (1021 words)
   
   
 </span>
@@ -251,61 +251,75 @@ ga('send', 'pageview');
       <article role="main" class="blog-post">
         
 
-<p>Modern day technologies for sure provide much more efficient, convenient and sometimes creative solutions to our problems. Want to talk for free with a relative thousand miles away? Open an app and that&rsquo;s it, talk as much as you want, this was not at all possible before. Solutions like these are all around us and we use them on a daily basis. Stuck in a new city? Open the map app and get going, it will track you in real time too. Cool huh?</p>
+<p>No matter how much time is devoted to developing an app or a website, or under how many eyes it passes through during its development stages, they still have vulnerabilities.
+Some have more so than others and some are just unusable. Every vendor on this planet has a security issue with their product. It has now become <em>a fact of modern-day life</em>.
+Take Microsoft for instance. <a href="https://www.cvedetails.com/top-50-vendors.php">CVE Details</a>, a site that chronicles publicly disclosed vulnerabilities shows that in the 10 years starting with 2006 the company has disclosed an astonishing 3,157 security flaws.</p>
 
-<p>While the users happy that they can talk for free now and they&rsquo;ve saved their money, they are paying a heavy price. Real-time location services are great but they do send data back to the servers in the name of _&ldquo;Consumer Experience&rdquo; _, <em>&ldquo;Accuracy Enhancing&rdquo;</em> or <em>&ldquo;Improvement Programs&rdquo;</em>. The users forget that when they are talking to their friends and family the data goes through the server first and can be stored or manipulated easily. They forget that the data which they generate on their social media profiles can be used to manipulate them in return.</p>
+<p>While you might think that the developers are fighting it and you are not dealing with them directly, you cannot be more wrong. Active bug reporting is the key to a stable and secure product.</p>
 
-<p>The mechanism or algorithms by which companies like Facebook and Google decide what ads to show you are already a recipe for disastrous results in the future.
-The recent Facebook and Cambridge Analytica debacle is an example you will often hear me quoting, Facebook came out to be pathetic in handling the data of their 2.2 billion users and the questions put by the US Senators&hellip;don&rsquo;t even get me started with it.</p>
+<h4 id="technical-jargons">Technical Jargons</h4>
 
-<p>User&rsquo;s data is just not secure anywhere. How many Google products do you use? Gmail, Chrome, Sheets, Google Search, and a lot more. Advertisements are the largest source of revenue for the tech-giant which is 70.9 percent of the total revenue. And certainly not all ads are shown to all people, they use your searches to determine your preferences and then what ads to show you, called &lsquo;Targeted much, there are no photos on their timeline and that their data is of no use to Facebook. This is where they are completely in the wrong, they fail to understand that even if they are not using the platform, their friends are active tagging them, sending them requests, etc.</p>
+<p>It is very important to introduce the terms that are used regarding security issues by the people working in the field, to avoid their overlapping and most of the time wrong usage.
+You&rsquo;ll find many wrong usages of these terms, so here is a short list containing some commonly used terms.</p>
 
-<p>One user might not care about their data, two users might not, but the <em>statistical inferences</em> that can be drawn from the demography has a potential to cause mass-manipulation of people on political issues and things like these take no time to reach in the hands of people with no good intentions.</p>
+<p>A <strong>bug</strong> is when a system is not behaving as intended.</p>
 
-<p>And this goes on as banks share data with insurance companies, social media and online searches to online shopping websites, and all of this happens with user unknowingly giving away permissions or they do not have an option.<br />
-Your data juggles between these corporates while you enjoy your free calls and online shopping.
-For this very reason, <em>International Data Protection Laws</em> are on their way, they are theoretically very effective in tackling these multinational technology firms.</p>
+<p>A <strong>vulnerability</strong> is a way to abuse a system most commonly it&rsquo;s regarding the security of that system.
+A bug may introduce a vulnerability.</p>
 
-<p>I&rsquo;ll give you one more reason not to trust tech firms with your data - they can and will share your data if the government demands it.
-It happened in the <a href="https://www.technologyreview.com/s/603709/hand-over-the-data">US</a>, in the <a href="https://eandt.theiet.org/content/articles/2018/04/tech-companies-may-be-forced-to-hand-over-user-data-under-new-eu-rules">European Union (EU)</a>, and allegedly in <a href="https://www.nationalheraldindia.com/india/has-paytm-violated-the-information-technology-act">India</a> too.</p>
+<p>An <strong>exploit</strong> is the realization of a vulnerability. It is a way which has already been invented after a vulnerability is known and the system can be exploited with it.</p>
 
-<p>Your Privacy 0, Law Enforcement 1.</p>
+<p>A <strong>Zero-day threat</strong> is a threat that exploits an unknown computer security vulnerability. Zero implies the developer’s ignorance of the exploit or bug. This means that there is no known security fix because developers are oblivious to the vulnerability or threat.
+A zero-day threat is also known as a <em>zero-hour attack</em> or <em>day-zero attack</em>.</p>
 
-<p><u><strong>EDIT-1</strong></u> : You might have recieved a <em>&lsquo;Privacy Policy Update&rsquo;</em> mail recently around 25 May 2018, that is because the <strong>GDPR (General Data Protection Regulation)</strong> goes into effect on May 25 2018.
-It tightens the already existing laws regarding what tech companies can do with your data, it gives you more control over how your data is collected and used, and forces companies to justify everything that they do with it.</p>
+<p><strong>CVE</strong> - A <a href="https://cve.mitre.org/cve">CVE</a> is a dictionary of publicly disclosed cybersecurity vulnerabilities and exposures that is free to search and use. It contains most of the known vulnerabilities to date.
+Each entry into the list is assigned a CVE ID for reference like CVE-2014–6271.</p>
 
-<p>Interesting thing to note here is that while GDPR is an <strong>EU (European Union) legislation</strong>, it still has a huge effect on businesses outside the EU. GDPR restricts collection of data that can be used to identify you including your name, ip address, location information or even things like sexual orientation, health data, and political opinions.</p>
+<p><img src="/img/cve.png" alt="CVE" /></p>
 
-<p>What I like about GDPR is the fact that people now have the &ldquo;Right to be Forgotten&rdquo;, people can request to have their data deleted, personal data needs to be transferable via a common file type, but it is still not absolute, certain conditions apply on it atleast for now. For Non-EU countries it is a concern beacause many business collect or reuse EU resident&rsquo;s data, they also use companies based in the EU for services and processing data.</p>
+<p><strong>Patch</strong> - It is the opposite of an exploit, it is a program that aims to fix the vulnerabilities.</p>
 
-<p>If a firm fails to comply with the GDPR, they are liable to pay <em>€20 million ($24 million) or 4% of global annual turnover</em>, whichever is larger.</p>
+<p>The scale on which the tech giants work today is another major reason why even the smallest of vulnerabilities can be a real challenge for cybersecurity experts to solve overnight.
+Or else, hackers can exploit them in a matter of seconds after they are known and are released to the public. As vulnerabilities always exist on a system at a given time, there is no way we can make sure that they are known to the public.
+And when I say public, I mean developers and people working with the system, let alone the end users. Suppose if a Blackhat Hacker discovers the vulnerability first, then he may exploit it cleverly or worse, he can keep on bringing in hackers on board to exploit it and before the creators
+know about it, its all out of their hands.</p>
 
-<p>On the very first day of GDPR enforcement, Facebook and Google have been hit with a raft of lawsuits accusing the companies of coercing users into sharing personal data. The lawsuits, which seek to fine Facebook 3.9 billion and Google 3.7 billion euro (roughly $8.8 billion in dollars), were filed by Austrian privacy activist Max Schrems, a longtime critic of the companies’ data collection practices.</p>
+<p>While bugs and vulnerabilities cannot be entirely avoided on the developer&rsquo;s side, they can be pretty easily avoided on the end user&rsquo;s side. By simply updating the system, people can avoid disastrous bugs.
+By just installing a 200KB update can actually save you from potential threats.</p>
 
-<p>These kind of laws are a nightmare for any tech firm collecting and using their user&rsquo;s data, and this is definitely a significant step in the right direction. Many smaller US companies pulled out of the EU to avoid GDPR, video game makers are blocking access for EU users to older games, saying updates for GDPR are too costly, Microsoft has more than 1,600 engineers working on GDPR.</p>
+<p>Another archive that is extensively used is <a href="https://www.exploit-db.com">Exploit-DB</a> by Offensive Security. It is <em>&ldquo;an archive of public exploits and corresponding vulnerable software, developed for use by penetration testers and vulnerability researchers&rdquo;</em>.
+It has a fairly large number of hacks and exploits and I love the way they categorize them, its easy enough to find what you want and I always use it for reference after a quick look at the target system. I recommend you to go ahead and give it a search for anything, like the phone you use or your router.</p>
 
-<p>You can also watch <a href="https://www.youtube.com/watch?v=_J5IZxI_xKk">this</a> video about the GDPR.</p>
+<p><img src="/img/exploit-db.JPG" alt="Exploit-DB" /></p>
 
-<p>India is also moving towards its own privacy regulations, a commitee was set up by former supreme court judge, Justice B N Srikrishna, and a draft bill is expected.</p>
+<p>Nowadays, you may hear about vulnerabilities in media too. You might have heard of <em>&ldquo;Heartbleed&rdquo;</em>, one of the most famous and the first bug that people went crazy over.
+That is why they even named it and it even has a <a href="http://heartbleed.com">website</a>. Heartbleed, or the OpenSSL TLS &lsquo;heartbeat&rsquo; Extension Information Disclosure Vulnerability (CVE-2014-0160), affects a component of OpenSSL known as Heartbeat. OpenSSL is one of the most widely used, open source implementations of the SSL (Secure Sockets Layer) and TLS (Transport Layer Security) protocols, the same &ldquo;secure&rdquo; protocols due to which this website that you are viewing is &ldquo;https&rdquo; encrypted, there is a green lock symbol too and it is said to be secure.
+It allowed a hacker to attack any of the two-thirds of Web servers that used the OpenSSL and not merely remove its encryption, but force it to give up any random data from its memory, sensitive information such as login credentials, personal data, or even decryption keys.
+<img src="/img/heartbleed.png" alt="Heartbleed" />
+Another set of popular bugs and vulnerabilities like Shellshock, POODLE, Gotofail, and Ghost are patched to a large extent now and I am even talking about these because they are popular and they are popular because they have catchy names and an active <a href="https://medium.com/threat-intel/bug-branding-heartbleed-14ef1a64047f">celebrity bug branding</a>.
+Thousands of other bugs remain completely ignored by the media and the end-users.</p>
+
+<p>While there is a whole community of cybersecurity experts, companies and users dedicated to building and providing patches for bugs. Be aware that not all bugs are fixed and there are always unknown bugs on any given system.</p>
 
 <h3 id="conclusion">Conclusion</h3>
 
-<p>So, you told me not to use Google, Facebook, and Twitter. What will I do on the internet then?</p>
-
-<p>There are many alternate options available.
-The right question to ask is - <em>What are these alternate options?</em></p>
+<p>As an end-user your role is minimal, but you should be aware of the scenario.</p>
 
 <ul>
-<li>For Searches, you can use <a href="https://www.duckduckgo.com">DuckDuckGo</a>, they never store any of the user&rsquo;s data,</li>
-<li>You can also clear <em>site data</em> and <em>cookies</em> after visiting a website to make sure that they don&rsquo;t remember you and everytime you arrive at a new user</li>
-<li>Turn your damn <strong>Location</strong> off for god&rsquo;s sake, you only need it while navigating or finding a place or route, keep it <strong>off</strong> otherwise.</li>
-<li>Avoid unnecessary signing in on websites when you are just browsing them unless you need their services badly.</li>
-<li>Create an email for just the purpose of signing in, don&rsquo;t use your Google+ or Facebook profile every time, or you can use a <a href="https://www.10minutemail.com">temporary email</a>.</li>
+<li><p>Just download the latest update for your operating system, smartphone, router etc&hellip; and you should be fine. These updates patch most of the known vulnerabilities till the day they are released to the end users.</p></li>
+
+<li><p>Make sure you are not using a <em>super-old</em> firmware on any of your devices, they are the ones which are affected severely during an outcry and its a hundred percent user&rsquo;s fault that they did not update it in time, despite the developer releasing them beforehand.</p></li>
 </ul>
 
-<p>Considering the amount of time we spend online and the data we generate, it is not that only our data is in danger, we too are in danger.</p>
+<h4 id="further-reading-and-recommended-links">Further Reading and Recommended Links -</h4>
 
-<p>Which raises the question - <em>Are we really secure?</em></p>
+<ul>
+<li><a href="https://www.exploit-db.com">Exploit-DB</a></li>
+<li><a href="https://www.scmagazineuk.com/vulnerabilities/section/7018">SC Magazine UK - Vulnerabilities</a></li>
+<li><a href="https://www.vulnerability-db.com/?q=articles/vulnerabilities-bugs">Vulnerability Magazine</a></li>
+<li><a href="https://cwe.mitre.org/data/graphs/888.html">Detailed Database of Vulnerability Types</a></li>
+<li><a href="http://routerpwn.com/">Routerpwn - Exploits and Vulnerabilities for Routers</a></li>
+</ul>
 
 
         
@@ -326,7 +340,7 @@ The right question to ask is - <em>What are these alternate options?</em></p>
 
 
 <li>
-    <a href="//twitter.com/share?url=https%3a%2f%2fabyssaltech.xyz%2fpost%2f2018-05-26-are-we-really-secure-1%2f&amp;text=Data%20Protection&amp;via="
+    <a href="//twitter.com/share?url=https%3a%2f%2fabyssaltech.xyz%2fpost%2f2018-06-02-are-we-really-secure-4%2f&amp;text=Bugs%20and%20Vulnerabilities&amp;via="
        target="_blank" alt="" title="Share on Twitter">
         <span class="fa-stack fa-lg">
                 <i class="fa fa-circle fa-stack-2x"></i>
@@ -337,7 +351,7 @@ The right question to ask is - <em>What are these alternate options?</em></p>
 
 
 <li>
-    <a href="//plus.google.com/share?url=https%3a%2f%2fabyssaltech.xyz%2fpost%2f2018-05-26-are-we-really-secure-1%2f" target="_blank" title="Share on Google Plus">
+    <a href="//plus.google.com/share?url=https%3a%2f%2fabyssaltech.xyz%2fpost%2f2018-06-02-are-we-really-secure-4%2f" target="_blank" title="Share on Google Plus">
          <span class="fa-stack fa-lg">
                 <i class="fa fa-circle fa-stack-2x"></i>
                 <i class="fa fa-google-plus fa-stack-1x fa-inverse"></i>
@@ -347,7 +361,7 @@ The right question to ask is - <em>What are these alternate options?</em></p>
 
 
 <li>
-    <a href="//www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fabyssaltech.xyz%2fpost%2f2018-05-26-are-we-really-secure-1%2f" target="_blank" title="Share on Facebook">
+    <a href="//www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fabyssaltech.xyz%2fpost%2f2018-06-02-are-we-really-secure-4%2f" target="_blank" title="Share on Facebook">
         <span class="fa-stack fa-lg">
                 <i class="fa fa-circle fa-stack-2x"></i>
                 <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
@@ -357,7 +371,7 @@ The right question to ask is - <em>What are these alternate options?</em></p>
 
 
 <li>
-    <a href="//reddit.com/submit?url=https%3a%2f%2fabyssaltech.xyz%2fpost%2f2018-05-26-are-we-really-secure-1%2f&amp;title=Data%20Protection" target="_blank" title="Share on Reddit">
+    <a href="//reddit.com/submit?url=https%3a%2f%2fabyssaltech.xyz%2fpost%2f2018-06-02-are-we-really-secure-4%2f&amp;title=Bugs%20and%20Vulnerabilities" target="_blank" title="Share on Reddit">
          <span class="fa-stack fa-lg">
                 <i class="fa fa-circle fa-stack-2x"></i>
                 <i class="fa fa-reddit fa-stack-1x fa-inverse"></i>
@@ -367,7 +381,7 @@ The right question to ask is - <em>What are these alternate options?</em></p>
 
 
 <li>
-    <a href="//www.linkedin.com/shareArticle?url=https%3a%2f%2fabyssaltech.xyz%2fpost%2f2018-05-26-are-we-really-secure-1%2f&amp;title=Data%20Protection" target="_blank"
+    <a href="//www.linkedin.com/shareArticle?url=https%3a%2f%2fabyssaltech.xyz%2fpost%2f2018-06-02-are-we-really-secure-4%2f&amp;title=Bugs%20and%20Vulnerabilities" target="_blank"
        title="Share on LinkedIn">
          <span class="fa-stack fa-lg">
                 <i class="fa fa-circle fa-stack-2x"></i>
@@ -378,7 +392,7 @@ The right question to ask is - <em>What are these alternate options?</em></p>
 
 
 <li>
-    <a href="//www.stumbleupon.com/submit?url=https%3a%2f%2fabyssaltech.xyz%2fpost%2f2018-05-26-are-we-really-secure-1%2f&amp;title=Data%20Protection" target="_blank"
+    <a href="//www.stumbleupon.com/submit?url=https%3a%2f%2fabyssaltech.xyz%2fpost%2f2018-06-02-are-we-really-secure-4%2f&amp;title=Bugs%20and%20Vulnerabilities" target="_blank"
        title="Share on StumbleUpon">
         <span class="fa-stack fa-lg">
                 <i class="fa fa-circle fa-stack-2x"></i>
@@ -389,7 +403,7 @@ The right question to ask is - <em>What are these alternate options?</em></p>
 
 
 <li>
-    <a href="//www.pinterest.com/pin/create/button/?url=https%3a%2f%2fabyssaltech.xyz%2fpost%2f2018-05-26-are-we-really-secure-1%2f&amp;description=Data%20Protection" target="_blank"
+    <a href="//www.pinterest.com/pin/create/button/?url=https%3a%2f%2fabyssaltech.xyz%2fpost%2f2018-06-02-are-we-really-secure-4%2f&amp;description=Bugs%20and%20Vulnerabilities" target="_blank"
        title="Share on Pinterest">
          <span class="fa-stack fa-lg">
                 <i class="fa fa-circle fa-stack-2x"></i>
@@ -407,13 +421,9 @@ The right question to ask is - <em>What are these alternate options?</em></p>
         <ul class="pager blog-pager">
           
             <li class="previous">
-              <a href="https://abyssaltech.xyz/post/2018-05-26-first-post/" data-toggle="tooltip" data-placement="top" title="First post!">&larr; Previous Post</a>
+              <a href="https://abyssaltech.xyz/post/2018-06-01-are-we-really-secure-3/" data-toggle="tooltip" data-placement="top" title="Apps and Permissions">&larr; Previous Post</a>
             </li>
           
-          
-            <li class="next">
-              <a href="https://abyssaltech.xyz/post/2018-05-27-are-we-really-secure-2/" data-toggle="tooltip" data-placement="top" title="Data Breaches">Next Post &rarr;</a>
-            </li>
           
         </ul>
       
