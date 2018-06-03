@@ -7,10 +7,20 @@
     <generator>Hugo -- gohugo.io</generator>
     <managingEditor>abhishekarya102@gmail.com (Abhishek Arya)</managingEditor>
     <webMaster>abhishekarya102@gmail.com (Abhishek Arya)</webMaster>
-    <lastBuildDate>Sat, 02 Jun 2018 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 03 Jun 2018 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://abyssaltech.xyz/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Introduction to the Dark Web</title>
+      <link>https://abyssaltech.xyz/post/2018-06-03-dark-web-1/</link>
+      <pubDate>Sun, 03 Jun 2018 00:00:00 +0000</pubDate>
+      <author>abhishekarya102@gmail.com (Abhishek Arya)</author>
+      <guid>https://abyssaltech.xyz/post/2018-06-03-dark-web-1/</guid>
+      <description>Introduction You hear about data leaks all the time in the media. Have you ever wondered where that data is leaked?
+You might&amp;rsquo;ve heard about the WannaCry ransomware attack last year. It is a program targeting Windows operating system as it installs and hijacks computers and demanding huge ransom, even ATM machines, personal computers as well as servers were not secure. It bought the US Healthcare System and French car maker, Renault to their knees.</description>
+    </item>
     
     <item>
       <title>Bugs and Vulnerabilities</title>
