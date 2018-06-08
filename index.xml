@@ -18,7 +18,8 @@
       <pubDate>Fri, 08 Jun 2018 00:00:00 +0000</pubDate>
       <author>abhishekarya102@gmail.com (Abhishek Arya)</author>
       <guid>https://abyssaltech.xyz/post/2018-06-08-image-classification/</guid>
-      <description>Introduction Recently, I made a neural network image classifier that can be used by astronomers and scientists to classify whether an image is of a Globular Star Cluster or an Open Star Cluster. You can refer here for knowing what are they.
+      <description>Introduction Recently, I made a neural network image classifier that can be used by astronomers and scientists to classify whether an image is of a Globular Star Cluster or an Open Star Cluster. Here is the Project Link.
+You can refer here for knowing what are these two star clusters.
 It can be very tiresome and time consuming for scientists to carefully classify between the two. And my model aims to decrease the classification time for these two categories of star clusters.</description>
     </item>
     
