@@ -1,0 +1,640 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+
+  <title>Image Classification using Convolutional Neural Networks - Transfer Learning</title>
+  <meta property="og:title" content="Image Classification using Convolutional Neural Networks - Transfer Learning" />
+  <meta name="twitter:title" content="Image Classification using Convolutional Neural Networks - Transfer …" />
+  <meta name="description" content="Deep Learning with Tensorflow">
+  <meta property="og:description" content="Deep Learning with Tensorflow">
+  <meta name="twitter:description" content="Deep Learning with Tensorflow">
+  <meta name="author" content="Abhishek Arya"/>
+  <link href='https://abyssaltech.xyz/img/favicon.ico' rel='icon' type='image/x-icon'/>
+  <meta property="og:image" content="https://abyssaltech.xyz/img/avatar-icon.png" />
+  <meta name="twitter:image" content="https://abyssaltech.xyz/img/avatar-icon.png" />
+  <meta name="twitter:card" content="summary" />
+  <meta property="og:url" content="https://abyssaltech.xyz/post/2018-06-08-image-classification-transfer-learning/" />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Abhishek Arya | Blog" />
+
+  <meta name="generator" content="Hugo 0.40.1" />
+  <link rel="canonical" href="https://abyssaltech.xyz/post/2018-06-08-image-classification-transfer-learning/" />
+  <link rel="alternate" href="https://abyssaltech.xyz/index.xml" type="application/rss+xml" title="Abhishek Arya | Blog">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.7.1/katex.min.css" integrity="sha384-wITovz90syo1dJWVh32uuETPVEtGigN07tkttEqPv+uR2SE/mbQcG7ATL28aI9H0" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://abyssaltech.xyz/css/main.css" /><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" />
+  <link rel="stylesheet" href="https://abyssaltech.xyz/css/highlight.min.css" /><link rel="stylesheet" href="https://abyssaltech.xyz/css/codeblock.css" />
+
+
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.2/photoswipe.min.css" integrity="sha384-h/L2W9KefUClHWaty3SLE5F/qvc4djlyR4qY3NUV5HGQBBW7stbcfff1+I/vmsHh" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.2/default-skin/default-skin.min.css" integrity="sha384-iD0dNku6PYSIQLyfTOpB06F2KCZJAKLOThS5HRe8b3ibhdEQ6eKsFf/EeFxdOt5R" crossorigin="anonymous">
+
+
+
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+<div class="pswp__bg"></div>
+
+<div class="pswp__scroll-wrap">
+    
+    <div class="pswp__container">
+      <div class="pswp__item"></div>
+      <div class="pswp__item"></div>
+      <div class="pswp__item"></div>
+    </div>
+    
+    <div class="pswp__ui pswp__ui--hidden">
+    <div class="pswp__top-bar">
+      
+      <div class="pswp__counter"></div>
+      <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+      <button class="pswp__button pswp__button--share" title="Share"></button>
+      <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+      <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+      
+      
+      <div class="pswp__preloader">
+        <div class="pswp__preloader__icn">
+          <div class="pswp__preloader__cut">
+            <div class="pswp__preloader__donut"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+      <div class="pswp__share-tooltip"></div>
+    </div>
+    <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+    </button>
+    <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+    </button>
+    <div class="pswp__caption">
+      <div class="pswp__caption__center"></div>
+    </div>
+    </div>
+    </div>
+</div>
+
+<script>
+window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+ga('create', 'UA-120021913-1', 'auto');
+ga('send', 'pageview');
+</script>
+<script async src='//www.google-analytics.com/analytics.js'></script>
+
+</head>
+
+  <body>
+    <nav class="navbar navbar-default navbar-fixed-top navbar-custom">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#main-navbar">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="https://abyssaltech.xyz">Abhishek Arya | Blog</a>
+    </div>
+
+    <div class="collapse navbar-collapse" id="main-navbar">
+      <ul class="nav navbar-nav navbar-right">
+        
+          
+            <li>
+              <a title="Blog" href="/">Blog</a>
+            </li>
+          
+        
+          
+            <li class="navlinks-container">
+              <a class="navlinks-parent" href="javascript:void(0)">featured</a>
+              <div class="navlinks-children">
+                
+                  <a href="/tags/are-we-really-secure/">Are we really secure?</a>
+                
+                  <a href="/post/---">---</a>
+                
+              </div>
+            </li>
+          
+        
+          
+            <li>
+              <a title="About" href="/page/about/">About</a>
+            </li>
+          
+        
+          
+            <li>
+              <a title="Tags" href="/tags">Tags</a>
+            </li>
+          
+        
+
+        
+
+        
+      </ul>
+    </div>
+
+    <div class="avatar-container">
+      <div class="avatar-img-border">
+        
+          <a title="Abhishek Arya | Blog" href="https://abyssaltech.xyz">
+            <img class="avatar-img" src="https://abyssaltech.xyz/img/avatar-icon.png" alt="Abhishek Arya | Blog" />
+          </a>
+        
+      </div>
+    </div>
+
+  </div>
+</nav>
+
+
+
+
+    
+  
+  
+  
+
+
+
+
+  
+    <div id="header-big-imgs" data-num-img=1 data-img-src-1="https://abyssaltech.xyz/img/postimg/deeplearning.png" data-img-desc-1="Machine Learning"></div>
+  
+
+  <header class="header-section has-img">
+    
+      <div class="intro-header big-img">
+        
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+              <div class="post-heading">
+                <h1>Image Classification using Convolutional Neural Networks - Transfer Learning</h1>
+                  
+                    
+                      <h2 class="post-subheading">Deep Learning with Tensorflow</h2>
+                    
+                  
+                  
+                    <span class="post-meta">
+  
+  
+  <i class="fa fa-calendar-o"></i>&nbsp;Posted on June 8, 2018
+  
+  
+  &nbsp;|&nbsp;
+  <i class="fa fa-clock-o"></i> 6 minutes (1139 words)
+  
+  
+</span>
+
+
+                  
+              </div>
+            </div>
+          </div>
+        </div>
+        <span class="img-desc" style="display: inline;"></span>
+      </div>
+    
+    <div class="intro-header no-img">
+      
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+            <div class="post-heading">
+              <h1>Image Classification using Convolutional Neural Networks - Transfer Learning</h1>
+                
+                  
+                    <h2 class="post-subheading">Deep Learning with Tensorflow</h2>
+                  
+                
+                
+                  <span class="post-meta">
+  
+  
+  <i class="fa fa-calendar-o"></i>&nbsp;Posted on June 8, 2018
+  
+  
+  &nbsp;|&nbsp;
+  <i class="fa fa-clock-o"></i> 6 minutes (1139 words)
+  
+  
+</span>
+
+
+                
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+
+    
+<div class="container" role="main">
+  <div class="row">
+    <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+      <article role="main" class="blog-post">
+        
+
+<h3 id="introduction">Introduction</h3>
+
+<p>Recently, I made a neural network image classifier that can be used by astronomers and scientists to classify whether an image is of a Globular Star Cluster or an Open Star Cluster. Here is the <a href="https://github.com/abhishekarya1/cluster-image-classifier-tensorflow">Project Link</a>.</p>
+
+<p>You can refer <a href="https://amazing-space.stsci.edu/resources/organizers/starclusters.php">here</a> for knowing what are these two star clusters.</p>
+
+<p><img src="/img/diffclusters.JPG" alt="Different Clusters" /></p>
+
+<p>It can be very tiresome and time consuming for scientists to carefully classify between the two. And my model aims to decrease the classification time for these two categories of star clusters.</p>
+
+<p>If you know even a very little about Machine Learning and the so called &ldquo;Artificial intellifence&rdquo;, then you might be aware of the datasets that the programs employing the learning deals with, images, audio/speech, videos and text data.</p>
+
+<p>Machine Learning models can do various things with a given data, they can do handwriting recognition, image recognition, language translation, and speech recognition.</p>
+
+<h3 id="tools">Tools</h3>
+
+<p>Google&rsquo;s Tensorflow is an open source library for high performance numerical computations, which allows it to handle multi-dimentional datastructures called tensors, and that leads it to be much more efficient in machine learning computation that required a lot of calculations like the Gradient Descent Function for a set of inputs and outputs.</p>
+
+<p><img src="/img/tf.png" alt="TensorFlow" /></p>
+
+<p><a href="https://deepmind.com/">Google Deepmind</a> is <a href="https://ai.googleblog.com/2016/04/deepmind-moves-to-tensorflow.html">on Tensorflow</a> too.</p>
+
+<p>Some call it the machine learning and deep neural networks library but that is just and understatement, Tensorflow is fairly scalable as it include package written in a variety of languages.</p>
+
+<p>There are deep learning libraries that might do better than Tensorflow like PyTorch, Theano and Keras. I prefer Tensorflow as I find it much easier to use and visulize neural networks and if you ever want to see the data flow graph, there is always <a href="https://www.tensorflow.org/programmers_guide/graph_viz">Tensorboard Graph Visualization</a>. Besides this, Tensorflow has proven itself to be fairly good at reinforcement learning models and the community embraces openness, clean APIs, useful modules, and helpful people on the internet sure helps Tensorflow to come out as the best option as of now.</p>
+
+<p>An image classifier with Tensorflow takes only 2 minutes to code.</p>
+
+<p>I&rsquo;m going to use <a href="https://towardsdatascience.com/what-is-transfer-learning-8b1a0fa42b4?gi=a6b0723e4d51">Transfer Learning</a> with Inception which is a deep convolutional neural network (CNN) architecture that achieves the new state of the art for classification and detection on the <a href="http://www.image-net.org/">ImageNet</a> dataset and it is pre-trained. We&rsquo;ll have to retrain the final layers for our image dataset and we&rsquo;ll be good to go, while the pre-trained layers of the neural network will help us recognize higher level abstract image patterns.</p>
+
+<p>For that we&rsquo;ll have to write some code and set Hyper-Parameters for our new model, but before that we need a <strong>lot</strong> of images and to download them we&rsquo;ll use batch image downloader script.</p>
+
+<p>I&rsquo;ll be training the last layer <em>final_training_ops</em> in the figure, while all the previous layers retain their already-trained state.</p>
+
+<p><img src="/img/cnn.png" alt="CNN" /></p>
+
+<p>After we have our images, <em>retrain.py</em> and <em>label_image.py</em> scipts from the github repo cloned onto our system in a folder, we can use the below commands -</p>
+
+<h3 id="directory-structure">Directory Structure</h3>
+
+<ol>
+<li><p>Create a new directory with the name - &ldquo;tf_files&rdquo; in the current directory containing <em>retrain.py</em> and <em>label_image.py</em> initially.</p></li>
+
+<li><p>Create the Training data images directory in tf_files. In my case it is - <code>tf_files/cluster_photos</code>.</p></li>
+
+<li><p>In the <code>cluster_photos</code> directory, create classes sub-directories. In my case they are <code>globular cluster</code> and <code>open cluster</code>.</p></li>
+
+<li><p>Create another Testing data images directory in tf_files. In my case it is - <code>tf_files/test_photos</code>.</p></li>
+
+<li><p>Do make a note here that the tf_files directory has to be there for <em>retrain.py</em> to work, do not try and snip paths of the directories inside the tf_files directory.</p></li>
+</ol>
+
+<h3 id="set-command-line-parameters">Set command line parameters</h3>
+<div class="highlight"><pre class="chroma">SET IMAGE_SIZE=224									
+SET ARCHITECTURE=&#34;mobilenet_0.50_%IMAGE_SIZE%&#34;		# or, SET ARCHITECTURE=&#34;inception_v3&#34; for Inception v3</pre></div>
+<h3 id="retraining-using-the-specified-architecture-and-directory-structure">Retraining using the specified Architecture and Directory Structure</h3>
+
+<p>Make sure to pass these as one line only.</p>
+
+<blockquote>
+<p><strong>Bottleneck</strong> - stores final layer data of the neural network, just before the output layer.</p>
+
+<p>** &ndash;image_dir** - change this to the path to the directory where the images are.</p>
+</blockquote>
+
+<p>If the <em>scripts</em> folder module is placed in the current directory already.</p>
+<div class="highlight"><pre class="chroma">python -m scripts.retrain \
+--bottleneck_dir=tf_files/bottlenecks \
+--how_many_training_steps=500 \
+--model_dir=tf_files/models/ \
+--summaries_dir=tf_files/training_summaries/%ARCHITECTURE% \
+--output_graph=tf_files/retrained_graph.pb \
+--output_labels=tf_files/retrained_labels.txt \
+--architecture=&#34;%ARCHITECTURE%&#34; \
+--image_dir=tf_files/cluster_photos</pre></div>
+<p>If the <em>retrain.py</em> script is available in our current working directory and there is no <em>script</em> folder, then from the current directory -</p>
+<div class="highlight"><pre class="chroma">python retrain.py \
+--bottleneck_dir=tf_files/bottlenecks \
+--how_many_training_steps=500 \
+--model_dir=tf_files/models/ \
+--summaries_dir=tf_files/training_summaries/%ARCHITECTURE% \
+--output_graph=tf_files/retrained_graph.pb \
+--output_labels=tf_files/retrained_labels.txt \
+--architecture=&#34;%ARCHITECTURE%&#34; \
+--image_dir=tf_files/cluster_photos</pre></div>
+<p>Learning Rate can be decreased or increased using the <code>--learning_rate</code> parameter, by default it is <code>0.01</code>.</p>
+
+<p>Also, the parameter <code>--how_many_training_steps=500</code> can be removed to set the default number of steps that is 4000 for higher accuracy and thus improved result.</p>
+
+<h3 id="training-will-take-approximately-30-40-mins-depending-upon-the-hyperparameters-architecture-and-the-number-and-resolution-of-training-images">Training will take approximately 30-40 mins depending upon the hyperparameters, architecture, and the number and resolution of training images.</h3>
+
+<p><img src="/img/training.JPG" alt="Training" /></p>
+
+<p>The step outputs are as follows -</p>
+
+<ul>
+<li>The <strong>training accuracy</strong> shows the percentage of the images used in the current training batch that were labeled with the correct class.</li>
+<li><strong>Validation accuracy</strong>: The validation accuracy is the precision (percentage of correctly-labelled images) on a randomly-selected group of images from a different set.</li>
+<li><strong>Cross entropy</strong> is a loss function that gives a glimpse into how well the learning process is progressing. (The lower the better.)</li>
+</ul>
+
+<p><strong>Final Test Accuracy -</strong></p>
+
+<p><img src="/img/fin.JPG" alt="Final" /></p>
+
+<h3 id="testing">Testing</h3>
+
+<p>After the model is finished training, input an image for it to classify -</p>
+<div class="highlight"><pre class="chroma">python -m scripts.label_image  --graph=tf_files/retrained_graph.pb  --image=tf_files/test_photos/1.jpg
+
+# or from the directory as -
+
+python label_image.py --image=tf_files/test_photos/2.jpg</pre></div>
+<p>And the output predictions will be displayed on the terminal.</p>
+
+<h4 id="for-inception-v3">For Inception v3 -</h4>
+
+<p>Changes required to <em>label_image.py</em> -</p>
+<div class="highlight"><pre class="chroma">At line 74 =&gt; input_height = 299
+At line 75 =&gt; input_width = 299
+At line 78 =&gt; input_layer = &#34;Mul&#34;</pre></div>
+<p>And we can evaluate with the same <em>label_image.py</em> which we used for MobileNet.</p>
+
+<h3 id="tensorboard">Tensorboard</h3>
+
+<p>Before training you can also launch tensorboard in the background. TensorBoard is a monitoring and inspection tool included with tensorflow. You will use it to monitor the training progress-</p>
+<div class="highlight"><pre class="chroma">tensorboard --logdir tf_files/training_summaries &amp;</pre></div>
+<p>The data from the training session will be saved into the <code>training_summaries</code> directory and can be audited using the command above to start Tensorboard.</p>
+
+<h4 id="reports-from-tensorboard">Reports from Tensorboard -</h4>
+
+<p><img src="/img/tensorboard1.JPG" alt="TB1" />
+<img src="/img/tensorboard2.JPG" alt="TB2" /></p>
+
+<h3 id="conclusion">Conclusion</h3>
+
+<p>Inception CNN Architecture can classify upto 1000 classes, as it is trained on <a href="http://www.image-net.org/">ImageNet</a> database.</p>
+
+<p>This project was a demonstration of the <em>Transfer Learning</em> process in Machine Learning and how it can be used for classification. Besides, I hope someday this can be useful for astronomers to classify their hundreds of cluster images that they collected overnight.
+Other applications include - medical, military and educational.</p>
+
+<h3 id="accuracy">Accuracy</h3>
+
+<p><img src="/img/fin.JPG" alt="accuracy" /></p>
+
+<h3 id="test-on-globular-star-cluster-image">Test on Globular Star Cluster Image</h3>
+
+<p><img src="/img/result2.png" alt="result2" /></p>
+
+<h3 id="test-on-open-star-cluster-image">Test on Open Star Cluster Image</h3>
+
+<p><img src="/img/result1.png" alt="result1" /></p>
+
+<p>I will surely create more classification models to solve problems. Any suggestions are always welcome.</p>
+
+<h3 id="learning-resources">Learning Resources</h3>
+
+<ul>
+<li>Rethinking the Inception Architecture for Computer Vision - <a href="https://arxiv.org/abs/1512.00567">Cornell University Library</a></li>
+<li>We Need to Go Deeper: A Practical Guide to Tensorflow and Inception - <a href="https://medium.com/initialized-capital/we-need-to-go-deeper-a-practical-guide-to-tensorflow-and-inception-50e66281804f">Medium</a></li>
+<li>Train your own image classifier with Inception in TensorFlow - <a href="https://ai.googleblog.com/2016/03/train-your-own-image-classifier-with.html">Google AI Blog</a></li>
+<li>Multi-label Image Classification with Inception Net - <a href="https://towardsdatascience.com/multi-label-image-classification-with-inception-net-cbb2ee538e30">Medium</a></li>
+</ul>
+
+
+        
+          <div class="blog-tags">
+            
+              <a href="https://abyssaltech.xyz/tags/machine-learning/">machine learning</a>&nbsp;
+            
+              <a href="https://abyssaltech.xyz/tags/tensorflow/">tensorflow</a>&nbsp;
+            
+              <a href="https://abyssaltech.xyz/tags/deep-learning/">deep learning</a>&nbsp;
+            
+          </div>
+        
+
+        
+            <hr/>
+            <section id="social-share">
+              <ul class="list-inline footer-links">
+                
+
+
+<li>
+    <a href="//twitter.com/share?url=https%3a%2f%2fabyssaltech.xyz%2fpost%2f2018-06-08-image-classification-transfer-learning%2f&amp;text=Image%20Classification%20using%20Convolutional%20Neural%20Networks%20-%20Transfer%20Learning&amp;via="
+       target="_blank" alt="" title="Share on Twitter">
+        <span class="fa-stack fa-lg">
+                <i class="fa fa-circle fa-stack-2x"></i>
+                <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
+              </span>
+    </a>
+</li>
+
+
+<li>
+    <a href="//plus.google.com/share?url=https%3a%2f%2fabyssaltech.xyz%2fpost%2f2018-06-08-image-classification-transfer-learning%2f" target="_blank" title="Share on Google Plus">
+         <span class="fa-stack fa-lg">
+                <i class="fa fa-circle fa-stack-2x"></i>
+                <i class="fa fa-google-plus fa-stack-1x fa-inverse"></i>
+              </span>
+    </a>
+</li>
+
+
+<li>
+    <a href="//www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fabyssaltech.xyz%2fpost%2f2018-06-08-image-classification-transfer-learning%2f" target="_blank" title="Share on Facebook">
+        <span class="fa-stack fa-lg">
+                <i class="fa fa-circle fa-stack-2x"></i>
+                <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
+              </span>
+    </a>
+</li>
+
+
+<li>
+    <a href="//reddit.com/submit?url=https%3a%2f%2fabyssaltech.xyz%2fpost%2f2018-06-08-image-classification-transfer-learning%2f&amp;title=Image%20Classification%20using%20Convolutional%20Neural%20Networks%20-%20Transfer%20Learning" target="_blank" title="Share on Reddit">
+         <span class="fa-stack fa-lg">
+                <i class="fa fa-circle fa-stack-2x"></i>
+                <i class="fa fa-reddit fa-stack-1x fa-inverse"></i>
+              </span>
+    </a>
+</li>
+
+
+<li>
+    <a href="//www.linkedin.com/shareArticle?url=https%3a%2f%2fabyssaltech.xyz%2fpost%2f2018-06-08-image-classification-transfer-learning%2f&amp;title=Image%20Classification%20using%20Convolutional%20Neural%20Networks%20-%20Transfer%20Learning" target="_blank"
+       title="Share on LinkedIn">
+         <span class="fa-stack fa-lg">
+                <i class="fa fa-circle fa-stack-2x"></i>
+                <i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
+              </span>
+    </a>
+</li>
+
+
+<li>
+    <a href="//www.stumbleupon.com/submit?url=https%3a%2f%2fabyssaltech.xyz%2fpost%2f2018-06-08-image-classification-transfer-learning%2f&amp;title=Image%20Classification%20using%20Convolutional%20Neural%20Networks%20-%20Transfer%20Learning" target="_blank"
+       title="Share on StumbleUpon">
+        <span class="fa-stack fa-lg">
+                <i class="fa fa-circle fa-stack-2x"></i>
+                <i class="fa fa-stumbleupon fa-stack-1x fa-inverse"></i>
+              </span>
+    </a>
+</li>
+
+
+<li>
+    <a href="//www.pinterest.com/pin/create/button/?url=https%3a%2f%2fabyssaltech.xyz%2fpost%2f2018-06-08-image-classification-transfer-learning%2f&amp;description=Image%20Classification%20using%20Convolutional%20Neural%20Networks%20-%20Transfer%20Learning" target="_blank"
+       title="Share on Pinterest">
+         <span class="fa-stack fa-lg">
+                <i class="fa fa-circle fa-stack-2x"></i>
+                <i class="fa fa-pinterest fa-stack-1x fa-inverse"></i>
+              </span>
+    </a>
+</li>
+
+              </ul>
+            </section>
+        
+      </article>
+
+      
+        <ul class="pager blog-pager">
+          
+            <li class="previous">
+              <a href="https://abyssaltech.xyz/post/2018-06-03-dark-web-1/" data-toggle="tooltip" data-placement="top" title="Introduction to the Dark Web">&larr; Previous Post</a>
+            </li>
+          
+          
+        </ul>
+      
+
+
+      
+        
+        
+      
+
+    </div>
+  </div>
+</div>
+
+    <footer>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+        <ul class="list-inline text-center footer-links">
+          
+              <li>
+                <a href="mailto:abhishekarya102@gmail.com" title="Email me">
+                  <span class="fa-stack fa-lg">
+                    <i class="fa fa-circle fa-stack-2x"></i>
+                    <i class="fa fa-envelope fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a href="https://www.facebook.com/dFuZeR101" title="Facebook">
+                  <span class="fa-stack fa-lg">
+                    <i class="fa fa-circle fa-stack-2x"></i>
+                    <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a href="https://plus.google.com/&#43;abhishekarya102" title="Google&#43;">
+                  <span class="fa-stack fa-lg">
+                    <i class="fa fa-circle fa-stack-2x"></i>
+                    <i class="fa fa-google-plus fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a href="https://github.com/abhishekarya1" title="GitHub">
+                  <span class="fa-stack fa-lg">
+                    <i class="fa fa-circle fa-stack-2x"></i>
+                    <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a href="https://telegram.me/arrayarya" title="Telegram">
+                  <span class="fa-stack fa-lg">
+                    <i class="fa fa-circle fa-stack-2x"></i>
+                    <i class="fa fa-telegram fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
+          
+          <li>
+            
+            <a href="https://abyssaltech.xyz/index.xml" title="RSS">
+            
+              <span class="fa-stack fa-lg">
+                <i class="fa fa-circle fa-stack-2x"></i>
+                <i class="fa fa-rss fa-stack-1x fa-inverse"></i>
+              </span>
+            </a>
+          </li>
+          
+        </ul>
+        <p class="credits copyright text-muted">
+          
+            
+              <a href="abhishekarya1.github.io">Abhishek Arya</a>
+            
+          
+
+          &nbsp;&bull;&nbsp;
+          2018
+
+          
+            &nbsp;&bull;&nbsp;
+            <a href="https://abyssaltech.xyz">Abhishek Arya | Blog</a>
+          
+        </p>
+        
+        <p class="credits theme-by text-muted">
+          <a href="https://gohugo.io">Hugo v0.40.1</a> powered &nbsp;&bull;&nbsp; Theme by <a href="#">Beautiful Jekyll</a> adapted to <a href="#">Beautiful Hugo</a>
+          
+        </p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.7.1/katex.min.js" integrity="sha384-/y1Nn9+QQAipbNQWU65krzJralCnuOasHncUFXGkdwntGeSvQicrYkiUBwsgUqc1" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.7.1/contrib/auto-render.min.js" integrity="sha384-dq1/gEHSxPZQ7DdrM82ID4YVol9BYyU7GbWlIwnwyPzotpoc57wDw/guX8EaYGPx" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<script src="https://abyssaltech.xyz/js/main.js"></script>
+<script src="https://abyssaltech.xyz/js/highlight.min.js"></script>
+<script> hljs.initHighlightingOnLoad(); </script>
+<script> $(document).ready(function() {$("pre.chroma").css("padding","0");}); </script><script> renderMathInElement(document.body); </script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.2/photoswipe.min.js" integrity="sha384-QELNnmcmU8IR9ZAykt67vGr9/rZJdHbiWi64V88fCPaOohUlHCqUD/unNN0BXSqy" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.2/photoswipe-ui-default.min.js" integrity="sha384-m67o7SkQ1ALzKZIFh4CiTA8tmadaujiTa9Vu+nqPSwDOqHrDmxLezTdFln8077+q" crossorigin="anonymous"></script>
+<script src="https://abyssaltech.xyz/js/load-photoswipe.js"></script>
+
+
+
+
+
+
+  </body>
+</html>
+
