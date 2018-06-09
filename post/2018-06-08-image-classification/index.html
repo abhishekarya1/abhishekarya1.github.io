@@ -195,7 +195,7 @@ ga('send', 'pageview');
   
   
   &nbsp;|&nbsp;
-  <i class="fa fa-clock-o"></i> 6 minutes (1141 words)
+  <i class="fa fa-clock-o"></i> 6 minutes (1139 words)
   
   
 </span>
@@ -229,7 +229,7 @@ ga('send', 'pageview');
   
   
   &nbsp;|&nbsp;
-  <i class="fa fa-clock-o"></i> 6 minutes (1141 words)
+  <i class="fa fa-clock-o"></i> 6 minutes (1139 words)
   
   
 </span>
@@ -273,7 +273,7 @@ ga('send', 'pageview');
 
 <p><a href="https://deepmind.com/">Google Deepmind</a> is <a href="https://ai.googleblog.com/2016/04/deepmind-moves-to-tensorflow.html">on Tensorflow</a> too.</p>
 
-<p>Some call it the machine learning and deep neural networks library but that is just and understatement, Tensorflow is fairly Scalable as it include package written in a variety of languages.</p>
+<p>Some call it the machine learning and deep neural networks library but that is just and understatement, Tensorflow is fairly scalable as it include package written in a variety of languages.</p>
 
 <p>There are deep learning libraries that might do better than Tensorflow like PyTorch, Theano and Keras. I prefer Tensorflow as I find it much easier to use and visulize neural networks and if you ever want to see the data flow graph, there is always <a href="https://www.tensorflow.org/programmers_guide/graph_viz">Tensorboard Graph Visualization</a>. Besides this, Tensorflow has proven itself to be fairly good at reinforcement learning models and the community embraces openness, clean APIs, useful modules, and helpful people on the internet sure helps Tensorflow to come out as the best option as of now.</p>
 
@@ -283,11 +283,11 @@ ga('send', 'pageview');
 
 <p>For that we&rsquo;ll have to write some code and set Hyper-Parameters for our new model, but before that we need a <strong>lot</strong> of images and to download them we&rsquo;ll use batch image downloader script.</p>
 
-<p>I&rsquo;ll be training the last layer _final_training<em>ops</em> in the figure, while all the previous layers retain their already-trained state.</p>
+<p>I&rsquo;ll be training the last layer <em>final_training_ops</em> in the figure, while all the previous layers retain their already-trained state.</p>
 
 <p><img src="/img/cnn.png" alt="CNN" /></p>
 
-<p>After we have our images, <em>retrain.py</em> and _label<em>image.py</em> scipts from the github repo cloned onto our system in a folder, we can use the below commands -</p>
+<p>After we have our images, <em>retrain.py</em> and <em>label_image.py</em> scipts from the github repo cloned onto our system in a folder, we can use the below commands -</p>
 
 <h3 id="directory-structure">Directory Structure</h3>
 
@@ -326,7 +326,7 @@ SET ARCHITECTURE=&#34;mobilenet_0.50_%IMAGE_SIZE%&#34;		# or, SET ARCHITECTURE=&
 --output_labels=tf_files/retrained_labels.txt \
 --architecture=&#34;%ARCHITECTURE%&#34; \
 --image_dir=tf_files/cluster_photos</pre></div>
-<p>If the <em>retrain.py</em> script is available in our current working directory and there is no <em>script folder</em>, then from the current directory -</p>
+<p>If the <em>retrain.py</em> script is available in our current working directory and there is no <em>script</em> folder, then from the current directory -</p>
 <div class="highlight"><pre class="chroma">python retrain.py \
 --bottleneck_dir=tf_files/bottlenecks \
 --how_many_training_steps=500 \
@@ -368,11 +368,11 @@ python label_image.py --image=tf_files/test_photos/2.jpg</pre></div>
 
 <h4 id="for-inception-v3">For Inception v3 -</h4>
 
-<p>Changes required to _label<em>image.py</em> -</p>
+<p>Changes required to <em>label_image.py</em> -</p>
 <div class="highlight"><pre class="chroma">At line 74 =&gt; input_height = 299
 At line 75 =&gt; input_width = 299
 At line 78 =&gt; input_layer = &#34;Mul&#34;</pre></div>
-<p>And we can evaluate with the same _label<em>image.py</em> which we used for MobileNet.</p>
+<p>And we can evaluate with the same <em>label_image.py</em> which we used for MobileNet.</p>
 
 <h3 id="tensorboard">Tensorboard</h3>
 
@@ -387,9 +387,9 @@ At line 78 =&gt; input_layer = &#34;Mul&#34;</pre></div>
 
 <h3 id="conclusion">Conclusion</h3>
 
-<p>Inception CNN Architecture can classify upto 1000 classes, as it is trained on <a href="http://www.image-net.org/">ImageNet</a> database form classes.</p>
+<p>Inception CNN Architecture can classify upto 1000 classes, as it is trained on <a href="http://www.image-net.org/">ImageNet</a> database.</p>
 
-<p>This project was a demonstration of the <em>Transfer Learning</em> process in Machine Learning and how it can be used for classification. Besides, I hope someday this can be huseful for astronomers to classify their hundreds of cluster images that they collected overnight.
+<p>This project was a demonstration of the <em>Transfer Learning</em> process in Machine Learning and how it can be used for classification. Besides, I hope someday this can be useful for astronomers to classify their hundreds of cluster images that they collected overnight.
 Other applications include - medical, military and educational.</p>
 
 <h3 id="accuracy">Accuracy</h3>
