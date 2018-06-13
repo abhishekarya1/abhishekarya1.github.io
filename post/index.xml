@@ -7,10 +7,20 @@
     <generator>Hugo -- gohugo.io</generator>
     <managingEditor>abhishekarya102@gmail.com (Abhishek Arya)</managingEditor>
     <webMaster>abhishekarya102@gmail.com (Abhishek Arya)</webMaster>
-    <lastBuildDate>Fri, 08 Jun 2018 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 13 Jun 2018 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://abyssaltech.xyz/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>A Brief Guide to Various Techniques in Hacking</title>
+      <link>https://abyssaltech.xyz/post/2018-06-13-hacking-techniques/</link>
+      <pubDate>Wed, 13 Jun 2018 00:00:00 +0000</pubDate>
+      <author>abhishekarya102@gmail.com (Abhishek Arya)</author>
+      <guid>https://abyssaltech.xyz/post/2018-06-13-hacking-techniques/</guid>
+      <description>Introduction To be a Hacker, one has to be a master of multiple disciplines ranging from Operating Systems to Networking, and of course programming. They need to know everything about everything, from latest server technologies like Node.js to old programming languages like BASIC and C. They know almost every web framework, operating system, wireless technology, encryption that there is, in and out.
+If you are finding weakness and loopholes in a system and gaining access or exploiting it then you are termed as a Hacker.</description>
+    </item>
     
     <item>
       <title>Image Classification using Convolutional Neural Networks - Transfer Learning</title>
