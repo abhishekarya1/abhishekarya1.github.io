@@ -7,19 +7,10 @@
     <generator>Hugo -- gohugo.io</generator>
     <managingEditor>abhishekarya102@gmail.com (Abhishek Arya)</managingEditor>
     <webMaster>abhishekarya102@gmail.com (Abhishek Arya)</webMaster>
-    <lastBuildDate>Fri, 01 Jun 2018 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 02 Jun 2018 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://abyssaltech.xyz/tags/index.xml" rel="self" type="application/rss+xml" />
     
-    
-    <item>
-      <title>Apps</title>
-      <link>https://abyssaltech.xyz/tags/apps/</link>
-      <pubDate>Fri, 01 Jun 2018 00:00:00 +0000</pubDate>
-      <author>abhishekarya102@gmail.com (Abhishek Arya)</author>
-      <guid>https://abyssaltech.xyz/tags/apps/</guid>
-      <description></description>
-    </item>
     
     <item>
       <title>Are We Really Secure</title>
@@ -81,15 +72,6 @@
       <pubDate>Wed, 13 Jun 2018 00:00:00 +0000</pubDate>
       <author>abhishekarya102@gmail.com (Abhishek Arya)</author>
       <guid>https://abyssaltech.xyz/tags/security/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Tensorflow</title>
-      <link>https://abyssaltech.xyz/tags/tensorflow/</link>
-      <pubDate>Fri, 08 Jun 2018 00:00:00 +0000</pubDate>
-      <author>abhishekarya102@gmail.com (Abhishek Arya)</author>
-      <guid>https://abyssaltech.xyz/tags/tensorflow/</guid>
       <description></description>
     </item>
     

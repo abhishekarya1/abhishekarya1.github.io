@@ -41,33 +41,5 @@ You might&amp;rsquo;ve heard about the WannaCry ransomware attack last year. It 
       <description>No matter how much time is devoted to developing an app or a website, or under how many eyes it passes through during its development stages, they still have vulnerabilities. Some have more so than others and some are just unusable. Every vendor on this planet has a security issue with their product. It has now become a fact of modern-day life. Take Microsoft for instance. CVE Details, a site that chronicles publicly disclosed vulnerabilities shows that in the 10 years starting with 2006 the company has disclosed an astonishing 3,157 security flaws.</description>
     </item>
     
-    <item>
-      <title>Apps and Permissions</title>
-      <link>https://abyssaltech.xyz/post/2018-06-01-are-we-really-secure-3/</link>
-      <pubDate>Fri, 01 Jun 2018 00:00:00 +0000</pubDate>
-      <author>abhishekarya102@gmail.com (Abhishek Arya)</author>
-      <guid>https://abyssaltech.xyz/post/2018-06-01-are-we-really-secure-3/</guid>
-      <description>Android is an operating system for handheld devices like smartphones. It was announced in 2007 and was the first commercial device was released in 2008. Today, after exactly a decade in the future, it has more than 2 billion monthly active devices. With such level of a userbase, sure comes a lot of prying eyes on your data. Though Google Play Store has restrictions on what you can install and what data your apps see, it is just a matter of a few permissions before these apps can start harvesting your data.</description>
-    </item>
-    
-    <item>
-      <title>Data Breaches</title>
-      <link>https://abyssaltech.xyz/post/2018-05-27-are-we-really-secure-2/</link>
-      <pubDate>Sun, 27 May 2018 00:00:00 +0000</pubDate>
-      <author>abhishekarya102@gmail.com (Abhishek Arya)</author>
-      <guid>https://abyssaltech.xyz/post/2018-05-27-are-we-really-secure-2/</guid>
-      <description>In the last post, I talked about how people unknowingly give away the data which can be used to draw statistical inferences to a large degree of accuracy for a particular region or a country. There is another bigger threat to our data - &amp;lsquo;Data Breaches&amp;rsquo;.
-You store photos in the cloud and you save storage, you use online platforms that save your details and you are okay with it, you buy something online and all your online transactions are stored in a database.</description>
-    </item>
-    
-    <item>
-      <title>Data Protection</title>
-      <link>https://abyssaltech.xyz/post/2018-05-26-are-we-really-secure-1/</link>
-      <pubDate>Sat, 26 May 2018 00:00:00 +0000</pubDate>
-      <author>abhishekarya102@gmail.com (Abhishek Arya)</author>
-      <guid>https://abyssaltech.xyz/post/2018-05-26-are-we-really-secure-1/</guid>
-      <description>Modern day technologies for sure provide much more efficient, convenient and sometimes creative solutions to our problems. Want to talk for free with a relative thousand miles away? Open an app and that&amp;rsquo;s it, talk as much as you want, this was not at all possible before. Solutions like these are all around us and we use them on a daily basis. Stuck in a new city? Open the map app and get going, it will track you in real time too.</description>
-    </item>
-    
   </channel>
 </rss>
