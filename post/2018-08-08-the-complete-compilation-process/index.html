@@ -1,0 +1,661 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+
+  <title>A Complete Breakdown of the Compilation Process</title>
+  <meta property="og:title" content="A Complete Breakdown of the Compilation Process" />
+  <meta name="twitter:title" content="A Complete Breakdown of the Compilation Process" />
+  <meta name="description" content="An illustrated tutorial on how to see the code at each stage">
+  <meta property="og:description" content="An illustrated tutorial on how to see the code at each stage">
+  <meta name="twitter:description" content="An illustrated tutorial on how to see the code at each stage">
+  <meta name="author" content="Abhishek Arya"/>
+  <link href='https://abyssaltech.xyz/img/favicon.ico' rel='icon' type='image/x-icon'/>
+  <meta property="og:image" content="https://abyssaltech.xyz/img/avatar-icon.svg" />
+  <meta name="twitter:image" content="https://abyssaltech.xyz/img/avatar-icon.svg" />
+  <meta name="twitter:card" content="summary" />
+  <meta property="og:url" content="https://abyssaltech.xyz/post/2018-08-08-the-complete-compilation-process/" />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Abyssal Tech" />
+
+  <meta name="generator" content="Hugo 0.40.1" />
+  <link rel="canonical" href="https://abyssaltech.xyz/post/2018-08-08-the-complete-compilation-process/" />
+  <link rel="alternate" href="https://abyssaltech.xyz/index.xml" type="application/rss+xml" title="Abyssal Tech">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.7.1/katex.min.css" integrity="sha384-wITovz90syo1dJWVh32uuETPVEtGigN07tkttEqPv+uR2SE/mbQcG7ATL28aI9H0" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://abyssaltech.xyz/css/main.css" /><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" />
+  <link rel="stylesheet" href="https://abyssaltech.xyz/css/highlight.min.css" /><link rel="stylesheet" href="https://abyssaltech.xyz/css/codeblock.css" />
+
+
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.2/photoswipe.min.css" integrity="sha384-h/L2W9KefUClHWaty3SLE5F/qvc4djlyR4qY3NUV5HGQBBW7stbcfff1+I/vmsHh" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.2/default-skin/default-skin.min.css" integrity="sha384-iD0dNku6PYSIQLyfTOpB06F2KCZJAKLOThS5HRe8b3ibhdEQ6eKsFf/EeFxdOt5R" crossorigin="anonymous">
+
+
+
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+<div class="pswp__bg"></div>
+
+<div class="pswp__scroll-wrap">
+    
+    <div class="pswp__container">
+      <div class="pswp__item"></div>
+      <div class="pswp__item"></div>
+      <div class="pswp__item"></div>
+    </div>
+    
+    <div class="pswp__ui pswp__ui--hidden">
+    <div class="pswp__top-bar">
+      
+      <div class="pswp__counter"></div>
+      <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+      <button class="pswp__button pswp__button--share" title="Share"></button>
+      <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+      <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+      
+      
+      <div class="pswp__preloader">
+        <div class="pswp__preloader__icn">
+          <div class="pswp__preloader__cut">
+            <div class="pswp__preloader__donut"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+      <div class="pswp__share-tooltip"></div>
+    </div>
+    <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+    </button>
+    <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+    </button>
+    <div class="pswp__caption">
+      <div class="pswp__caption__center"></div>
+    </div>
+    </div>
+    </div>
+</div>
+
+<script>
+window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+ga('create', 'UA-120021913-1', 'auto');
+ga('send', 'pageview');
+</script>
+<script async src='//www.google-analytics.com/analytics.js'></script>
+
+</head>
+
+  <body>
+    <nav class="navbar navbar-default navbar-fixed-top navbar-custom">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#main-navbar">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="https://abyssaltech.xyz">Abyssal Tech</a>
+    </div>
+
+    <div class="collapse navbar-collapse" id="main-navbar">
+      <ul class="nav navbar-nav navbar-right">
+        
+          
+            <li>
+              <a title="Blog" href="/">Blog</a>
+            </li>
+          
+        
+          
+            <li class="navlinks-container">
+              <a class="navlinks-parent" href="javascript:void(0)">featured</a>
+              <div class="navlinks-children">
+                
+                  <a href="/tags/are-we-really-secure/">Are we really secure?</a>
+                
+                  <a href="/tags/hacking/">Hacking and Kali Linux</a>
+                
+                  <a href="/post/---">---</a>
+                
+              </div>
+            </li>
+          
+        
+          
+            <li>
+              <a title="About" href="/page/about/">About</a>
+            </li>
+          
+        
+          
+            <li>
+              <a title="Tags" href="/tags">Tags</a>
+            </li>
+          
+        
+
+        
+
+        
+      </ul>
+    </div>
+
+    <div class="avatar-container">
+      <div class="avatar-img-border">
+        
+          <a title="Abyssal Tech" href="https://abyssaltech.xyz">
+            <img class="avatar-img" src="https://abyssaltech.xyz/img/avatar-icon.svg" alt="Abyssal Tech" />
+          </a>
+        
+      </div>
+    </div>
+
+  </div>
+</nav>
+
+
+
+
+    
+  
+  
+  
+
+
+
+
+  
+    <div id="header-big-imgs" data-num-img=1 data-img-src-1="https://abyssaltech.xyz/img/postimg/compilation.JPG" data-img-desc-1="Programming"></div>
+  
+
+  <header class="header-section has-img">
+    
+      <div class="intro-header big-img">
+        
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+              <div class="post-heading">
+                <h1>A Complete Breakdown of the Compilation Process</h1>
+                  
+                    
+                      <h2 class="post-subheading">An illustrated tutorial on how to see the code at each stage</h2>
+                    
+                  
+                  
+                    <span class="post-meta">
+  
+  
+  <i class="fa fa-calendar-o"></i>&nbsp;Posted on August 8, 2018
+  
+  
+  &nbsp;|&nbsp;
+  <i class="fa fa-clock-o"></i> 5 minutes (927 words)
+  
+  
+</span>
+
+
+                  
+              </div>
+            </div>
+          </div>
+        </div>
+        <span class="img-desc" style="display: inline;"></span>
+      </div>
+    
+    <div class="intro-header no-img">
+      
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+            <div class="post-heading">
+              
+			  <h1>A Complete Breakdown of the Compilation Process</h1>
+			  
+                
+                  
+                    <h2 class="post-subheading">An illustrated tutorial on how to see the code at each stage</h2>
+                  
+                
+                
+                  <span class="post-meta">
+  
+  
+  <i class="fa fa-calendar-o"></i>&nbsp;Posted on August 8, 2018
+  
+  
+  &nbsp;|&nbsp;
+  <i class="fa fa-clock-o"></i> 5 minutes (927 words)
+  
+  
+</span>
+
+
+                
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+
+    
+<div class="container" role="main">
+  <div class="row">
+    <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+      <article role="main" class="blog-post">
+        
+
+<h2 id="the-compilation-process-in-c-c">The Compilation Process in C/C++</h2>
+
+<p>Knowing how your code compiles can be very helpful when writing and debugging it.</p>
+
+<p>Compiling a C/C++ program is a multi-stage process.</p>
+
+<p>The complete compilation process in C/C++ can be split into four separate stages:</p>
+
+<ol>
+<li>Preprocessing</li>
+<li>Compilation</li>
+<li>Assembly</li>
+<li>Linking</li>
+</ol>
+
+<p><img src="/img/compilation.png" alt="Entire Compilation Process" /></p>
+
+<p>By using appropriate compiler options, we can stop this process at any stage. These options are passed as command line parameters.</p>
+
+<p>In the following examples, I will be using the <strong>C++ programming language</strong> to write the code and <strong>g++ compiler</strong> to compile it. However, these commands can be easily implemented with a program written in the <strong>C programming language</strong> and compiled in <strong>gcc compiler</strong>.</p>
+
+<p>As an example, the code below is apt for understanding this.</p>
+<div class="highlight"><pre class="chroma">/*
+Name : div.cc
+
+A C++ Program to check divisibility by 2 */
+
+#include&lt;iostream&gt;
+
+using namespace std;
+
+int main()
+{
+    int x;
+
+    cin &gt;&gt; x;
+
+    if (x % 2 == 0)
+    {
+        cout &lt;&lt; &#34;Divisible&#34;;
+    }
+
+    else
+    {
+        cout &lt;&lt; &#34;Not Divisible&#34;;
+    }
+}</pre></div>
+<p>It is a simple program that asks the user for an input and expects an integer (int) type constant. It prints <em>Divisible</em> on the screen if the number is divisible by 2 and <em>Not Divisible</em> otherwise.</p>
+
+<h2 id="preprocessing">Preprocessing</h2>
+
+<p>The C++ preprocessor copies the contents of the included header files (in our case - <em>iostream.h</em>) into the source code file by using preprocessor directive (#include), expands macros, and replaces constants defined using #define with their values. It also removes comments from the main code.</p>
+
+<p>A new source file is created that contains code from our program as well as the header files and this is what is used as input to the further stages for the compilation to be declared complete.</p>
+
+<p>We can stop at this stage and see the output by using <strong>“-E”</strong> option in gcc or g++.</p>
+
+<p>In g++:
+<code>g++ -E div.cc</code></p>
+
+<p>In gcc:
+<code>gcc -E div.c</code></p>
+
+<p>Output to a file using <strong>“&gt;”</strong> or <strong>“-o”</strong> options.</p>
+
+<ul>
+<li><code>g++ -E div.cc &gt; div</code></li>
+<li><code>g++ -E div.cc -o div</code></li>
+</ul>
+
+<p>The above commands will store the code in <strong>.FILE</strong> extension.</p>
+
+<p>The GNU standard for the preprocessed files is <strong>.i</strong> or <strong>.ii</strong> extensions. It signifies that the code inside the file is not to be preprocessed and is to be sent directly for compilation.</p>
+
+<p><img src="/img/preprocess.JPG" alt="Preprocessed Code" /></p>
+
+<p>Our 21 line program is now 16,014 lines after preprocessing and all of that is just the header file inclusion (iostream.h) till line 15,996!</p>
+
+<p>You can see the complete preprocessed file, <strong>div.ii</strong> - <a href="/res/div.ii">here</a>.</p>
+
+<h2 id="compilation">Compilation</h2>
+
+<p>The preprocessed code is compiled into the assembly language for the current machine. It is in the form of assembly language that is machine dependent. The file extension is <strong>.s</strong>.</p>
+
+<p>We can stop at this stage and see the output by using “-S” option in gcc or g++.</p>
+
+<p>In g++:
+<code>g++ -S div.cc</code></p>
+
+<p>In gcc:
+<code>gcc -S div.c -o div.s</code></p>
+
+<p><img src="/img/assembly.JPG" alt="Assembly Code" /></p>
+
+<p>You can see the complete compiled file, <strong>div.s</strong> - <a href="/res/div.s">here</a>.</p>
+
+<h2 id="assembly">Assembly</h2>
+
+<p>During this stage, the assembler code generated by the compiler is assembled into the object code for the platform by the assembler. It contains equivalent binary code for our program. It generates an object file with a <strong>.o</strong> extension.</p>
+
+<p>We can stop at this stage and see the output by using “-c” option in gcc or g++.</p>
+
+<p>In g++:
+<code>g++ -c div.cc</code></p>
+
+<p>In gcc:
+<code>gcc -c div.c -o div.o</code></p>
+
+<p>NOTE: Notice the use of lowercase (.c) instead of uppercase (.C) which is used for linking.</p>
+
+<p><img src="/img/machinecode.JPG" alt="Machine Binary Code" /></p>
+
+<p>To download the object file, <strong>div.o</strong> - <a href="/res/div.o">click here</a>.</p>
+
+<h2 id="linking">Linking</h2>
+
+<p>In this stage, all the linking of function calls with their definitions are done. Linker identifies where all these functions are implemented with the help of the assembly code. Linker fills in the addresses with the actual definitions. The linker also does a few additional tasks such as combining our program with some standard routines that are needed to make our program executable.</p>
+
+<p>It generates an executable file with a <strong>.exe</strong> extension.</p>
+
+<p>The final executable size is way more than the input file.</p>
+
+<p>If no option is specified, then all stages of the compilation process are performed and an executable file is created and placed in the current directory.</p>
+
+<p>In g++:
+<code>g++ div.cc</code></p>
+
+<p>In gcc:
+<code>gcc div.c</code></p>
+
+<p>These create an executable with the default name as <strong>a.exe</strong> or <strong>a.out</strong> on linux. To name it something else:
+<code>g++ -o div div.cc</code></p>
+
+<p>This will create a <strong>div.exe</strong> file in the current directory. We can now run our program from the output executable.</p>
+
+<p><img src="/img/exe.JPG" alt="exe" /></p>
+
+<p>Shown above is our program executable run from the terminal by just typing its name.</p>
+
+<h2 id="exploring-further">Exploring Further</h2>
+
+<h4 id="produce-all-the-intermediate-files-using-save-temps-option">Produce all the intermediate files using <strong>“-save-temps”</strong> option.</h4>
+
+<p>The <strong>-save-temps</strong> option can generate all files from the four stages of the compilation process. Through this option, output at all the stages of compilation is stored in the current directory.</p>
+
+<p>In g++:
+<code>g++ -save-temps div.cc</code></p>
+
+<p>In gcc:
+<code>gcc -save-temps div.c</code></p>
+
+<p>For example :</p>
+<div class="highlight"><pre class="chroma">$ g++ -save-temps div.cc
+
+$ ls
+a.out  div.cc  div.ii  div.o  div.s</pre></div>
+<p>See that all the intermediate files, as well as the final executable, was also produced in the output.</p>
+
+<h4 id="verbose-mode">Verbose Mode</h4>
+
+<p>You can see the detailed compilation process by using the verbose <strong>“-v”</strong> option.</p>
+
+<p>In g++:
+<code>g++ -v div.cc</code></p>
+
+<p>In gcc:
+<code>gcc -v -o div.exe div.c</code></p>
+
+<p>To see for any intermediate stage:
+<code>g++ -v -S div.cc</code></p>
+
+<p>The details will be shown within the terminal itself as shown in the image below.</p>
+
+<p><img src="/img/verbose.JPG" alt="Verbose Mode" /></p>
+
+<p>You can open the image above or save it, and zoom in to see the details.</p>
+
+<h2 id="references">References</h2>
+
+<ul>
+<li>Using the GNU Compiler Collection (GCC) - <a href="https://gcc.gnu.org/onlinedocs/gcc/Overall-Options.html">gcc.gnu.org</a></li>
+<li>The C++ compilation process - <a href="http://faculty.cs.niu.edu/~mcmahon/CS241/Notes/compile.html">cs.niu.edu</a></li>
+<li>15 Most Frequently Used GCC Compiler Command Line Options - <a href="https://www.thegeekstuff.com/2012/10/gcc-compiler-options/">The Geek Stuff</a></li>
+</ul>
+
+
+        
+          <div class="blog-tags">
+            
+              <a href="https://abyssaltech.xyz/tags/programming/">programming</a>&nbsp;
+            
+          </div>
+        
+
+        
+            <hr/>
+            <section id="social-share">
+              <ul class="list-inline footer-links">
+                
+
+
+<li>
+    <a href="//twitter.com/share?url=https%3a%2f%2fabyssaltech.xyz%2fpost%2f2018-08-08-the-complete-compilation-process%2f&amp;text=A%20Complete%20Breakdown%20of%20the%20Compilation%20Process&amp;via="
+       target="_blank" alt="" title="Share on Twitter">
+        <span class="fa-stack fa-lg">
+                <i class="fa fa-circle fa-stack-2x"></i>
+                <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
+              </span>
+    </a>
+</li>
+
+
+<li>
+    <a href="//plus.google.com/share?url=https%3a%2f%2fabyssaltech.xyz%2fpost%2f2018-08-08-the-complete-compilation-process%2f" target="_blank" title="Share on Google Plus">
+         <span class="fa-stack fa-lg">
+                <i class="fa fa-circle fa-stack-2x"></i>
+                <i class="fa fa-google-plus fa-stack-1x fa-inverse"></i>
+              </span>
+    </a>
+</li>
+
+
+<li>
+    <a href="//www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fabyssaltech.xyz%2fpost%2f2018-08-08-the-complete-compilation-process%2f" target="_blank" title="Share on Facebook">
+        <span class="fa-stack fa-lg">
+                <i class="fa fa-circle fa-stack-2x"></i>
+                <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
+              </span>
+    </a>
+</li>
+
+
+<li>
+    <a href="//reddit.com/submit?url=https%3a%2f%2fabyssaltech.xyz%2fpost%2f2018-08-08-the-complete-compilation-process%2f&amp;title=A%20Complete%20Breakdown%20of%20the%20Compilation%20Process" target="_blank" title="Share on Reddit">
+         <span class="fa-stack fa-lg">
+                <i class="fa fa-circle fa-stack-2x"></i>
+                <i class="fa fa-reddit fa-stack-1x fa-inverse"></i>
+              </span>
+    </a>
+</li>
+
+
+<li>
+    <a href="//www.linkedin.com/shareArticle?url=https%3a%2f%2fabyssaltech.xyz%2fpost%2f2018-08-08-the-complete-compilation-process%2f&amp;title=A%20Complete%20Breakdown%20of%20the%20Compilation%20Process" target="_blank"
+       title="Share on LinkedIn">
+         <span class="fa-stack fa-lg">
+                <i class="fa fa-circle fa-stack-2x"></i>
+                <i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
+              </span>
+    </a>
+</li>
+
+
+<li>
+    <a href="//www.stumbleupon.com/submit?url=https%3a%2f%2fabyssaltech.xyz%2fpost%2f2018-08-08-the-complete-compilation-process%2f&amp;title=A%20Complete%20Breakdown%20of%20the%20Compilation%20Process" target="_blank"
+       title="Share on StumbleUpon">
+        <span class="fa-stack fa-lg">
+                <i class="fa fa-circle fa-stack-2x"></i>
+                <i class="fa fa-stumbleupon fa-stack-1x fa-inverse"></i>
+              </span>
+    </a>
+</li>
+
+
+<li>
+    <a href="//www.pinterest.com/pin/create/button/?url=https%3a%2f%2fabyssaltech.xyz%2fpost%2f2018-08-08-the-complete-compilation-process%2f&amp;description=A%20Complete%20Breakdown%20of%20the%20Compilation%20Process" target="_blank"
+       title="Share on Pinterest">
+         <span class="fa-stack fa-lg">
+                <i class="fa fa-circle fa-stack-2x"></i>
+                <i class="fa fa-pinterest fa-stack-1x fa-inverse"></i>
+              </span>
+    </a>
+</li>
+
+              </ul>
+            </section>
+        
+      </article>
+
+      
+        <ul class="pager blog-pager">
+          
+            <li class="previous">
+              <a href="https://abyssaltech.xyz/post/2018-07-27-github-on-your-resume/" data-toggle="tooltip" data-placement="top" title="GitHub on your Resume">&larr; Previous Post</a>
+            </li>
+          
+          
+        </ul>
+      
+
+
+      
+        
+        
+      
+
+    </div>
+  </div>
+</div>
+
+    <footer>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+        <ul class="list-inline text-center footer-links">
+          
+              <li>
+                <a href="mailto:abhishekarya102@gmail.com" title="Email me">
+                  <span class="fa-stack fa-lg">
+                    <i class="fa fa-circle fa-stack-2x"></i>
+                    <i class="fa fa-envelope fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a href="https://www.facebook.com/dFuZeR101" title="Facebook">
+                  <span class="fa-stack fa-lg">
+                    <i class="fa fa-circle fa-stack-2x"></i>
+                    <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a href="https://plus.google.com/&#43;abhishekarya102" title="Google&#43;">
+                  <span class="fa-stack fa-lg">
+                    <i class="fa fa-circle fa-stack-2x"></i>
+                    <i class="fa fa-google-plus fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a href="https://github.com/abhishekarya1" title="GitHub">
+                  <span class="fa-stack fa-lg">
+                    <i class="fa fa-circle fa-stack-2x"></i>
+                    <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a href="https://telegram.me/arrayarya" title="Telegram">
+                  <span class="fa-stack fa-lg">
+                    <i class="fa fa-circle fa-stack-2x"></i>
+                    <i class="fa fa-telegram fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
+          
+          <li>
+            
+            <a href="https://abyssaltech.xyz/index.xml" title="RSS">
+            
+              <span class="fa-stack fa-lg">
+                <i class="fa fa-circle fa-stack-2x"></i>
+                <i class="fa fa-rss fa-stack-1x fa-inverse"></i>
+              </span>
+            </a>
+          </li>
+          
+        </ul>
+        <p class="credits copyright text-muted">
+          
+            
+              <a href="https://www.github.com/abhishekarya1/">Abhishek Arya</a>
+            
+          
+
+          &nbsp;&bull;&nbsp;
+          2018
+
+          
+            &nbsp;&bull;&nbsp;
+            <a href="https://abyssaltech.xyz">Abyssal Tech</a>
+          
+        </p>
+        
+        <p class="credits theme-by text-muted">
+          <a href="https://gohugo.io">Hugo v0.40.1</a> powered &nbsp;&bull;&nbsp; Theme by <a href="#">Beautiful Jekyll</a> adapted to <a href="#">Beautiful Hugo</a>
+          
+        </p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.7.1/katex.min.js" integrity="sha384-/y1Nn9+QQAipbNQWU65krzJralCnuOasHncUFXGkdwntGeSvQicrYkiUBwsgUqc1" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.7.1/contrib/auto-render.min.js" integrity="sha384-dq1/gEHSxPZQ7DdrM82ID4YVol9BYyU7GbWlIwnwyPzotpoc57wDw/guX8EaYGPx" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<script src="https://abyssaltech.xyz/js/main.js"></script>
+<script src="https://abyssaltech.xyz/js/highlight.min.js"></script>
+<script> hljs.initHighlightingOnLoad(); </script>
+<script> $(document).ready(function() {$("pre.chroma").css("padding","0");}); </script><script> renderMathInElement(document.body); </script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.2/photoswipe.min.js" integrity="sha384-QELNnmcmU8IR9ZAykt67vGr9/rZJdHbiWi64V88fCPaOohUlHCqUD/unNN0BXSqy" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.2/photoswipe-ui-default.min.js" integrity="sha384-m67o7SkQ1ALzKZIFh4CiTA8tmadaujiTa9Vu+nqPSwDOqHrDmxLezTdFln8077+q" crossorigin="anonymous"></script>
+<script src="https://abyssaltech.xyz/js/load-photoswipe.js"></script>
+
+
+
+
+
+
+  </body>
+</html>
+

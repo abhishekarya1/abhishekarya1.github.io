@@ -7,10 +7,23 @@
     <generator>Hugo -- gohugo.io</generator>
     <managingEditor>abhishekarya102@gmail.com (Abhishek Arya)</managingEditor>
     <webMaster>abhishekarya102@gmail.com (Abhishek Arya)</webMaster>
-    <lastBuildDate>Fri, 27 Jul 2018 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 08 Aug 2018 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://abyssaltech.xyz/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>A Complete Breakdown of the Compilation Process</title>
+      <link>https://abyssaltech.xyz/post/2018-08-08-the-complete-compilation-process/</link>
+      <pubDate>Wed, 08 Aug 2018 00:00:00 +0000</pubDate>
+      <author>abhishekarya102@gmail.com (Abhishek Arya)</author>
+      <guid>https://abyssaltech.xyz/post/2018-08-08-the-complete-compilation-process/</guid>
+      <description>The Compilation Process in C/C++ Knowing how your code compiles can be very helpful when writing and debugging it.
+Compiling a C/C++ program is a multi-stage process.
+The complete compilation process in C/C++ can be split into four separate stages:
+ Preprocessing Compilation Assembly Linking  By using appropriate compiler options, we can stop this process at any stage. These options are passed as command line parameters.
+In the following examples, I will be using the C++ programming language to write the code and g++ compiler to compile it.</description>
+    </item>
     
     <item>
       <title>GitHub on your Resume</title>
