@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Tags on Abyssal Tech</title>
+    <title>Tags on Abhishek Arya | Blog</title>
     <link>https://abyssaltech.xyz/tags/</link>
-    <description>Recent content in Tags on Abyssal Tech</description>
+    <description>Recent content in Tags on Abhishek Arya | Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <managingEditor>abhishekarya102@gmail.com (Abhishek Arya)</managingEditor>
     <webMaster>abhishekarya102@gmail.com (Abhishek Arya)</webMaster>
@@ -69,7 +69,7 @@
     <item>
       <title>Machine Learning</title>
       <link>https://abyssaltech.xyz/tags/machine-learning/</link>
-      <pubDate>Fri, 08 Jun 2018 00:00:00 +0000</pubDate>
+      <pubDate>Mon, 20 Aug 2018 00:00:00 +0000</pubDate>
       <author>abhishekarya102@gmail.com (Abhishek Arya)</author>
       <guid>https://abyssaltech.xyz/tags/machine-learning/</guid>
       <description></description>
