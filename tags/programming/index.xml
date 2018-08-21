@@ -7,19 +7,10 @@
     <generator>Hugo -- gohugo.io</generator>
     <managingEditor>abhishekarya102@gmail.com (Abhishek Arya)</managingEditor>
     <webMaster>abhishekarya102@gmail.com (Abhishek Arya)</webMaster>
-    <lastBuildDate>Mon, 20 Aug 2018 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 08 Aug 2018 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://abyssaltech.xyz/tags/programming/index.xml" rel="self" type="application/rss+xml" />
     
-    
-    <item>
-      <title>Build your own Lexical Analyzer using Flex</title>
-      <link>https://abyssaltech.xyz/post/2018-08-20-create-your-own-lexical-analyzer-using-flex/</link>
-      <pubDate>Mon, 20 Aug 2018 00:00:00 +0000</pubDate>
-      <author>abhishekarya102@gmail.com (Abhishek Arya)</author>
-      <guid>https://abyssaltech.xyz/post/2018-08-20-create-your-own-lexical-analyzer-using-flex/</guid>
-      <description> Introduction </description>
-    </item>
     
     <item>
       <title>A Complete Breakdown of the Compilation Process</title>
