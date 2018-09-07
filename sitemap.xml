@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://abyssaltech.xyz/post/2018-09-07-cosmos-prologue/</loc>
+    <lastmod>2018-09-06T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://abyssaltech.xyz/post/2018-08-20-summary-of-an-introduction-to-machine-learning-for-students-in-secondary-education/</loc>
     <lastmod>2018-08-20T00:00:00+00:00</lastmod>
   </url>
@@ -69,7 +74,7 @@
   
   <url>
     <loc>https://abyssaltech.xyz/</loc>
-    <lastmod>2018-08-20T00:00:00+00:00</lastmod>
+    <lastmod>2018-09-06T00:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -90,6 +95,12 @@
   <url>
     <loc>https://abyssaltech.xyz/tags/choosing-electives/</loc>
     <lastmod>2018-06-27T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://abyssaltech.xyz/tags/cosmos/</loc>
+    <lastmod>2018-09-06T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -130,7 +141,7 @@
   
   <url>
     <loc>https://abyssaltech.xyz/post/</loc>
-    <lastmod>2018-08-20T00:00:00+00:00</lastmod>
+    <lastmod>2018-09-06T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -149,6 +160,12 @@
   <url>
     <loc>https://abyssaltech.xyz/tags/</loc>
     <lastmod>2018-06-02T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://abyssaltech.xyz/tags/tv-series/</loc>
+    <lastmod>2018-09-06T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
