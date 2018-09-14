@@ -7,10 +7,20 @@
     <generator>Hugo -- gohugo.io</generator>
     <managingEditor>abhishekarya102@gmail.com (Abhishek Arya)</managingEditor>
     <webMaster>abhishekarya102@gmail.com (Abhishek Arya)</webMaster>
-    <lastBuildDate>Sat, 08 Sep 2018 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 14 Sep 2018 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://abyssaltech.xyz/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Building webpages with AI</title>
+      <link>https://abyssaltech.xyz/post/2018-09-14-sketch-2-code/</link>
+      <pubDate>Fri, 14 Sep 2018 00:00:00 +0000</pubDate>
+      <author>abhishekarya102@gmail.com (Abhishek Arya)</author>
+      <guid>https://abyssaltech.xyz/post/2018-09-14-sketch-2-code/</guid>
+      <description>What seems to be the problem with building HTML pages? I think it has to do with the amount of work one has to do for building just the structural components. With machine learning, we can easily identify these components like lines, text, and boxes, and create code for it. But web designers can do that more efficiently.
+The problem is brainstorming designs. When having a lot of ideas in the mind, you can draw them on a paper or whiteboard in a jiffy, but the same is not true for code, which is a hefty amount of effort and not something designers want to do as it delays the design process.</description>
+    </item>
     
     <item>
       <title>Cosmos - A Spacetime Odyssey, Episode#1</title>
@@ -22,6 +32,17 @@
 This episode discusses our understanding of the universe. From defining our cosmic address, discussing the lives and ideas of Copernicus and Giordano Bruno, introducing the cosmic calendar, and explaining how science is a cooperative enterprise spanning the generations.
 It opens with this famous opening line from the 1980&amp;rsquo;s Cosmos by Carl Sagan:
  &amp;ldquo;The universe is all there is, or was, or ever will be.</description>
+    </item>
+    
+    <item>
+      <title>Cosmos - A Spacetime Odyssey, Episode#2</title>
+      <link>https://abyssaltech.xyz/post/2018-09-10-cosmos-a-spacetime-odyssey-ep-2/</link>
+      <pubDate>Sat, 08 Sep 2018 00:00:00 +0000</pubDate>
+      <author>abhishekarya102@gmail.com (Abhishek Arya)</author>
+      <guid>https://abyssaltech.xyz/post/2018-09-10-cosmos-a-spacetime-odyssey-ep-2/</guid>
+      <description>Subjects: Biology, Life Sciences, Biochemistry, Earth Science, Anatomy, Physiology.
+This episode discusses evolution, DNA, mutations, natural selection, tree of life, evolution of the eye, history of life on Earth, mass extinctions, Geologic Time Scale.
+##</description>
     </item>
     
     <item>

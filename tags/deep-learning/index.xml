@@ -7,10 +7,20 @@
     <generator>Hugo -- gohugo.io</generator>
     <managingEditor>abhishekarya102@gmail.com (Abhishek Arya)</managingEditor>
     <webMaster>abhishekarya102@gmail.com (Abhishek Arya)</webMaster>
-    <lastBuildDate>Fri, 08 Jun 2018 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 14 Sep 2018 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://abyssaltech.xyz/tags/deep-learning/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Building webpages with AI</title>
+      <link>https://abyssaltech.xyz/post/2018-09-14-sketch-2-code/</link>
+      <pubDate>Fri, 14 Sep 2018 00:00:00 +0000</pubDate>
+      <author>abhishekarya102@gmail.com (Abhishek Arya)</author>
+      <guid>https://abyssaltech.xyz/post/2018-09-14-sketch-2-code/</guid>
+      <description>What seems to be the problem with building HTML pages? I think it has to do with the amount of work one has to do for building just the structural components. With machine learning, we can easily identify these components like lines, text, and boxes, and create code for it. But web designers can do that more efficiently.
+The problem is brainstorming designs. When having a lot of ideas in the mind, you can draw them on a paper or whiteboard in a jiffy, but the same is not true for code, which is a hefty amount of effort and not something designers want to do as it delays the design process.</description>
+    </item>
     
     <item>
       <title>Image Classification using Convolutional Neural Networks - Transfer Learning</title>
