@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://abyssaltech.xyz/post/2018-09-21-the-year-2038-problem/</loc>
+    <lastmod>2018-09-21T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://abyssaltech.xyz/post/2018-09-15-cosmos-a-spacetime-odyssey-ep-2/</loc>
     <lastmod>2018-09-15T00:00:00+00:00</lastmod>
   </url>
@@ -89,7 +94,7 @@
   
   <url>
     <loc>https://abyssaltech.xyz/</loc>
-    <lastmod>2018-09-15T00:00:00+00:00</lastmod>
+    <lastmod>2018-09-21T00:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -156,25 +161,31 @@
   
   <url>
     <loc>https://abyssaltech.xyz/post/</loc>
-    <lastmod>2018-09-15T00:00:00+00:00</lastmod>
+    <lastmod>2018-09-21T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://abyssaltech.xyz/tags/programming/</loc>
-    <lastmod>2018-08-08T00:00:00+00:00</lastmod>
+    <lastmod>2018-09-21T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://abyssaltech.xyz/tags/security/</loc>
-    <lastmod>2018-06-13T00:00:00+00:00</lastmod>
+    <lastmod>2018-09-21T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://abyssaltech.xyz/tags/</loc>
     <lastmod>2018-06-02T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://abyssaltech.xyz/tags/technology/</loc>
+    <lastmod>2018-09-21T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   

@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Programming on Abhishek Arya | Blog</title>
-    <link>https://abyssaltech.xyz/tags/programming/</link>
-    <description>Recent content in Programming on Abhishek Arya | Blog</description>
+    <title>Technology on Abhishek Arya | Blog</title>
+    <link>https://abyssaltech.xyz/tags/technology/</link>
+    <description>Recent content in Technology on Abhishek Arya | Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <managingEditor>abhishekarya102@gmail.com (Abhishek Arya)</managingEditor>
     <webMaster>abhishekarya102@gmail.com (Abhishek Arya)</webMaster>
     <lastBuildDate>Fri, 21 Sep 2018 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="https://abyssaltech.xyz/tags/programming/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://abyssaltech.xyz/tags/technology/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
@@ -20,19 +20,6 @@
       <guid>https://abyssaltech.xyz/post/2018-09-21-the-year-2038-problem/</guid>
       <description>Not Enough Storage If you know about The Year 2000 problem, also known as the Y2K problem, the Millennium bug, or the Y2K bug, then you know how bad it was.
 In short, only the last two digits of a year were used to store the years in computers and most electronic devices in the last century. But, as soon as we hit the year 2000, problems were anticipated, and arose, because many programs represented four-digit years with only the final two digits — making the year 2000 indistinguishable from 1900 or even 3000.</description>
-    </item>
-    
-    <item>
-      <title>A Complete Breakdown of the Compilation Process</title>
-      <link>https://abyssaltech.xyz/post/2018-08-08-the-complete-compilation-process/</link>
-      <pubDate>Wed, 08 Aug 2018 00:00:00 +0000</pubDate>
-      <author>abhishekarya102@gmail.com (Abhishek Arya)</author>
-      <guid>https://abyssaltech.xyz/post/2018-08-08-the-complete-compilation-process/</guid>
-      <description>The Compilation Process in C/C++ Knowing how your code compiles can be very helpful when writing and debugging it.
-Compiling a C/C++ program is a multi-stage process.
-The complete compilation process in C/C++ can be split into four separate stages:
- Preprocessing Compilation Assembly Linking  By using appropriate compiler options, we can stop this process at any stage. These options are passed as command line parameters.
-In the following examples, I will be using the C++ programming language to write the code and g++ compiler to compile it.</description>
     </item>
     
   </channel>
