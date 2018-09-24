@@ -23,7 +23,7 @@ In short, only the last two digits of a year were used to store the years in com
     </item>
     
     <item>
-      <title>A Complete Breakdown of the Compilation Process</title>
+      <title>Command-line flags to see the code at each stage of compilation</title>
       <link>https://abyssaltech.xyz/post/2018-08-08-the-complete-compilation-process/</link>
       <pubDate>Wed, 08 Aug 2018 00:00:00 +0000</pubDate>
       <author>abhishekarya102@gmail.com (Abhishek Arya)</author>
