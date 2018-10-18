@@ -1,0 +1,624 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+
+  <title>A Starter&#39;s Guide to Quantum Computing</title>
+  <meta property="og:title" content="A Starter&#39;s Guide to Quantum Computing" />
+  <meta name="twitter:title" content="A Starter&#39;s Guide to Quantum Computing" />
+  <meta name="description" content="Is it time now to take the quantum leap in computing?">
+  <meta property="og:description" content="Is it time now to take the quantum leap in computing?">
+  <meta name="twitter:description" content="Is it time now to take the quantum leap in computing?">
+  <meta name="author" content="Abhishek Arya"/>
+  <link href='https://abyssaltech.xyz/img/favicon.ico' rel='icon' type='image/x-icon'/>
+  <meta property="og:image" content="https://abyssaltech.xyz/img/avatar-icon.svg" />
+  <meta name="twitter:image" content="https://abyssaltech.xyz/img/avatar-icon.svg" />
+  <meta name="twitter:card" content="summary" />
+  <meta property="og:url" content="https://abyssaltech.xyz/post/2018-10-18-a-starters-guide-to-quantum-computing/" />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Abhishek Arya | Blog" />
+
+  <meta name="generator" content="Hugo 0.48" />
+  <link rel="canonical" href="https://abyssaltech.xyz/post/2018-10-18-a-starters-guide-to-quantum-computing/" />
+  <link rel="alternate" href="https://abyssaltech.xyz/index.xml" type="application/rss+xml" title="Abhishek Arya | Blog">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.7.1/katex.min.css" integrity="sha384-wITovz90syo1dJWVh32uuETPVEtGigN07tkttEqPv+uR2SE/mbQcG7ATL28aI9H0" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://abyssaltech.xyz/css/main.css" /><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" />
+  <link rel="stylesheet" href="https://abyssaltech.xyz/css/highlight.min.css" /><link rel="stylesheet" href="https://abyssaltech.xyz/css/codeblock.css" /><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.2/photoswipe.min.css" integrity="sha384-h/L2W9KefUClHWaty3SLE5F/qvc4djlyR4qY3NUV5HGQBBW7stbcfff1+I/vmsHh" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.2/default-skin/default-skin.min.css" integrity="sha384-iD0dNku6PYSIQLyfTOpB06F2KCZJAKLOThS5HRe8b3ibhdEQ6eKsFf/EeFxdOt5R" crossorigin="anonymous">
+
+
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-120021913-1', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+</head>
+
+  <body>
+    <nav class="navbar navbar-default navbar-fixed-top navbar-custom">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#main-navbar">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="https://abyssaltech.xyz">Abhishek Arya | Blog</a>
+    </div>
+
+    <div class="collapse navbar-collapse" id="main-navbar">
+      <ul class="nav navbar-nav navbar-right">
+        
+          
+            <li>
+              <a title="Blog" href="/">Blog</a>
+            </li>
+          
+        
+          
+            <li class="navlinks-container">
+              <a class="navlinks-parent" href="javascript:void(0)">featured</a>
+              <div class="navlinks-children">
+                
+                  <a href="/tags/cosmos/">Cosmos: A Spacetime Odyssey</a>
+                
+                  <a href="/tags/are-we-really-secure/">Are we really secure?</a>
+                
+                  <a href="/tags/hacking/">Hacking and Kali Linux</a>
+                
+              </div>
+            </li>
+          
+        
+          
+            <li>
+              <a title="About" href="/page/about/">About</a>
+            </li>
+          
+        
+          
+            <li>
+              <a title="Tags" href="/tags">Tags</a>
+            </li>
+          
+        
+
+        
+
+        
+      </ul>
+    </div>
+
+    
+      <div class="avatar-container">
+        <div class="avatar-img-border">
+          <a title="Abhishek Arya | Blog" href="https://abyssaltech.xyz">
+            <img class="avatar-img" src="https://abyssaltech.xyz/img/avatar-icon.svg" alt="Abhishek Arya | Blog" />
+          </a>
+        </div>
+      </div>
+    
+
+  </div>
+</nav>
+
+
+
+
+    
+
+
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+<div class="pswp__bg"></div>
+
+<div class="pswp__scroll-wrap">
+    
+    <div class="pswp__container">
+      <div class="pswp__item"></div>
+      <div class="pswp__item"></div>
+      <div class="pswp__item"></div>
+    </div>
+    
+    <div class="pswp__ui pswp__ui--hidden">
+    <div class="pswp__top-bar">
+      
+      <div class="pswp__counter"></div>
+      <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+      <button class="pswp__button pswp__button--share" title="Share"></button>
+      <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+      <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+      
+      
+      <div class="pswp__preloader">
+        <div class="pswp__preloader__icn">
+          <div class="pswp__preloader__cut">
+            <div class="pswp__preloader__donut"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+      <div class="pswp__share-tooltip"></div>
+    </div>
+    <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+    </button>
+    <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+    </button>
+    <div class="pswp__caption">
+      <div class="pswp__caption__center"></div>
+    </div>
+    </div>
+    </div>
+</div>
+
+
+  
+  
+  
+
+
+
+
+
+
+  
+    <div id="header-big-imgs" data-num-img=1 data-img-src-1="https://abyssaltech.xyz/img/qc/qc-cover.jpeg" data-img-desc-1="Quantum Computing"></div>
+  
+
+  <header class="header-section has-img">
+    
+      <div class="intro-header big-img">
+        
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+              <div class="post-heading">
+                <h1>A Starter&#39;s Guide to Quantum Computing</h1>
+                  
+                    
+                      <h2 class="post-subheading">Is it time now to take the quantum leap in computing?</h2>
+                    
+                  
+                  
+                    <span class="post-meta">
+  
+  
+  <i class="fa fa-calendar-o"></i>&nbsp;Posted on October 18, 2018
+  
+  
+  &nbsp;|&nbsp;
+  <i class="fa fa-clock-o"></i> 7 minutes (1315 words)
+  
+  
+</span>
+
+
+                  
+              </div>
+            </div>
+          </div>
+        </div>
+        <span class="img-desc" style="display: inline;"></span>
+      </div>
+    
+    <div class="intro-header no-img">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+            <div class="post-heading">
+              
+                <h1>A Starter&#39;s Guide to Quantum Computing</h1>
+              
+              
+              
+                
+                  <h2 class="post-subheading">Is it time now to take the quantum leap in computing?</h2>
+                
+              
+              
+                <span class="post-meta">
+  
+  
+  <i class="fa fa-calendar-o"></i>&nbsp;Posted on October 18, 2018
+  
+  
+  &nbsp;|&nbsp;
+  <i class="fa fa-clock-o"></i> 7 minutes (1315 words)
+  
+  
+</span>
+
+
+              
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+
+    
+<div class="container" role="main">
+  <div class="row">
+    <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+      <article role="main" class="blog-post">
+        
+
+<h2 id="another-buzzword">Another Buzzword?</h2>
+
+<p>The term &ldquo;Quantum Computing&rdquo; has been one of the <a href="https://www.allerin.com/blog/top-5-technology-buzzwords-of-2018">most popular buzzwords</a> of 2018. And rightly so, it has already found many applications in almost every field out there, from Physics to Medicinal Sciences, even AI. Everybody can use some &ldquo;quantum computing&rdquo; like they are using the computers <em>(referred to as &ldquo;classical&rdquo; from now on)</em> in some way or the other. It has all the potential to disrupt every industry out there.</p>
+
+<p>Some of the world&rsquo;s most influential companies like <a href="https://ai.google/research/teams/applied-science/quantum-ai/">Google</a>, <a href="https://www.techrepublic.com/article/heres-why-microsoft-is-all-in-on-quantum-computing/">Microsoft</a>, <a href="https://www.research.ibm.com/ibm-q/">IBM</a>, <a href="https://www.pcworld.com/article/3168753/components-processors/intel-researches-tech-to-prepare-for-a-future-beyond-todays-pcs.html">Intel</a> and the world&rsquo;s <a href="https://www.scmp.com/news/china/economy/article/2140860/china-winning-race-us-develop-quantum-computers">Governments</a> are making significant investments and more and more people are gearing up to be the first one to get their hands on a quantum computer.</p>
+
+<p><img src="/img/qc/bristlecone.png" alt="Google's Bristlecone Chip" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <strong>Image: Google&rsquo;s Bristlecone Processor</strong></p>
+
+<p>Though quantum computers exist today, the race is to make a commercially viable one. But certainly, it is very difficult to avoid all the hype.</p>
+
+<h2 id="get-started">Get Started</h2>
+
+<p>Some recent developments in quantum computing technology lead to some of the news articles showing up in my news feed, and it brought back, a cool video on quantum computing that I saw on YouTube a couple of years back - <a href="https://www.youtube.com/watch?v=JhHMJCUmq28">here it is</a>. When I saw this, I was in awe and intrigued.</p>
+
+<p><strong>Quantum computing is nothing but computing using various quantum-mechanical phenomena</strong>. Talking of quantum mechanics, Richard Feynman, one of the greatest physicist and educator and one of the founding fathers of quantum computing, said - <em>&ldquo;Nobody understands quantum mechanics&rdquo;</em>. Here is a <a href="https://www.youtube.com/watch?v=w3ZRLllWgHI">video</a>. Perhaps he meant that you don&rsquo;t need to understand it to be able to tinker with the ideas and possibilities.</p>
+
+<p><a href="https://www.livescience.com/33816-quantum-mechanics-explanation.html">Quantum mechanics</a> has been around for quite a while now and yet it is a very new field where people are proposing new ideas, revealing new things and <a href="https://www.quantamagazine.org/graduate-student-solves-quantum-verification-problem-20181008/">solving problems</a>. We do not know if this is the ultimate correct model to describe the universe and the atoms but we do know that this is how things work in nature, not like we previously thought. And that is what puts us out of our comfort zone in going deep into the world of quantum mechanics.</p>
+
+<blockquote>
+<p>&ldquo;Nature isn&rsquo;t classical, dammit, and if you want to make a simulation of nature, you&rsquo;d better make it quantum mechanical, and by golly it&rsquo;s a wonderful problem, because it doesn&rsquo;t look so easy.&rdquo; - Richard P. Feynman</p>
+</blockquote>
+
+<h2 id="the-limits-of-classical-computers">The Limits of Classical Computers</h2>
+
+<p>AS you know that in the past few years computers have grown exponentially in their ability to compute, Moore&rsquo;s law will <a href="https://www.technologyreview.com/s/601441/moores-law-is-dead-now-what/">end</a> soon, how are we going to fulfill the increasing need for computing power for Artificial Intelligence, simulations and for solving more complex problems in cryptography.</p>
+
+<p>In our day to day life, we use devices which use the binary number system, simply because it is easier to realize it. Only two states are possible, ON means 1 and OFF means 0. All the information is represented in a sequence of these &ldquo;bits&rdquo; that can only exist in state 1 or 0 at a given instant in time. We manipulate these sequences using logic gates and transistors to perform every calculation like addition and multiplication.</p>
+
+<p>As we go smaller and smaller with the size of transistors reaching 14nm, fitting almost <a href="https://ipfs.io/ipfs/QmXoypizjW3WknFiJnKLwHCnL72vedxjQkDDP1mXWo6uco/wiki/Transistor_count.html">1.4 billion</a> of them on an Intel Core i7 CPU (Haswell). At a very small scale, a strange phenomenon named &ldquo;Quantum Tunnelling&rdquo; is observed. The electrons teleport to the other side of the transistor without actually passing through. The basic physical phenomena describing the working of computers collapse at this scale and now we need to get our heads around quantum mechanics so that we can go even smaller as well as powerful.</p>
+
+<p><img src="/img/qc/haswell.jpg" alt="Intel 22nm Haswell Die" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>Image: Intel 22nm Haswell Die</strong></p>
+
+<p>We need quantum computing to be able to push the envelope or else we will soon reach the apogee.</p>
+
+<h2 id="quantum-computing">Quantum Computing</h2>
+
+<p>In quantum computing, you have something called a &ldquo;qubit&rdquo;. It has a value that can be 0 or 1. So what is so different here? a qubit can have a value that is either 0 or 1 only when we see it, <strong>but</strong>, it can be in a state where it has a probability associated with being either 0 or 1 upon being seen when we&rsquo;re not seeing it. This is called <strong>Superposition</strong>.</p>
+
+<p><img src="/img/qc/qubit.png" alt="classical bit vs qubit" /></p>
+
+<p>If you have heard about the <em>&ldquo;Schrödinger&rsquo;s Cat&rdquo;</em> then you know what I am saying, if you don&rsquo;t then I highly recommend watching <a href="https://www.youtube.com/watch?v=IOYyCHGWJq4">this</a>.</p>
+
+<p>As explained above, the qubit is proportions of both 0 and 1 at the same time. The moment we see it to determine its value, we get the outcome as only one state that is either 0 or 1.</p>
+
+<p>A qubit exists in two states simultaneously, this allows us to perform many computation tasks parallelly on a scale that can&rsquo;t be performed on a classical computer.</p>
+<div class="highlight"><pre class="chroma">4 classical bits = 16 possible states, only 1 state at a given time,
+
+      0000    0001    0010    0011
+
+      0100    0101    0110    0111
+
+      1000    1001    1010    1011
+
+      1100    1101    1110    1111
+
+4 qubits = all 16 states at a given time.     </pre></div>
+<p>With only 20 qubits we can have 1,048,576 states in parallel!</p>
+
+<h2 id="applications">Applications</h2>
+
+<p>For some of the classical computing problems, quantum computing can make a dramatic difference.</p>
+
+<ol>
+<li><p><strong>Machine Learning and AI</strong> - Quantum computing can accelerate machine learning algorithms and data analysis.</p></li>
+
+<li><p><strong>Cryptography</strong> - One of the fields which will be severely revolutionized by the advent of quantum computing. With quantum computing, data will be much more secure no matter where it is stored, one such example is quantum key distribution.</p></li>
+
+<li><p><strong>Medicine and Materials</strong> - Chemists need to evaluate the interactions between molecules, proteins, and chemicals to see if medicines will improve certain conditions or cure diseases, but due to the extraordinary amount of combinations that are analyzed, this is time and labor intensive. Since quantum computers can review multiple molecules, proteins and chemicals simultaneously, they make it possible for chemists to determine viable drug options quicker.</p></li>
+
+<li><p><strong>Weather Forecasting and Climate Change Predictions</strong> - Meteorologists will have a much better idea of when bad weather will strike to alert people and ultimately save lives.</p></li>
+
+<li><p><strong>Big Data</strong> - Searching big data is a problem we&rsquo;re destined to face and find a solution to when the data gets <em>bigger</em>. Quantum computers can search the database significantly less time than classical computers.</p></li>
+</ol>
+
+<p>Some of the fields of applications include:</p>
+
+<ul>
+<li><p><strong>Aerospace Engineering</strong>: Optimal mesh partitioning for finite elements</p></li>
+
+<li><p><strong>Biology</strong>: Phylogeny reconstruction</p></li>
+
+<li><p><strong>Chemical Engineering</strong>: Heat exchanger network synthesis</p></li>
+
+<li><p><strong>Chemistry</strong>: Protein folding</p></li>
+
+<li><p><strong>Civil Engineering</strong>: Equilibrium of urban traffic flow</p></li>
+
+<li><p><strong>Economics</strong>: Computation of arbitrage in financial markets with friction</p></li>
+
+<li><p><strong>Electrical Engineering</strong>: VLSI layout</p></li>
+
+<li><p><strong>Environmental Engineering</strong>: Optimal placement of contaminant sensors</p></li>
+
+<li><p><strong>Financial Engineering</strong>: Minimum risk portfolio of given return</p></li>
+
+<li><p><strong>Game Theory</strong>: Nash equilibrium that maximizes social welfare</p></li>
+
+<li><p><strong>Mechanical Engineering</strong>: Structure of turbulence in sheared flows</p></li>
+
+<li><p><strong>Medicine</strong>: Reconstructing 3D shape from biplane Angioardiogram</p></li>
+
+<li><p><strong>Operations Research</strong>: Traveling salesperson problem</p></li>
+
+<li><p><strong>Physics</strong>: Partition function of the 3D Ising model</p></li>
+
+<li><p><strong>Politics</strong>: Shapley-Shubik voting power</p></li>
+
+<li><p><strong>Recreation</strong>: Versions of Sudoku, Checkers, Minesweeper, and Tetris</p></li>
+
+<li><p><strong>Statistics</strong>: Optimal experimental design</p></li>
+</ul>
+
+<p>If you want to know more, I highly recommend <a href="https://www.dwavesys.com/quantum-computing/applications">this</a>.</p>
+
+<h2 id="conclusion">Conclusion</h2>
+
+<p>Quantum computing is in a stage where you can compare it to the computers in the 1950s. We have <a href="https://www.technologyreview.com/s/610274/google-thinks-its-close-to-quantum-supremacy-heres-what-that-really-means/">Google&rsquo;s Bristlecone</a>, a new quantum computing chip with 72 qubits, soon outdone by <a href="https://medium.com/rigetti/the-rigetti-128-qubit-chip-and-what-it-means-for-quantum-df757d1b71ea">Rigetti&rsquo;s 128 qubit chip</a> as the most number of qubits on a chip.</p>
+
+<p><img src="/img/qc/qc-activity.jpeg" alt="Activity in QC" /></p>
+
+<p>If you&rsquo;ve ever thought that everything has already been done and there is not much left for you to explore, quantum mechanics and quantum computing something that you must look into.</p>
+
+<p>Ans if you&rsquo;re ready, then take the leap and start learning now.</p>
+
+<h2 id="references-and-further-reading">References and Further Reading</h2>
+
+<ul>
+<li><a href="https://www.bcg.com/en-in/publications/2018/coming-quantum-leap-computing.aspx">The Coming Quantum Leap Computing</a></li>
+<li><a href="http://www.qubitcounter.com/">Qubit Counter</a></li>
+<li><a href="https://www.youtube.com/watch?v=CMdHDHEuOUE">Google and NASA&rsquo;s Quantum Artificial Intelligence Lab</a></li>
+<li><a href="https://futurism.com/quantum-computing-qa">Quantum Computing Is Going to Change the World. Here’s What This Means for You.</a></li>
+<li><a href="https://www.forbes.com/sites/bernardmarr/2017/07/10/6-practical-examples-of-how-quantum-computing-will-change-our-world/">6 Practical Examples Of How Quantum Computing Will Change Our World</a></li>
+<li><a href="https://www.youtube.com/watch?v=JhHMJCUmq28">Quantum Computers Explained – Limits of Human Technology</a> *</li>
+
+<li><p><a href="https://www.dwavesys.com/quantum-computing/applications">D-WAVE Quantum Computing - Applications</a> *</p>
+
+<p>(*) <em><em>already mentioned inline</em></em></p></li>
+</ul>
+
+<p><br></p>
+
+
+        
+          <div class="blog-tags">
+            
+              <a href="https://abyssaltech.xyz/tags/technology/">Technology</a>&nbsp;
+            
+              <a href="https://abyssaltech.xyz/tags/quantum-computing/">Quantum Computing</a>&nbsp;
+            
+          </div>
+        
+
+        
+            <hr/>
+            <section id="social-share">
+              <ul class="list-inline footer-links">
+                
+
+
+<li>
+    <a href="//twitter.com/share?url=https%3a%2f%2fabyssaltech.xyz%2fpost%2f2018-10-18-a-starters-guide-to-quantum-computing%2f&amp;text=A%20Starter%27s%20Guide%20to%20Quantum%20Computing&amp;via="
+       target="_blank" alt="" title="Share on Twitter">
+        <span class="fa-stack fa-lg">
+                <i class="fa fa-circle fa-stack-2x"></i>
+                <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
+              </span>
+    </a>
+</li>
+
+
+<li>
+    <a href="//plus.google.com/share?url=https%3a%2f%2fabyssaltech.xyz%2fpost%2f2018-10-18-a-starters-guide-to-quantum-computing%2f" target="_blank" title="Share on Google Plus">
+         <span class="fa-stack fa-lg">
+                <i class="fa fa-circle fa-stack-2x"></i>
+                <i class="fa fa-google-plus fa-stack-1x fa-inverse"></i>
+              </span>
+    </a>
+</li>
+
+
+<li>
+    <a href="//www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fabyssaltech.xyz%2fpost%2f2018-10-18-a-starters-guide-to-quantum-computing%2f" target="_blank" title="Share on Facebook">
+        <span class="fa-stack fa-lg">
+                <i class="fa fa-circle fa-stack-2x"></i>
+                <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
+              </span>
+    </a>
+</li>
+
+
+<li>
+    <a href="//reddit.com/submit?url=https%3a%2f%2fabyssaltech.xyz%2fpost%2f2018-10-18-a-starters-guide-to-quantum-computing%2f&amp;title=A%20Starter%27s%20Guide%20to%20Quantum%20Computing" target="_blank" title="Share on Reddit">
+         <span class="fa-stack fa-lg">
+                <i class="fa fa-circle fa-stack-2x"></i>
+                <i class="fa fa-reddit fa-stack-1x fa-inverse"></i>
+              </span>
+    </a>
+</li>
+
+
+<li>
+    <a href="//www.linkedin.com/shareArticle?url=https%3a%2f%2fabyssaltech.xyz%2fpost%2f2018-10-18-a-starters-guide-to-quantum-computing%2f&amp;title=A%20Starter%27s%20Guide%20to%20Quantum%20Computing" target="_blank"
+       title="Share on LinkedIn">
+         <span class="fa-stack fa-lg">
+                <i class="fa fa-circle fa-stack-2x"></i>
+                <i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
+              </span>
+    </a>
+</li>
+
+
+<li>
+    <a href="//www.stumbleupon.com/submit?url=https%3a%2f%2fabyssaltech.xyz%2fpost%2f2018-10-18-a-starters-guide-to-quantum-computing%2f&amp;title=A%20Starter%27s%20Guide%20to%20Quantum%20Computing" target="_blank"
+       title="Share on StumbleUpon">
+        <span class="fa-stack fa-lg">
+                <i class="fa fa-circle fa-stack-2x"></i>
+                <i class="fa fa-stumbleupon fa-stack-1x fa-inverse"></i>
+              </span>
+    </a>
+</li>
+
+
+<li>
+    <a href="//www.pinterest.com/pin/create/button/?url=https%3a%2f%2fabyssaltech.xyz%2fpost%2f2018-10-18-a-starters-guide-to-quantum-computing%2f&amp;description=A%20Starter%27s%20Guide%20to%20Quantum%20Computing" target="_blank"
+       title="Share on Pinterest">
+         <span class="fa-stack fa-lg">
+                <i class="fa fa-circle fa-stack-2x"></i>
+                <i class="fa fa-pinterest fa-stack-1x fa-inverse"></i>
+              </span>
+    </a>
+</li>
+
+              </ul>
+            </section>
+        
+      </article>
+
+      
+        <ul class="pager blog-pager">
+          
+            <li class="previous">
+              <a href="https://abyssaltech.xyz/post/2018-09-21-the-year-2038-problem/" data-toggle="tooltip" data-placement="top" title="The Year 2038 Problem">&larr; Previous Post</a>
+            </li>
+          
+          
+        </ul>
+      
+
+
+      
+        
+        
+      
+
+    </div>
+  </div>
+</div>
+
+    <footer>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+        <ul class="list-inline text-center footer-links">
+          
+              <li>
+                <a href="mailto:abhishekarya102@gmail.com" title="Email me">
+                  <span class="fa-stack fa-lg">
+                    <i class="fa fa-circle fa-stack-2x"></i>
+                    <i class="fa fa-envelope fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a href="https://www.facebook.com/dFuZeR101" title="Facebook">
+                  <span class="fa-stack fa-lg">
+                    <i class="fa fa-circle fa-stack-2x"></i>
+                    <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a href="https://plus.google.com/&#43;abhishekarya102" title="Google&#43;">
+                  <span class="fa-stack fa-lg">
+                    <i class="fa fa-circle fa-stack-2x"></i>
+                    <i class="fa fa-google-plus fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a href="https://github.com/abhishekarya1" title="GitHub">
+                  <span class="fa-stack fa-lg">
+                    <i class="fa fa-circle fa-stack-2x"></i>
+                    <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a href="https://telegram.me/arrayarya" title="Telegram">
+                  <span class="fa-stack fa-lg">
+                    <i class="fa fa-circle fa-stack-2x"></i>
+                    <i class="fa fa-telegram fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
+          
+          <li>
+            
+            <a href="https://abyssaltech.xyz/index.xml" title="RSS">
+            
+              <span class="fa-stack fa-lg">
+                <i class="fa fa-circle fa-stack-2x"></i>
+                <i class="fa fa-rss fa-stack-1x fa-inverse"></i>
+              </span>
+            </a>
+          </li>
+          
+        </ul>
+        <p class="credits copyright text-muted">
+          
+            
+              <a href="https://www.github.com/abhishekarya1/">Abhishek Arya</a>
+            
+          
+
+          &nbsp;&bull;&nbsp;
+          2018
+
+          
+            &nbsp;&bull;&nbsp;
+            <a href="https://abyssaltech.xyz">Abhishek Arya | Blog</a>
+          
+        </p>
+        
+        <p class="credits theme-by text-muted">
+          <a href="http://gohugo.io">Hugo v0.48</a> powered &nbsp;&bull;&nbsp; Theme by <u>Beautiful Jekyll</u> adapted to <u>Beautiful Hugo</u>
+          
+        </p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.7.1/katex.min.js" integrity="sha384-/y1Nn9+QQAipbNQWU65krzJralCnuOasHncUFXGkdwntGeSvQicrYkiUBwsgUqc1" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.7.1/contrib/auto-render.min.js" integrity="sha384-dq1/gEHSxPZQ7DdrM82ID4YVol9BYyU7GbWlIwnwyPzotpoc57wDw/guX8EaYGPx" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<script src="https://abyssaltech.xyz/js/main.js"></script>
+<script src="https://abyssaltech.xyz/js/highlight.min.js"></script>
+<script> hljs.initHighlightingOnLoad(); </script>
+<script> $(document).ready(function() {$("pre.chroma").css("padding","0");}); </script><script> renderMathInElement(document.body); </script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.2/photoswipe.min.js" integrity="sha384-QELNnmcmU8IR9ZAykt67vGr9/rZJdHbiWi64V88fCPaOohUlHCqUD/unNN0BXSqy" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.2/photoswipe-ui-default.min.js" integrity="sha384-m67o7SkQ1ALzKZIFh4CiTA8tmadaujiTa9Vu+nqPSwDOqHrDmxLezTdFln8077+q" crossorigin="anonymous"></script>
+<script src="https://abyssaltech.xyz/js/load-photoswipe.js"></script>
+
+
+
+
+
+
+  </body>
+</html>
+
