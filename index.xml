@@ -7,10 +7,21 @@
     <generator>Hugo -- gohugo.io</generator>
     <managingEditor>abhishekarya102@gmail.com (Abhishek Arya)</managingEditor>
     <webMaster>abhishekarya102@gmail.com (Abhishek Arya)</webMaster>
-    <lastBuildDate>Fri, 19 Oct 2018 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 26 Oct 2018 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://abyssaltech.xyz/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Markdown</title>
+      <link>https://abyssaltech.xyz/post/2018-10-26-markdown-syntax-usage/</link>
+      <pubDate>Fri, 26 Oct 2018 00:00:00 +0000</pubDate>
+      <author>abhishekarya102@gmail.com (Abhishek Arya)</author>
+      <guid>https://abyssaltech.xyz/post/2018-10-26-markdown-syntax-usage/</guid>
+      <description>Markdown Markdown is a lightweight markup language that can be used to write plain text-format which can be converted to valid HTML. Using markdown you don&amp;rsquo;t need to write content within HTML tags, you can directly write text with markdown syntax and it&amp;rsquo;ll automatically get converted. You can also use HTML within markdown!
+Markdown files have an extension .md or .markdown.
+It is also different from your normal text editors like Word in which you click buttons to do the job.</description>
+    </item>
     
     <item>
       <title>Quantum Computing - What you need to know</title>

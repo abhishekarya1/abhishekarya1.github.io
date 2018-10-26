@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://abyssaltech.xyz/post/2018-10-26-markdown-syntax-usage/</loc>
+    <lastmod>2018-10-26T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://abyssaltech.xyz/post/2018-10-19-quantum-computing-what-you-need-to-know/</loc>
     <lastmod>2018-10-19T00:00:00+00:00</lastmod>
   </url>
@@ -99,7 +104,7 @@
   
   <url>
     <loc>https://abyssaltech.xyz/</loc>
-    <lastmod>2018-10-19T00:00:00+00:00</lastmod>
+    <lastmod>2018-10-26T00:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -160,13 +165,19 @@
   </url>
   
   <url>
+    <loc>https://abyssaltech.xyz/tags/markdown/</loc>
+    <lastmod>2018-10-26T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://abyssaltech.xyz/page/</loc>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://abyssaltech.xyz/post/</loc>
-    <lastmod>2018-10-19T00:00:00+00:00</lastmod>
+    <lastmod>2018-10-26T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -203,6 +214,12 @@
   <url>
     <loc>https://abyssaltech.xyz/tags/tv-series/</loc>
     <lastmod>2018-09-15T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://abyssaltech.xyz/tags/web/</loc>
+    <lastmod>2018-10-26T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   

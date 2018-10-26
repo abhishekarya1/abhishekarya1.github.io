@@ -1,0 +1,946 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+
+  <title>Markdown</title>
+  <meta property="og:title" content="Markdown" />
+  <meta name="twitter:title" content="Markdown" />
+  <meta name="description" content="Syntax and Usage">
+  <meta property="og:description" content="Syntax and Usage">
+  <meta name="twitter:description" content="Syntax and Usage">
+  <meta name="author" content="Abhishek Arya"/>
+  <link href='https://abyssaltech.xyz/img/favicon.ico' rel='icon' type='image/x-icon'/>
+  <meta property="og:image" content="https://abyssaltech.xyz/img/avatar-icon.svg" />
+  <meta name="twitter:image" content="https://abyssaltech.xyz/img/avatar-icon.svg" />
+  <meta name="twitter:card" content="summary" />
+  <meta property="og:url" content="https://abyssaltech.xyz/post/2018-10-26-markdown-syntax-usage/" />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Abhishek Arya | Blog" />
+
+  <meta name="generator" content="Hugo 0.48" />
+  <link rel="canonical" href="https://abyssaltech.xyz/post/2018-10-26-markdown-syntax-usage/" />
+  <link rel="alternate" href="https://abyssaltech.xyz/index.xml" type="application/rss+xml" title="Abhishek Arya | Blog">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.7.1/katex.min.css" integrity="sha384-wITovz90syo1dJWVh32uuETPVEtGigN07tkttEqPv+uR2SE/mbQcG7ATL28aI9H0" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://abyssaltech.xyz/css/main.css" /><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" />
+  <link rel="stylesheet" href="https://abyssaltech.xyz/css/highlight.min.css" /><link rel="stylesheet" href="https://abyssaltech.xyz/css/codeblock.css" /><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.2/photoswipe.min.css" integrity="sha384-h/L2W9KefUClHWaty3SLE5F/qvc4djlyR4qY3NUV5HGQBBW7stbcfff1+I/vmsHh" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.2/default-skin/default-skin.min.css" integrity="sha384-iD0dNku6PYSIQLyfTOpB06F2KCZJAKLOThS5HRe8b3ibhdEQ6eKsFf/EeFxdOt5R" crossorigin="anonymous">
+
+
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-120021913-1', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+</head>
+
+  <body>
+    <nav class="navbar navbar-default navbar-fixed-top navbar-custom">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#main-navbar">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="https://abyssaltech.xyz">Abhishek Arya | Blog</a>
+    </div>
+
+    <div class="collapse navbar-collapse" id="main-navbar">
+      <ul class="nav navbar-nav navbar-right">
+        
+          
+            <li>
+              <a title="Blog" href="/">Blog</a>
+            </li>
+          
+        
+          
+            <li class="navlinks-container">
+              <a class="navlinks-parent" href="javascript:void(0)">featured</a>
+              <div class="navlinks-children">
+                
+                  <a href="/tags/cosmos/">Cosmos: A Spacetime Odyssey</a>
+                
+                  <a href="/tags/are-we-really-secure/">Are we really secure?</a>
+                
+                  <a href="/tags/hacking/">Hacking and Kali Linux</a>
+                
+              </div>
+            </li>
+          
+        
+          
+            <li>
+              <a title="About" href="/page/about/">About</a>
+            </li>
+          
+        
+          
+            <li>
+              <a title="Tags" href="/tags">Tags</a>
+            </li>
+          
+        
+
+        
+
+        
+      </ul>
+    </div>
+
+    
+      <div class="avatar-container">
+        <div class="avatar-img-border">
+          <a title="Abhishek Arya | Blog" href="https://abyssaltech.xyz">
+            <img class="avatar-img" src="https://abyssaltech.xyz/img/avatar-icon.svg" alt="Abhishek Arya | Blog" />
+          </a>
+        </div>
+      </div>
+    
+
+  </div>
+</nav>
+
+
+
+
+    
+
+
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+<div class="pswp__bg"></div>
+
+<div class="pswp__scroll-wrap">
+    
+    <div class="pswp__container">
+      <div class="pswp__item"></div>
+      <div class="pswp__item"></div>
+      <div class="pswp__item"></div>
+    </div>
+    
+    <div class="pswp__ui pswp__ui--hidden">
+    <div class="pswp__top-bar">
+      
+      <div class="pswp__counter"></div>
+      <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+      <button class="pswp__button pswp__button--share" title="Share"></button>
+      <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+      <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+      
+      
+      <div class="pswp__preloader">
+        <div class="pswp__preloader__icn">
+          <div class="pswp__preloader__cut">
+            <div class="pswp__preloader__donut"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+      <div class="pswp__share-tooltip"></div>
+    </div>
+    <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+    </button>
+    <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+    </button>
+    <div class="pswp__caption">
+      <div class="pswp__caption__center"></div>
+    </div>
+    </div>
+    </div>
+</div>
+
+
+  
+  
+  
+
+
+
+
+
+
+  
+
+  <header class="header-section ">
+    
+    <div class="intro-header no-img">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+            <div class="post-heading">
+              
+                <h1>Markdown</h1>
+              
+              
+              
+                
+                  <h2 class="post-subheading">Syntax and Usage</h2>
+                
+              
+              
+                <span class="post-meta">
+  
+  
+  <i class="fa fa-calendar-o"></i>&nbsp;Posted on October 26, 2018
+  
+  
+  &nbsp;|&nbsp;
+  <i class="fa fa-clock-o"></i> 8 minutes (1519 words)
+  
+  
+</span>
+
+
+              
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+
+    
+<div class="container" role="main">
+  <div class="row">
+    <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+      <article role="main" class="blog-post">
+        
+
+<h2 id="markdown">Markdown</h2>
+
+<p><a href="https://en.wikipedia.org/wiki/Markdown">Markdown</a> is a lightweight markup language that can be used to write plain text-format which can be converted to valid HTML. Using markdown you don&rsquo;t need to write content within HTML tags, you can directly write text with markdown syntax and it&rsquo;ll automatically get converted. You can also use HTML within markdown!</p>
+
+<p>Markdown files have an extension <code>.md</code> or <code>.markdown</code>.</p>
+
+<p>It is also different from your normal text editors like Word in which you click buttons to do the job. In Markdown you don&rsquo;t see the output as you&rsquo;re typing, you only see it in a browser and if you&rsquo;ve some changes, you have to go back and edit.</p>
+
+<p>Today, markdown can be found in many places. <a href="https://guides.github.com/features/mastering-markdown/">GitHub</a> uses it for writing documentation, <a href="https://www.reddit.com/wiki/commenting">Reddit</a> uses it for comments, you can try it out while writing messages in WhatsApp, you can write emails in it, much of the content you read online is written in Markdown. This post is written in Markdown too. It has an advantage that the person who is writing does not need to see everytime how it looks on a webpage. You can write with markdown syntax and the HTML pages will automatically be generated from it.</p>
+
+<p>It looks very clean and it is easy to write too. Markdown is a fast and easy way to take notes, create content for a website, and produce print-ready documents, some even make presentations from it too. It is quickly becoming the writing standard for <a href="http://chronicle.com/blogs/profhacker/markdown-the-syntax-you-probably-already-know/35295">academics</a>, <a href="http://blogs.plos.org/mfenner/2012/12/13/a-call-for-scholarly-markdown/">scientists</a>, <a href="http://lifehacker.com/5943320/what-is-markdown-and-why-is-it-better-for-my-to+do-lists-and-notes">writers</a>, and many more.</p>
+
+<p>Here&rsquo;s the difference between some HTML and same goal achieved by Markdown -</p>
+<div class="highlight"><pre class="chroma">HTML:
+
+&lt;h1&gt;Markdown is &lt;em&gt;awesome&lt;/em&gt;. Start using it now.&lt;/h1&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://daringfireball.net/projects/markdown/&#34;&gt;Markdown&lt;/a&gt; is so cool,
+
+it will make your life &lt;em&gt;easier&lt;/em&gt;&lt;strong&gt;A lot easier.&lt;/strong&gt;&lt;/p&gt;
+
+Markdown:
+
+&gt;# Why *you* should use Markdown to write your next blog post
+
+[Markdown][1] is so cool, it will make your life *easier*. **A lot easier.**</pre></div>
+<p>Notice how Markdown is a lot readable. But, after the content is posted online, they both look the same.</p>
+
+<p>Though it is a lot different and far from the comfort of other <a href="https://en.wikipedia.org/wiki/WYSIWYG">WYSIWYG</a> tools, it offers unparalleled writing speed, fluency, and fewer errors.</p>
+
+<h2 id="cheatsheet">Cheatsheet</h2>
+
+<p>Though Markdown has different &ldquo;flavuors&rdquo; depending upon what you&rsquo;re using it for, this is a more generalized list meant to be used as a quick reference.</p>
+
+<p>Given below are usage and examples of Markdown syntax categorized for easy reference.</p>
+
+<ol>
+<li><a href="#headings">Headings</a></li>
+<li><a href="#emphasis">Emphasis</a></li>
+<li><a href="#lists">Lists</a></li>
+<li><a href="#links">Links</a></li>
+<li><a href="#headingID">Heading ID</a></li>
+<li><a href="#images">Images</a></li>
+<li><a href="#highlighting">Highlighting</a></li>
+<li><a href="#tables">Tables</a></li>
+<li><a href="#blockquotes">Blockquotes</a></li>
+<li><a href="#inlinehtml">Inline HTML</a></li>
+<li><a href="#hr">Horizontal Rule</a></li>
+<li><a href="#tasklists">Tasklists</a></li>
+<li><a href="#footnotes">Footnotes</a></li>
+<li><a href="#defns">Definitions</a></li>
+<li><a href="#esc">Escaping</a></li>
+<li><a href="#linebreaks">Line Breaks</a></li>
+<li><a href="#youtube">YouTube Videos</a></li>
+</ol>
+
+<hr />
+
+<h3 id="headings">1. Headings</h3>
+<div class="highlight"><pre class="chroma"># H1
+## H2
+### H3
+#### H4
+##### H5
+###### H6
+
+Alternalively, you can use undeline styles as follows:
+
+Another-H1
+==========
+
+Another-H2
+----------</pre></div>
+<h1 id="h1">H1</h1>
+
+<h2 id="h2">H2</h2>
+
+<h3 id="h3">H3</h3>
+
+<h4 id="h4">H4</h4>
+
+<h5 id="h5">H5</h5>
+
+<h6 id="h6">H6</h6>
+
+<h1 id="alternative-h1">Alternative-H1</h1>
+
+<h2 id="alternative-h2">Alternative-H2</h2>
+
+<hr />
+
+<h3 id="emphasis">2. Emphasis</h3>
+
+<p>Many kinds of emphasis are available Emphasis in Markdown. Same as <code>&lt;em&gt;</code> tag in HTML.</p>
+<div class="highlight"><pre class="chroma">Emphasis, aka Italics: *asterisks* or _underscores_.
+
+Strong emphasis, aka Bold: **double asterisks** or __double underscores__.
+
+You can also combine them: **asterisks and _underscore too_**.
+
+Strikethrough uses two tildes: ~~wrong or sarcasm~~</pre></div>
+<p>Emphasis, aka Italics: <em>asterisks</em> or <em>underscores</em>.</p>
+
+<p>Strong emphasis, aka Bold: <strong>double asterisks</strong> or <strong>double underscores</strong>.</p>
+
+<p>You can also combine them: <strong>asterisks and <em>underscore too</em></strong>.</p>
+
+<h2 id="strikethrough-uses-two-tildes-sarcasm">Strikethrough uses two tildes: <del>sarcasm</del></h2>
+
+<h3 id="lists">3. Lists</h3>
+
+<p>Proper indentation is required to display lists properly.</p>
+<div class="highlight"><pre class="chroma">1. Item
+2. Another item
+and so on...
+
+* Unordered list Item
+  * Sub-list item
+
+109. Numbers don&#39;t matter, just that it should be a number
+
+1. Item
+  1. Sub-list item 1
+
++ Plus can be used
+- Minus can be used too</pre></div>
+<ol>
+<li>Item</li>
+<li>Another item
+and so on&hellip;</li>
+</ol>
+
+<ul>
+<li>Unordered list Item
+
+<ul>
+<li>Sub-list item</li>
+</ul></li>
+</ul>
+
+<ol>
+<li><p>Numbers don&rsquo;t matter, just that it should be a number</p></li>
+
+<li><p>Item</p>
+
+<ol>
+<li>Sub-list item 1</li>
+</ol></li>
+</ol>
+
+<ul>
+<li>Plus can be used</li>
+<li>Minus can be used too</li>
+</ul>
+
+<hr />
+
+<h3 id="links">4. Links</h3>
+
+<p>Direct, reference and relative links can be created.</p>
+<div class="highlight"><pre class="chroma">[Inline-style link](https://www.google.com)
+
+[Inline-style link with tooltip](https://www.google.com &#34;Google&#39;s Homepage&#34;)
+
+[Reference-style link][Case-insensitive reference text]
+
+[You can use numbers for reference-style link definitions][1]
+
+Expand those references later:
+
+
+
+[Relative link to local](../docs/new/my)
+
+[link text itself]</pre></div>
+<p><a href="https://www.google.com">Inline-style link</a></p>
+
+<p><a href="https://www.google.com" title="Google Homepage">Inline-style link with tooltip</a></p>
+
+<p><a href="https://www.bing.com">Reference-style link</a></p>
+
+<p><a href="1" title="This is the footnote.
+">You can use numbers for reference-style link definitions</a></p>
+
+<p><a href="../docs/new/my">Relative link to local</a></p>
+
+<p><a href="https://www.google.com">link text itself</a></p>
+
+<hr />
+
+<h3 id="headingID">5. Heading ID</h3>
+
+<p>You can place heading id as</p>
+<div class="highlight"><pre class="chroma">### My Heading {#custom-id}</pre></div>
+<p>You can then link directly to it using link as <code>[Goto Heading](#custom-id)</code>.</p>
+
+<hr />
+
+<h3 id="images">6. Images</h3>
+<div class="highlight"><pre class="chroma">Absolute:
+![Alt-text for image](https://abyssaltech.xyz/img/triangle.jpg)
+
+Relative:
+![Alt text for image](/img/triangle.jpg)
+
+Reference-styled:
+![Alt-text for image][image]</pre></div>
+<p>Absolute:
+<img src="https://abyssaltech.xyz/img/splash.png" alt="Alt-text for image" /></p>
+
+<p>Relative:
+<img src="/img/splash.png" alt="Alt text for image" /></p>
+
+<p>Reference-styled:
+<img src="(https://abyssaltech.xyz/img/splash.png)" alt="Alt-text for image" /></p>
+
+<hr />
+
+<h3 id="highlighting">7. Highlighting</h3>
+
+<p>Code and syntax highlighting can be performed with Markdown. It differs from render to renderer.</p>
+
+<p>We can inline-highlight text or block-highlight code.</p>
+<div class="highlight"><pre class="chroma">back-ticks are used for inline-highlighting: `Important`
+
+triple back-ticks are used for block-highlighting: code enclosed within &#39;&#39;&#39;
+
+You can specify the language for proper highlighting:
+
+```python
+s = &#34;Python syntax highlighting&#34;
+print s
+```.</pre></div>
+<p>back-ticks are used for inline-highlighting: <code>Important Stuff</code></p>
+
+<p>triple back-ticks are used for block-highlighting: code enclosed within ```</p>
+
+<p>You can specify the language for proper highlighting:</p>
+<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="n">s</span> <span class="o">=</span> <span class="s2">&#34;Python syntax highlighting&#34;</span>
+<span class="k">print</span> <span class="n">s</span></code></pre></div>
+<hr />
+
+<h3 id="tables">8. Tables</h3>
+
+<p>Tables aren&rsquo;t part of the original Markdown specifications, but they are there many times.</p>
+<div class="highlight"><pre class="chroma">| Tables        | Are           | Cool  |
+| ------------- | ------------- | ----- |
+| row 1         | top           |    4  |
+| row 2         | middle        |    2  |
+| row 3         | bottom        |    3  |
+
+You don&#39;t need to make the raw Markdown line up prettily.
+
+Much | Less | Pretty
+--- | --- | ---
+Still | renders | fine
+1 | 2 | 3
+
+To change the alignment of the elements in a column, add a colon (:) to the left side, right side,
+ or both sides of the appropriate set of hyphens on the second line.
+ For example, inputting this:
+
+Column L | Column C | Column R
+:--------|:--------:|---------:
+A1 | B1 | C1
+A2 | B2 | C2</pre></div>
+<table>
+<thead>
+<tr>
+<th>Tables</th>
+<th>Are</th>
+<th>Cool</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>row 1</td>
+<td>top</td>
+<td>4</td>
+</tr>
+
+<tr>
+<td>row 2</td>
+<td>middle</td>
+<td>2</td>
+</tr>
+
+<tr>
+<td>row 3</td>
+<td>bottom</td>
+<td>3</td>
+</tr>
+</tbody>
+</table>
+
+<p>There must be at least 3 dashes separating each header cell.
+The outer pipes (|) are optional, and you don&rsquo;t need to make the
+raw Markdown line up prettily.</p>
+
+<table>
+<thead>
+<tr>
+<th>Much</th>
+<th>Less</th>
+<th>Pretty</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>Still</td>
+<td>renders</td>
+<td>fine</td>
+</tr>
+
+<tr>
+<td>1</td>
+<td>2</td>
+<td>3</td>
+</tr>
+</tbody>
+</table>
+
+<p>To change the alignment of the elements in a column, add a colon (:) to the left side, right side, or both sides of the appropriate set of hyphens on the second line. For example, inputting this:</p>
+
+<table>
+<thead>
+<tr>
+<th align="left">Column L</th>
+<th align="center">Column C</th>
+<th align="right">Column R</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td align="left">A1</td>
+<td align="center">B1</td>
+<td align="right">C1</td>
+</tr>
+
+<tr>
+<td align="left">A2</td>
+<td align="center">B2</td>
+<td align="right">C2</td>
+</tr>
+</tbody>
+</table>
+
+<hr />
+
+<h3 id="blockquotes">9. Blockquotes</h3>
+<div class="highlight"><pre class="chroma">&gt; Here is a nice quote.
+&gt; This line is part of the same code.</pre></div>
+<blockquote>
+<p>Here is a nice quote.
+This line is part of the same code.</p>
+</blockquote>
+
+<p>A quote can also nicely align and wrap around when it is a really long one.</p>
+
+<hr />
+
+<h3 id="inlinehtml">10. Inline HTML</h3>
+
+<p>You are free to use HTML in your Markdown, and most of the times it&rsquo;ll work pretty good.</p>
+
+<hr />
+
+<h3 id="hr">11. Horizontal Rule</h3>
+<div class="highlight"><pre class="chroma">Three or more -
+
+---
+
+Hyphens
+
+***
+
+Asterisks
+
+___
+
+Underscores</pre></div>
+<p>Three or more -</p>
+
+<hr />
+
+<p>Hyphens</p>
+
+<hr />
+
+<p>Asterisks</p>
+
+<hr />
+
+<p>Underscores</p>
+
+<hr />
+
+<h3 id="tasklists">12. Tasklists</h3>
+
+<p>Simple tasklists can be generated.</p>
+<div class="highlight"><pre class="chroma">- [x] Write the post
+- [ ] Update the repo
+- [ ] Push and publish</pre></div>
+<ul class="task-list">
+<li><label><input type="checkbox" checked disabled class="task-list-item"> Write the post</label></li>
+<li><label><input type="checkbox" disabled class="task-list-item"> Update the repo</label></li>
+<li><label><input type="checkbox" disabled class="task-list-item"> Push and publish</label></li>
+</ul>
+
+<hr />
+
+<h3 id="footnotes">13. Footnotes</h3>
+<div class="highlight"><pre class="chroma">Here&#39;s a sentence with a footnote. [^1]</pre></div>
+<p>Here&rsquo;s a sentence with a footnote. <sup class="footnote-ref" id="fnref:1"><a href="#fn:1">1</a></sup></p>
+
+<hr />
+
+<p>A footnote will be created at the very bottom of this page, which you can visit clicking the note attached to the sentence.</p>
+
+<h3 id="defns">14. Definitions</h3>
+
+<p>Some Markdown processors allow you to create definition lists of terms and their corresponding definitions as follows.</p>
+<div class="highlight"><pre class="chroma">First Term
+: This is the definition of the first term.
+
+Second Term
+: This is one definition of the second term.
+: This is another definition of the second term.</pre></div>
+<dl>
+<dt>First Term</dt>
+<dd>This is the definition of the first term.</dd>
+<dt>Second Term</dt>
+<dd>This is one definition of the second term.</dd>
+<dd>This is another definition of the second term.</dd>
+</dl>
+
+<hr />
+
+<h3 id="esc">15. Escaping</h3>
+
+<p>You can escape certain characters in Markdown.</p>
+<div class="highlight"><pre class="chroma">\     backslash
+\.    dot  
+\!    exclamation mark  
+\#    hash
+\*    asterisk
+\+    plus
+\-    minus
+\_    underscore
+\`    backtick
+\(\)  parentheses
+\[\]  brackets
+\{\}  curly brackets  </pre></div>
+<h3 id="linebreaks">16. Line Breaks</h3>
+
+<p>One Newline won&rsquo;t break the line in Markdown, you have to hit newline twice or use two spaces after a line for line break.</p>
+<div class="highlight"><pre class="chroma">Here&#39;s a line for us to start with.
+
+This line is separated from the one above by two newlines, so it will be a *separate paragraph*.
+
+This line is also a separate paragraph, but...
+This line is only separated by a single newline, so it&#39;s a separate line in the *same paragraph*.</pre></div>
+<p>Here&rsquo;s a line for us to start with.</p>
+
+<p>This line is separated from the one above by two newlines, so it will be a <strong>separate paragraph</strong>.</p>
+
+<p>This line is also a separate paragraph, but&hellip;
+This line is only separated by a single newline, so it&rsquo;s a separate line in the <strong>same paragraph</strong>.</p>
+
+<hr />
+
+<h3 id="youtube">17. YouTube Videos</h3>
+
+<p>Videos can be added directly by just pasting their embed code inside Markdown.</p>
+
+<h2 id="links-and-references">Links and References</h2>
+
+<ul>
+<li><p>You can try out Markdown directly in your browser here - <a href="https://dillinger.io/">Dillinger.io</a>.</p></li>
+
+<li><p>Some good practice <a href="https://www.markdowntutorial.com/">here</a>.</p></li>
+
+<li><p>A good reference for Markdown - <a href="https://www.markdownguide.org/">link</a>.</p></li>
+
+<li><p>For more detailed info, you can refer to the official documentation <a href="https://daringfireball.net/projects/markdown/syntax">here</a>.</p></li>
+
+<li><p>Markdown - <a href="https://en.wikipedia.org/wiki/Markdown">Wikipedia</a>.</p></li>
+</ul>
+<div class="footnotes">
+
+<hr />
+
+<ol>
+<li id="fn:1">This is the footnote.
+ <a class="footnote-return" href="#fnref:1"><sup>[return]</sup></a></li>
+</ol>
+</div>
+
+
+        
+          <div class="blog-tags">
+            
+              <a href="https://abyssaltech.xyz/tags/web/">Web</a>&nbsp;
+            
+              <a href="https://abyssaltech.xyz/tags/markdown/">Markdown</a>&nbsp;
+            
+          </div>
+        
+
+        
+            <hr/>
+            <section id="social-share">
+              <ul class="list-inline footer-links">
+                
+
+
+<li>
+    <a href="//twitter.com/share?url=https%3a%2f%2fabyssaltech.xyz%2fpost%2f2018-10-26-markdown-syntax-usage%2f&amp;text=Markdown&amp;via="
+       target="_blank" alt="" title="Share on Twitter">
+        <span class="fa-stack fa-lg">
+                <i class="fa fa-circle fa-stack-2x"></i>
+                <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
+              </span>
+    </a>
+</li>
+
+
+<li>
+    <a href="//plus.google.com/share?url=https%3a%2f%2fabyssaltech.xyz%2fpost%2f2018-10-26-markdown-syntax-usage%2f" target="_blank" title="Share on Google Plus">
+         <span class="fa-stack fa-lg">
+                <i class="fa fa-circle fa-stack-2x"></i>
+                <i class="fa fa-google-plus fa-stack-1x fa-inverse"></i>
+              </span>
+    </a>
+</li>
+
+
+<li>
+    <a href="//www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fabyssaltech.xyz%2fpost%2f2018-10-26-markdown-syntax-usage%2f" target="_blank" title="Share on Facebook">
+        <span class="fa-stack fa-lg">
+                <i class="fa fa-circle fa-stack-2x"></i>
+                <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
+              </span>
+    </a>
+</li>
+
+
+<li>
+    <a href="//reddit.com/submit?url=https%3a%2f%2fabyssaltech.xyz%2fpost%2f2018-10-26-markdown-syntax-usage%2f&amp;title=Markdown" target="_blank" title="Share on Reddit">
+         <span class="fa-stack fa-lg">
+                <i class="fa fa-circle fa-stack-2x"></i>
+                <i class="fa fa-reddit fa-stack-1x fa-inverse"></i>
+              </span>
+    </a>
+</li>
+
+
+<li>
+    <a href="//www.linkedin.com/shareArticle?url=https%3a%2f%2fabyssaltech.xyz%2fpost%2f2018-10-26-markdown-syntax-usage%2f&amp;title=Markdown" target="_blank"
+       title="Share on LinkedIn">
+         <span class="fa-stack fa-lg">
+                <i class="fa fa-circle fa-stack-2x"></i>
+                <i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
+              </span>
+    </a>
+</li>
+
+
+<li>
+    <a href="//www.stumbleupon.com/submit?url=https%3a%2f%2fabyssaltech.xyz%2fpost%2f2018-10-26-markdown-syntax-usage%2f&amp;title=Markdown" target="_blank"
+       title="Share on StumbleUpon">
+        <span class="fa-stack fa-lg">
+                <i class="fa fa-circle fa-stack-2x"></i>
+                <i class="fa fa-stumbleupon fa-stack-1x fa-inverse"></i>
+              </span>
+    </a>
+</li>
+
+
+<li>
+    <a href="//www.pinterest.com/pin/create/button/?url=https%3a%2f%2fabyssaltech.xyz%2fpost%2f2018-10-26-markdown-syntax-usage%2f&amp;description=Markdown" target="_blank"
+       title="Share on Pinterest">
+         <span class="fa-stack fa-lg">
+                <i class="fa fa-circle fa-stack-2x"></i>
+                <i class="fa fa-pinterest fa-stack-1x fa-inverse"></i>
+              </span>
+    </a>
+</li>
+
+              </ul>
+            </section>
+        
+      </article>
+
+      
+        <ul class="pager blog-pager">
+          
+            <li class="previous">
+              <a href="https://abyssaltech.xyz/post/2018-10-19-quantum-computing-what-you-need-to-know/" data-toggle="tooltip" data-placement="top" title="Quantum Computing - What you need to know">&larr; Previous Post</a>
+            </li>
+          
+          
+        </ul>
+      
+
+
+      
+        
+        
+      
+
+    </div>
+  </div>
+</div>
+
+    <footer>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+        <ul class="list-inline text-center footer-links">
+          
+              <li>
+                <a href="mailto:abhishekarya102@gmail.com" title="Email me">
+                  <span class="fa-stack fa-lg">
+                    <i class="fa fa-circle fa-stack-2x"></i>
+                    <i class="fa fa-envelope fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a href="https://www.facebook.com/dFuZeR101" title="Facebook">
+                  <span class="fa-stack fa-lg">
+                    <i class="fa fa-circle fa-stack-2x"></i>
+                    <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a href="https://plus.google.com/&#43;abhishekarya102" title="Google&#43;">
+                  <span class="fa-stack fa-lg">
+                    <i class="fa fa-circle fa-stack-2x"></i>
+                    <i class="fa fa-google-plus fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a href="https://github.com/abhishekarya1" title="GitHub">
+                  <span class="fa-stack fa-lg">
+                    <i class="fa fa-circle fa-stack-2x"></i>
+                    <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a href="https://telegram.me/arrayarya" title="Telegram">
+                  <span class="fa-stack fa-lg">
+                    <i class="fa fa-circle fa-stack-2x"></i>
+                    <i class="fa fa-telegram fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
+          
+          <li>
+            
+            <a href="https://abyssaltech.xyz/index.xml" title="RSS">
+            
+              <span class="fa-stack fa-lg">
+                <i class="fa fa-circle fa-stack-2x"></i>
+                <i class="fa fa-rss fa-stack-1x fa-inverse"></i>
+              </span>
+            </a>
+          </li>
+          
+        </ul>
+        <p class="credits copyright text-muted">
+          
+            
+              <a href="https://www.github.com/abhishekarya1/">Abhishek Arya</a>
+            
+          
+
+          &nbsp;&bull;&nbsp;
+          2018
+
+          
+            &nbsp;&bull;&nbsp;
+            <a href="https://abyssaltech.xyz">Abhishek Arya | Blog</a>
+          
+        </p>
+        
+        <p class="credits theme-by text-muted">
+          <a href="http://gohugo.io">Hugo v0.48</a> powered &nbsp;&bull;&nbsp; Theme by <u>Beautiful Jekyll</u> adapted to <u>Beautiful Hugo</u>
+          
+        </p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.7.1/katex.min.js" integrity="sha384-/y1Nn9+QQAipbNQWU65krzJralCnuOasHncUFXGkdwntGeSvQicrYkiUBwsgUqc1" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.7.1/contrib/auto-render.min.js" integrity="sha384-dq1/gEHSxPZQ7DdrM82ID4YVol9BYyU7GbWlIwnwyPzotpoc57wDw/guX8EaYGPx" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<script src="https://abyssaltech.xyz/js/main.js"></script>
+<script src="https://abyssaltech.xyz/js/highlight.min.js"></script>
+<script> hljs.initHighlightingOnLoad(); </script>
+<script> $(document).ready(function() {$("pre.chroma").css("padding","0");}); </script><script> renderMathInElement(document.body); </script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.2/photoswipe.min.js" integrity="sha384-QELNnmcmU8IR9ZAykt67vGr9/rZJdHbiWi64V88fCPaOohUlHCqUD/unNN0BXSqy" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.2/photoswipe-ui-default.min.js" integrity="sha384-m67o7SkQ1ALzKZIFh4CiTA8tmadaujiTa9Vu+nqPSwDOqHrDmxLezTdFln8077+q" crossorigin="anonymous"></script>
+<script src="https://abyssaltech.xyz/js/load-photoswipe.js"></script>
+
+
+
+
+
+
+  </body>
+</html>
+
