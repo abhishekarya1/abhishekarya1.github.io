@@ -7,10 +7,21 @@
     <generator>Hugo -- gohugo.io</generator>
     <managingEditor>abhishekarya102@gmail.com (Abhishek Arya)</managingEditor>
     <webMaster>abhishekarya102@gmail.com (Abhishek Arya)</webMaster>
-    <lastBuildDate>Fri, 26 Oct 2018 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 21 Dec 2018 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://abyssaltech.xyz/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>An Idiot-Proof Guide to be Safe On the Internet</title>
+      <link>https://abyssaltech.xyz/post/2018-12-21-are-we-really-secure-5/</link>
+      <pubDate>Fri, 21 Dec 2018 00:00:00 +0000</pubDate>
+      <author>abhishekarya102@gmail.com (Abhishek Arya)</author>
+      <guid>https://abyssaltech.xyz/post/2018-12-21-are-we-really-secure-5/</guid>
+      <description>You must&amp;rsquo;ve heard about tech giants not taking the protection of their user&amp;rsquo;s data seriously at all, yet again. And various news articles are already doing the rounds of my news feeds, yet again.
+From Quora to Facebook (well no surprises there), and even TRAI&amp;rsquo;s Chairman R.S. Sharma&amp;rsquo;s personal details were posted online after he openly challenged the Internet to do so.
+On 21 December 2018, The Ministry of Home Affairs issued an order authorizing 10 Central agencies to intercept, monitor, and decrypt &amp;ldquo;any information generated, transmitted, received or stored in any computer.</description>
+    </item>
     
     <item>
       <title>Markdown</title>
