@@ -2,32 +2,32 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Machine Learning on Abhishek Arya | Blog</title>
-    <link>https://abyssaltech.xyz/tags/machine-learning/</link>
+    <link>https://whatisthat.tech/tags/machine-learning/</link>
     <description>Recent content in Machine Learning on Abhishek Arya | Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <managingEditor>abhishekarya102@gmail.com (Abhishek Arya)</managingEditor>
     <webMaster>abhishekarya102@gmail.com (Abhishek Arya)</webMaster>
     <lastBuildDate>Fri, 14 Sep 2018 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="https://abyssaltech.xyz/tags/machine-learning/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://whatisthat.tech/tags/machine-learning/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Building webpages with AI</title>
-      <link>https://abyssaltech.xyz/post/2018-09-14-sketch-2-code/</link>
+      <link>https://whatisthat.tech/post/2018-09-14-sketch-2-code/</link>
       <pubDate>Fri, 14 Sep 2018 00:00:00 +0000</pubDate>
       <author>abhishekarya102@gmail.com (Abhishek Arya)</author>
-      <guid>https://abyssaltech.xyz/post/2018-09-14-sketch-2-code/</guid>
+      <guid>https://whatisthat.tech/post/2018-09-14-sketch-2-code/</guid>
       <description>What seems to be the problem with building HTML pages? I think it has to do with the amount of work one has to do for building just the structural components. With machine learning, we can easily identify these components like lines, text, and boxes, and create code for it. But web designers can do that more efficiently.
 The problem is brainstorming designs. When having a lot of ideas in the mind, you can draw them on a paper or whiteboard in a jiffy, but the same is not true for code, which is a hefty amount of effort and not something designers want to do as it delays the design process.</description>
     </item>
     
     <item>
       <title>Summary - An Introduction to Machine Learning for Students in Secondary Education</title>
-      <link>https://abyssaltech.xyz/post/2018-08-20-summary-of-an-introduction-to-machine-learning-for-students-in-secondary-education/</link>
+      <link>https://whatisthat.tech/post/2018-08-20-summary-of-an-introduction-to-machine-learning-for-students-in-secondary-education/</link>
       <pubDate>Mon, 20 Aug 2018 00:00:00 +0000</pubDate>
       <author>abhishekarya102@gmail.com (Abhishek Arya)</author>
-      <guid>https://abyssaltech.xyz/post/2018-08-20-summary-of-an-introduction-to-machine-learning-for-students-in-secondary-education/</guid>
+      <guid>https://whatisthat.tech/post/2018-08-20-summary-of-an-introduction-to-machine-learning-for-students-in-secondary-education/</guid>
       <description>Introduction The following is a summary of the conference paper - S. D. Essinger and G. L. Rosen, &amp;ldquo;An introduction to machine learning for students in secondary education,&amp;rdquo; 2011 Digital Signal Processing and Signal Processing Education Meeting (DSP/SPE), Sedona, AZ, 2011, pp. 243-248.
 doi: 10.1109/DSP-SPE.2011.5739219 URL: IEEE Xplore
 Read online or download the full PDF here: ResearchGate
@@ -36,10 +36,10 @@ Summary The paper elucidates a proposed machine learning (ML) lab for high schoo
     
     <item>
       <title>Image Classification using Convolutional Neural Networks - Transfer Learning</title>
-      <link>https://abyssaltech.xyz/post/2018-06-08-image-classification-transfer-learning/</link>
+      <link>https://whatisthat.tech/post/2018-06-08-image-classification-transfer-learning/</link>
       <pubDate>Fri, 08 Jun 2018 00:00:00 +0000</pubDate>
       <author>abhishekarya102@gmail.com (Abhishek Arya)</author>
-      <guid>https://abyssaltech.xyz/post/2018-06-08-image-classification-transfer-learning/</guid>
+      <guid>https://whatisthat.tech/post/2018-06-08-image-classification-transfer-learning/</guid>
       <description>Introduction Recently, I made a neural network image classifier that can be used by astronomers and scientists to classify whether an image is of a Globular Star Cluster or an Open Star Cluster. Here is the Project Link.
 You can refer here for knowing what are these two star clusters.
 It can be very tiresome and time consuming for scientists to carefully classify between the two. And my model aims to decrease the classification time for these two categories of star clusters.</description>
