@@ -2,22 +2,22 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Quantum Computing on Abhishek Arya | Blog</title>
-    <link>https://whatisthat.tech/tags/quantum-computing/</link>
+    <link>https://abyssaltech.xyz/tags/quantum-computing/</link>
     <description>Recent content in Quantum Computing on Abhishek Arya | Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <managingEditor>abhishekarya102@gmail.com (Abhishek Arya)</managingEditor>
     <webMaster>abhishekarya102@gmail.com (Abhishek Arya)</webMaster>
     <lastBuildDate>Fri, 19 Oct 2018 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="https://whatisthat.tech/tags/quantum-computing/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://abyssaltech.xyz/tags/quantum-computing/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Quantum Computing - What you need to know</title>
-      <link>https://whatisthat.tech/post/2018-10-19-quantum-computing-what-you-need-to-know/</link>
+      <link>https://abyssaltech.xyz/post/2018-10-19-quantum-computing-what-you-need-to-know/</link>
       <pubDate>Fri, 19 Oct 2018 00:00:00 +0000</pubDate>
       <author>abhishekarya102@gmail.com (Abhishek Arya)</author>
-      <guid>https://whatisthat.tech/post/2018-10-19-quantum-computing-what-you-need-to-know/</guid>
+      <guid>https://abyssaltech.xyz/post/2018-10-19-quantum-computing-what-you-need-to-know/</guid>
       <description>Another Buzzword? The term &amp;ldquo;Quantum Computing&amp;rdquo; has been one of the most popular buzzwords of 2018. And rightly so, it has already found many applications in almost every field out there, from Physics to Medicinal Sciences, even AI. Everybody can use some &amp;ldquo;quantum computing&amp;rdquo; like they are using the computers (referred to as &amp;ldquo;classical&amp;rdquo; from now on) in some way or the other. It has all the potential to disrupt every industry out there.</description>
     </item>
     
