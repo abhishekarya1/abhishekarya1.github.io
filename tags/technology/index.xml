@@ -2,41 +2,41 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Technology on Abhishek Arya | Blog</title>
-    <link>https://abyssaltech.xyz/tags/technology/</link>
+    <link>https://whatisthat.tech/tags/technology/</link>
     <description>Recent content in Technology on Abhishek Arya | Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <managingEditor>abhishekarya102@gmail.com (Abhishek Arya)</managingEditor>
     <webMaster>abhishekarya102@gmail.com (Abhishek Arya)</webMaster>
     <lastBuildDate>Fri, 19 Oct 2018 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="https://abyssaltech.xyz/tags/technology/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://whatisthat.tech/tags/technology/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Quantum Computing - What you need to know</title>
-      <link>https://abyssaltech.xyz/post/2018-10-19-quantum-computing-what-you-need-to-know/</link>
+      <link>https://whatisthat.tech/post/2018-10-19-quantum-computing-what-you-need-to-know/</link>
       <pubDate>Fri, 19 Oct 2018 00:00:00 +0000</pubDate>
       <author>abhishekarya102@gmail.com (Abhishek Arya)</author>
-      <guid>https://abyssaltech.xyz/post/2018-10-19-quantum-computing-what-you-need-to-know/</guid>
+      <guid>https://whatisthat.tech/post/2018-10-19-quantum-computing-what-you-need-to-know/</guid>
       <description>Another Buzzword? The term &amp;ldquo;Quantum Computing&amp;rdquo; has been one of the most popular buzzwords of 2018. And rightly so, it has already found many applications in almost every field out there, from Physics to Medicinal Sciences, even AI. Everybody can use some &amp;ldquo;quantum computing&amp;rdquo; like they are using the computers (referred to as &amp;ldquo;classical&amp;rdquo; from now on) in some way or the other. It has all the potential to disrupt every industry out there.</description>
     </item>
     
     <item>
       <title>The Year 2038 Problem</title>
-      <link>https://abyssaltech.xyz/post/2018-09-21-the-year-2038-problem/</link>
+      <link>https://whatisthat.tech/post/2018-09-21-the-year-2038-problem/</link>
       <pubDate>Fri, 21 Sep 2018 00:00:00 +0000</pubDate>
       <author>abhishekarya102@gmail.com (Abhishek Arya)</author>
-      <guid>https://abyssaltech.xyz/post/2018-09-21-the-year-2038-problem/</guid>
+      <guid>https://whatisthat.tech/post/2018-09-21-the-year-2038-problem/</guid>
       <description>Not Enough Storage If you know about The Year 2000 problem, also known as the Y2K problem, the Millennium bug, or the Y2K bug, then you know how bad it was.
 In short, only the last two digits of a year were used to store the years in computers and most electronic devices in the last century. But, as soon as we hit the year 2000, problems were anticipated, and arose, because many programs represented four-digit years with only the final two digits — making the year 2000 indistinguishable from 1900 or even 3000.</description>
     </item>
     
     <item>
       <title>Documentaries</title>
-      <link>https://abyssaltech.xyz/page/documentaries/</link>
+      <link>https://whatisthat.tech/page/documentaries/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <author>abhishekarya102@gmail.com (Abhishek Arya)</author>
-      <guid>https://abyssaltech.xyz/page/documentaries/</guid>
+      <guid>https://whatisthat.tech/page/documentaries/</guid>
       <description>This is a list of all of my favourite documentaries and shows. I&amp;rsquo;ve learnt a lot from watching these and I hope that it is the same with you.
 This list will be updated regularly as I discover more stuff.
 

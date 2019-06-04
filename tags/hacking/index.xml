@@ -2,22 +2,22 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Hacking on Abhishek Arya | Blog</title>
-    <link>https://abyssaltech.xyz/tags/hacking/</link>
+    <link>https://whatisthat.tech/tags/hacking/</link>
     <description>Recent content in Hacking on Abhishek Arya | Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <managingEditor>abhishekarya102@gmail.com (Abhishek Arya)</managingEditor>
     <webMaster>abhishekarya102@gmail.com (Abhishek Arya)</webMaster>
     <lastBuildDate>Fri, 21 Dec 2018 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="https://abyssaltech.xyz/tags/hacking/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://whatisthat.tech/tags/hacking/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>An Idiot-Proof Guide to be Safe On the Internet</title>
-      <link>https://abyssaltech.xyz/post/2018-12-21-are-we-really-secure-5/</link>
+      <link>https://whatisthat.tech/post/2018-12-21-are-we-really-secure-5/</link>
       <pubDate>Fri, 21 Dec 2018 00:00:00 +0000</pubDate>
       <author>abhishekarya102@gmail.com (Abhishek Arya)</author>
-      <guid>https://abyssaltech.xyz/post/2018-12-21-are-we-really-secure-5/</guid>
+      <guid>https://whatisthat.tech/post/2018-12-21-are-we-really-secure-5/</guid>
       <description>You must&amp;rsquo;ve heard about tech giants not taking the protection of their user&amp;rsquo;s data seriously at all, yet again. And various news articles are already doing the rounds of my news feeds, yet again.
 From Quora to Facebook (well no surprises there), and even TRAI&amp;rsquo;s Chairman R.S. Sharma&amp;rsquo;s personal details were posted online after he openly challenged the Internet to do so.
 On 21 December 2018, The Ministry of Home Affairs issued an order authorizing 10 Central agencies to intercept, monitor, and decrypt &amp;ldquo;any information generated, transmitted, received or stored in any computer.</description>
@@ -25,30 +25,30 @@ On 21 December 2018, The Ministry of Home Affairs issued an order authorizing 10
     
     <item>
       <title>A Brief Guide to Various Techniques in Hacking</title>
-      <link>https://abyssaltech.xyz/post/2018-06-13-hacking-techniques/</link>
+      <link>https://whatisthat.tech/post/2018-06-13-hacking-techniques/</link>
       <pubDate>Wed, 13 Jun 2018 00:00:00 +0000</pubDate>
       <author>abhishekarya102@gmail.com (Abhishek Arya)</author>
-      <guid>https://abyssaltech.xyz/post/2018-06-13-hacking-techniques/</guid>
+      <guid>https://whatisthat.tech/post/2018-06-13-hacking-techniques/</guid>
       <description>Introduction To be a Hacker, one has to be a master of multiple disciplines ranging from Operating Systems to Networking, and of course programming. They need to know everything about everything, from latest server technologies like Node.js to old programming languages like BASIC and C. They know almost every web framework, operating system, wireless technology, encryption that there is, in and out.
 If you are finding weakness and loopholes in a system and gaining access or exploiting it then you are termed as a Hacker.</description>
     </item>
     
     <item>
       <title>Introduction to the Dark Web</title>
-      <link>https://abyssaltech.xyz/post/2018-06-03-dark-web-1/</link>
+      <link>https://whatisthat.tech/post/2018-06-03-dark-web-1/</link>
       <pubDate>Sun, 03 Jun 2018 00:00:00 +0000</pubDate>
       <author>abhishekarya102@gmail.com (Abhishek Arya)</author>
-      <guid>https://abyssaltech.xyz/post/2018-06-03-dark-web-1/</guid>
+      <guid>https://whatisthat.tech/post/2018-06-03-dark-web-1/</guid>
       <description>Introduction You hear about data leaks all the time in the media. Have you ever wondered where that data is leaked?
 You might&amp;rsquo;ve heard about the WannaCry ransomware attack last year. It is a program targeting Windows operating system as it installs and hijacks computers and demanding huge ransom, even ATM machines, personal computers as well as servers were not secure. It bought the US Healthcare System and French car maker, Renault to their knees.</description>
     </item>
     
     <item>
       <title>Bugs and Vulnerabilities</title>
-      <link>https://abyssaltech.xyz/post/2018-06-02-are-we-really-secure-4/</link>
+      <link>https://whatisthat.tech/post/2018-06-02-are-we-really-secure-4/</link>
       <pubDate>Sat, 02 Jun 2018 00:00:00 +0000</pubDate>
       <author>abhishekarya102@gmail.com (Abhishek Arya)</author>
-      <guid>https://abyssaltech.xyz/post/2018-06-02-are-we-really-secure-4/</guid>
+      <guid>https://whatisthat.tech/post/2018-06-02-are-we-really-secure-4/</guid>
       <description>No matter how much time is devoted to developing an app or a website, or under how many eyes it passes through during its development stages, they still have vulnerabilities. Some have more so than others and some are just unusable. Every vendor on this planet has a security issue with their product. It has now become a fact of modern-day life. Take Microsoft for instance. CVE Details, a site that chronicles publicly disclosed vulnerabilities shows that in the 10 years starting with 2006 the company has disclosed an astonishing 3,157 security flaws.</description>
     </item>
     
