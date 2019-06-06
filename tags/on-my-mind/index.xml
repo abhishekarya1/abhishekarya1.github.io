@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>On My Mind on Abhishek Arya | Blog</title>
+    <link>https://whatisthat.tech/tags/on-my-mind/</link>
+    <description>Recent content in On My Mind on Abhishek Arya | Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <managingEditor>abhishekarya102@gmail.com (Abhishek Arya)</managingEditor>
+    <webMaster>abhishekarya102@gmail.com (Abhishek Arya)</webMaster>
+    <lastBuildDate>Thu, 06 Jun 2019 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://whatisthat.tech/tags/on-my-mind/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>A New Beginning</title>
+      <link>https://whatisthat.tech/post/2019-06-06-a-new-beginning/</link>
+      <pubDate>Thu, 06 Jun 2019 00:00:00 +0000</pubDate>
+      <author>abhishekarya102@gmail.com (Abhishek Arya)</author>
+      <guid>https://whatisthat.tech/post/2019-06-06-a-new-beginning/</guid>
+      <description>Abyssaltech.xyz 🎉 Sometime around the same time yesteryear I put up a challenge to myself, summer vacations were approaching and I needed something to work on, that&amp;rsquo;s when I decided to make a small blog website, mostly because I wanted it to be something web and CS related.
+I researched and learnt many things along the way, I set up the hosting and the domain and finally got it running.</description>
+    </item>
+    
+  </channel>
+</rss>
