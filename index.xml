@@ -2,31 +2,31 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Abhishek Arya | Blog</title>
-    <link>https://whatisthat.tech/</link>
+    <link>https://abhishekarya1.github.io/</link>
     <description>Recent content on Abhishek Arya | Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <managingEditor>abhishekarya102@gmail.com (Abhishek Arya)</managingEditor>
     <webMaster>abhishekarya102@gmail.com (Abhishek Arya)</webMaster>
     <lastBuildDate>Wed, 24 Jul 2019 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="https://whatisthat.tech/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://abhishekarya1.github.io/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Learning New Things is Frustrating</title>
-      <link>https://whatisthat.tech/post/2019-07-24-learning-new-things-is-frustating/</link>
+      <link>https://abhishekarya1.github.io/post/2019-07-24-learning-new-things-is-frustating/</link>
       <pubDate>Wed, 24 Jul 2019 00:00:00 +0000</pubDate>
       <author>abhishekarya102@gmail.com (Abhishek Arya)</author>
-      <guid>https://whatisthat.tech/post/2019-07-24-learning-new-things-is-frustating/</guid>
+      <guid>https://abhishekarya1.github.io/post/2019-07-24-learning-new-things-is-frustating/</guid>
       <description>&amp;ldquo;Learning is fun&amp;rdquo;, they say. Well, I beg to differ. Learning new things is frustrating, it is uncomforting at best. If you&amp;rsquo;re learning a new word, you can just attach a silly memory or wordplay with it and it&amp;rsquo;s there in your mind now and when you start using it daily, it sticks. But, this is not the case with other things such as sciences. Fields of study such as Economics, Biology, Mathematics, and Computer Sciences, enable you to solve real-life problems.</description>
     </item>
     
     <item>
       <title>An Idiot-Proof Guide to be Safe On the Internet</title>
-      <link>https://whatisthat.tech/post/2018-12-21-are-we-really-secure-5/</link>
+      <link>https://abhishekarya1.github.io/post/2018-12-21-are-we-really-secure-5/</link>
       <pubDate>Fri, 21 Dec 2018 00:00:00 +0000</pubDate>
       <author>abhishekarya102@gmail.com (Abhishek Arya)</author>
-      <guid>https://whatisthat.tech/post/2018-12-21-are-we-really-secure-5/</guid>
+      <guid>https://abhishekarya1.github.io/post/2018-12-21-are-we-really-secure-5/</guid>
       <description>You must&amp;rsquo;ve heard about tech giants not taking the protection of their user&amp;rsquo;s data seriously at all, yet again. And various news articles are already doing the rounds of my news feeds, yet again.
 From Quora to Facebook (well no surprises there), and even TRAI&amp;rsquo;s Chairman R.S. Sharma&amp;rsquo;s personal details were posted online after he openly challenged the Internet to do so.
 On 21 December 2018, The Ministry of Home Affairs issued an order authorizing 10 Central agencies to intercept, monitor, and decrypt &amp;ldquo;any information generated, transmitted, received or stored in any computer.</description>
@@ -34,10 +34,10 @@ On 21 December 2018, The Ministry of Home Affairs issued an order authorizing 10
     
     <item>
       <title>Markdown</title>
-      <link>https://whatisthat.tech/post/2018-10-26-markdown-syntax-usage/</link>
+      <link>https://abhishekarya1.github.io/post/2018-10-26-markdown-syntax-usage/</link>
       <pubDate>Fri, 26 Oct 2018 00:00:00 +0000</pubDate>
       <author>abhishekarya102@gmail.com (Abhishek Arya)</author>
-      <guid>https://whatisthat.tech/post/2018-10-26-markdown-syntax-usage/</guid>
+      <guid>https://abhishekarya1.github.io/post/2018-10-26-markdown-syntax-usage/</guid>
       <description>Markdown Markdown is a lightweight markup language that can be used to write plain text-format which can be converted to valid HTML. Using markdown you don&amp;rsquo;t need to write content within HTML tags, you can directly write text with markdown syntax and it&amp;rsquo;ll automatically get converted. You can also use HTML within markdown!
 Markdown files have an extension .md or .markdown.
 It is also different from your normal text editors like Word in which you click buttons to do the job.</description>
@@ -45,29 +45,29 @@ It is also different from your normal text editors like Word in which you click 
     
     <item>
       <title>Quantum Computing - What you need to know</title>
-      <link>https://whatisthat.tech/post/2018-10-19-quantum-computing-what-you-need-to-know/</link>
+      <link>https://abhishekarya1.github.io/post/2018-10-19-quantum-computing-what-you-need-to-know/</link>
       <pubDate>Fri, 19 Oct 2018 00:00:00 +0000</pubDate>
       <author>abhishekarya102@gmail.com (Abhishek Arya)</author>
-      <guid>https://whatisthat.tech/post/2018-10-19-quantum-computing-what-you-need-to-know/</guid>
+      <guid>https://abhishekarya1.github.io/post/2018-10-19-quantum-computing-what-you-need-to-know/</guid>
       <description>Another Buzzword? The term &amp;ldquo;Quantum Computing&amp;rdquo; has been one of the most popular buzzwords of 2018. And rightly so, it has already found many applications in almost every field out there, from Physics to Medicinal Sciences, even AI. Everybody can use some &amp;ldquo;quantum computing&amp;rdquo; like they are using the computers (referred to as &amp;ldquo;classical&amp;rdquo; from now on) in some way or the other. It has all the potential to disrupt every industry out there.</description>
     </item>
     
     <item>
       <title>The Year 2038 Problem</title>
-      <link>https://whatisthat.tech/post/2018-09-21-the-year-2038-problem/</link>
+      <link>https://abhishekarya1.github.io/post/2018-09-21-the-year-2038-problem/</link>
       <pubDate>Fri, 21 Sep 2018 00:00:00 +0000</pubDate>
       <author>abhishekarya102@gmail.com (Abhishek Arya)</author>
-      <guid>https://whatisthat.tech/post/2018-09-21-the-year-2038-problem/</guid>
+      <guid>https://abhishekarya1.github.io/post/2018-09-21-the-year-2038-problem/</guid>
       <description>Not Enough Storage If you know about The Year 2000 problem, also known as the Y2K problem, the Millennium bug, or the Y2K bug, then you know how bad it was.
 In short, only the last two digits of a year were used to store the years in computers and most electronic devices in the last century. But, as soon as we hit the year 2000, problems were anticipated, and arose, because many programs represented four-digit years with only the final two digits — making the year 2000 indistinguishable from 1900 or even 3000.</description>
     </item>
     
     <item>
       <title>Cosmos - A Spacetime Odyssey, Episode#2</title>
-      <link>https://whatisthat.tech/post/2018-09-15-cosmos-a-spacetime-odyssey-ep-2/</link>
+      <link>https://abhishekarya1.github.io/post/2018-09-15-cosmos-a-spacetime-odyssey-ep-2/</link>
       <pubDate>Sat, 15 Sep 2018 00:00:00 +0000</pubDate>
       <author>abhishekarya102@gmail.com (Abhishek Arya)</author>
-      <guid>https://whatisthat.tech/post/2018-09-15-cosmos-a-spacetime-odyssey-ep-2/</guid>
+      <guid>https://abhishekarya1.github.io/post/2018-09-15-cosmos-a-spacetime-odyssey-ep-2/</guid>
       <description>Subjects: Biology, Life Sciences, Biochemistry, Earth Science, Anatomy, Physiology.
 This episode discusses evolution, DNA, mutations, natural selection, the tree of life, the evolution of the eye, history of life on Earth, mass extinctions, and Geologic Time Scale.
 Selection Artificial Selection - Selective Breeding Millions of years ago we domesticated some Wolves. Wolves with more submissive nature were accepted and more dominant ones were hunted. The genes of the domesticated wolves were passed down and became &amp;ldquo;the man&amp;rsquo;s best friend&amp;rdquo; - Dogs.</description>
@@ -75,20 +75,20 @@ Selection Artificial Selection - Selective Breeding Millions of years ago we dom
     
     <item>
       <title>Building webpages with AI</title>
-      <link>https://whatisthat.tech/post/2018-09-14-sketch-2-code/</link>
+      <link>https://abhishekarya1.github.io/post/2018-09-14-sketch-2-code/</link>
       <pubDate>Fri, 14 Sep 2018 00:00:00 +0000</pubDate>
       <author>abhishekarya102@gmail.com (Abhishek Arya)</author>
-      <guid>https://whatisthat.tech/post/2018-09-14-sketch-2-code/</guid>
+      <guid>https://abhishekarya1.github.io/post/2018-09-14-sketch-2-code/</guid>
       <description>What seems to be the problem with building HTML pages? I think it has to do with the amount of work one has to do for building just the structural components. With machine learning, we can easily identify these components like lines, text, and boxes, and create code for it. But web designers can do that more efficiently.
 The problem is brainstorming designs. When having a lot of ideas in the mind, you can draw them on a paper or whiteboard in a jiffy, but the same is not true for code, which is a hefty amount of effort and not something designers want to do as it delays the design process.</description>
     </item>
     
     <item>
       <title>Cosmos - A Spacetime Odyssey, Episode#1</title>
-      <link>https://whatisthat.tech/post/2018-09-08-cosmos-a-spacetime-odyssey-ep-1/</link>
+      <link>https://abhishekarya1.github.io/post/2018-09-08-cosmos-a-spacetime-odyssey-ep-1/</link>
       <pubDate>Sat, 08 Sep 2018 00:00:00 +0000</pubDate>
       <author>abhishekarya102@gmail.com (Abhishek Arya)</author>
-      <guid>https://whatisthat.tech/post/2018-09-08-cosmos-a-spacetime-odyssey-ep-1/</guid>
+      <guid>https://abhishekarya1.github.io/post/2018-09-08-cosmos-a-spacetime-odyssey-ep-1/</guid>
       <description>Subjects: Physics, Astronomy, Earth Science, Space Science, Physical Science.
 This episode discusses our understanding of the universe. From defining our cosmic address, discussing the lives and ideas of Copernicus and Giordano Bruno, introducing the cosmic calendar, and explaining how science is a cooperative enterprise spanning the generations.
 It opens with this famous opening line from the 1980&amp;rsquo;s Cosmos by Carl Sagan:
@@ -97,19 +97,19 @@ It opens with this famous opening line from the 1980&amp;rsquo;s Cosmos by Carl 
     
     <item>
       <title>Cosmos - A Spacetime Odyssey</title>
-      <link>https://whatisthat.tech/post/2018-09-07-cosmos-prologue/</link>
+      <link>https://abhishekarya1.github.io/post/2018-09-07-cosmos-prologue/</link>
       <pubDate>Fri, 07 Sep 2018 00:00:00 +0000</pubDate>
       <author>abhishekarya102@gmail.com (Abhishek Arya)</author>
-      <guid>https://whatisthat.tech/post/2018-09-07-cosmos-prologue/</guid>
+      <guid>https://abhishekarya1.github.io/post/2018-09-07-cosmos-prologue/</guid>
       <description>Cosmos: A Spacetime Odyssey (2014) Cosmos is an American science documentary television series. It is a follow-up to the 1980 television series Cosmos: A Personal Voyage, which was presented by Carl Sagan, one of the greatest astrophysicists and science communicators, and it is considered a milestone for scientific documentaries. It is one of the top-rated television series worldwide and if you&amp;rsquo;re someone who does not watch TV shows at all, this is the thing you should definitely not miss.</description>
     </item>
     
     <item>
       <title>Summary - An Introduction to Machine Learning for Students in Secondary Education</title>
-      <link>https://whatisthat.tech/post/2018-08-20-summary-of-an-introduction-to-machine-learning-for-students-in-secondary-education/</link>
+      <link>https://abhishekarya1.github.io/post/2018-08-20-summary-of-an-introduction-to-machine-learning-for-students-in-secondary-education/</link>
       <pubDate>Mon, 20 Aug 2018 00:00:00 +0000</pubDate>
       <author>abhishekarya102@gmail.com (Abhishek Arya)</author>
-      <guid>https://whatisthat.tech/post/2018-08-20-summary-of-an-introduction-to-machine-learning-for-students-in-secondary-education/</guid>
+      <guid>https://abhishekarya1.github.io/post/2018-08-20-summary-of-an-introduction-to-machine-learning-for-students-in-secondary-education/</guid>
       <description>Introduction The following is a summary of the conference paper - S. D. Essinger and G. L. Rosen, &amp;ldquo;An introduction to machine learning for students in secondary education,&amp;rdquo; 2011 Digital Signal Processing and Signal Processing Education Meeting (DSP/SPE), Sedona, AZ, 2011, pp. 243-248.
 doi: 10.1109/DSP-SPE.2011.5739219 URL: IEEE Xplore
 Read online or download the full PDF here: ResearchGate
@@ -118,10 +118,10 @@ Summary The paper elucidates a proposed machine learning (ML) lab for high schoo
     
     <item>
       <title>Command-line flags to see the code at each stage of compilation</title>
-      <link>https://whatisthat.tech/post/2018-08-08-the-complete-compilation-process/</link>
+      <link>https://abhishekarya1.github.io/post/2018-08-08-the-complete-compilation-process/</link>
       <pubDate>Wed, 08 Aug 2018 00:00:00 +0000</pubDate>
       <author>abhishekarya102@gmail.com (Abhishek Arya)</author>
-      <guid>https://whatisthat.tech/post/2018-08-08-the-complete-compilation-process/</guid>
+      <guid>https://abhishekarya1.github.io/post/2018-08-08-the-complete-compilation-process/</guid>
       <description>The Compilation Process in C/C++ Knowing how your code compiles can be very helpful when writing and debugging it.
 Compiling a C/C++ program is a multi-stage process.
 The complete compilation process in C/C++ can be split into four separate stages:
@@ -131,49 +131,49 @@ In the following examples, I will be using the C++ programming language to write
     
     <item>
       <title>GitHub on your Resume</title>
-      <link>https://whatisthat.tech/post/2018-07-27-github-on-your-resume/</link>
+      <link>https://abhishekarya1.github.io/post/2018-07-27-github-on-your-resume/</link>
       <pubDate>Fri, 27 Jul 2018 00:00:00 +0000</pubDate>
       <author>abhishekarya102@gmail.com (Abhishek Arya)</author>
-      <guid>https://whatisthat.tech/post/2018-07-27-github-on-your-resume/</guid>
+      <guid>https://abhishekarya1.github.io/post/2018-07-27-github-on-your-resume/</guid>
       <description>Git and GitHub Many of you might have heard about Git and GitHub. Git is a version control system created by Linus Torvalds (the very same guy who created Linux, btw, Linux is named after him) in 2005, it tracks changes to files and directories. GitHub is used extensively for hosting any kind of project and let other people contribute to them, it can be coding, design, review or writing documentation for any project.</description>
     </item>
     
     <item>
       <title>Android, Python, and Web Programming with HTML &amp; PHP</title>
-      <link>https://whatisthat.tech/post/2018-06-27-choosing-electives-2/</link>
+      <link>https://abhishekarya1.github.io/post/2018-06-27-choosing-electives-2/</link>
       <pubDate>Wed, 27 Jun 2018 00:00:00 +0000</pubDate>
       <author>abhishekarya102@gmail.com (Abhishek Arya)</author>
-      <guid>https://whatisthat.tech/post/2018-06-27-choosing-electives-2/</guid>
+      <guid>https://abhishekarya1.github.io/post/2018-06-27-choosing-electives-2/</guid>
       <description>In Part-1, I talked about courses which require you to understand concepts and learn them so that you can get started with building actual stuff with them.
 In this post, however, I am going to be talking about the courses in which you are going to freely experiment with the tools and you are definitely going to make something, say a simple app or a website during the course. These courses are more development focused and you must choose among these if you want to create something.</description>
     </item>
     
     <item>
       <title>Cloud Computing, IoT, and Wireless Communications</title>
-      <link>https://whatisthat.tech/post/2018-06-26-choosing-electives-1/</link>
+      <link>https://abhishekarya1.github.io/post/2018-06-26-choosing-electives-1/</link>
       <pubDate>Tue, 26 Jun 2018 00:00:00 +0000</pubDate>
       <author>abhishekarya102@gmail.com (Abhishek Arya)</author>
-      <guid>https://whatisthat.tech/post/2018-06-26-choosing-electives-1/</guid>
+      <guid>https://abhishekarya1.github.io/post/2018-06-26-choosing-electives-1/</guid>
       <description>It is mandatory for students of computer sciences in their fifth semester to choose an elective course as electives are a great learning opportunity for students to learn something that is actually useful in real-life.
 Developing apps and websites, learning new technologies are all a part of the learning experience. It is advised that you choose your elective course carefully after being aware of what to expect from the course and what you want to do after it.</description>
     </item>
     
     <item>
       <title>A Brief Guide to Various Techniques in Hacking</title>
-      <link>https://whatisthat.tech/post/2018-06-13-hacking-techniques/</link>
+      <link>https://abhishekarya1.github.io/post/2018-06-13-hacking-techniques/</link>
       <pubDate>Wed, 13 Jun 2018 00:00:00 +0000</pubDate>
       <author>abhishekarya102@gmail.com (Abhishek Arya)</author>
-      <guid>https://whatisthat.tech/post/2018-06-13-hacking-techniques/</guid>
+      <guid>https://abhishekarya1.github.io/post/2018-06-13-hacking-techniques/</guid>
       <description>Introduction To be a Hacker, one has to be a master of multiple disciplines ranging from Operating Systems to Networking, and of course programming. They need to know everything about everything, from latest server technologies like Node.js to old programming languages like BASIC and C. They know almost every web framework, operating system, wireless technology, encryption that there is, in and out.
 If you are finding weakness and loopholes in a system and gaining access or exploiting it then you are termed as a Hacker.</description>
     </item>
     
     <item>
       <title>Image Classification using Convolutional Neural Networks - Transfer Learning</title>
-      <link>https://whatisthat.tech/post/2018-06-08-image-classification-transfer-learning/</link>
+      <link>https://abhishekarya1.github.io/post/2018-06-08-image-classification-transfer-learning/</link>
       <pubDate>Fri, 08 Jun 2018 00:00:00 +0000</pubDate>
       <author>abhishekarya102@gmail.com (Abhishek Arya)</author>
-      <guid>https://whatisthat.tech/post/2018-06-08-image-classification-transfer-learning/</guid>
+      <guid>https://abhishekarya1.github.io/post/2018-06-08-image-classification-transfer-learning/</guid>
       <description>Introduction Recently, I made a neural network image classifier that can be used by astronomers and scientists to classify whether an image is of a Globular Star Cluster or an Open Star Cluster. Here is the Project Link.
 You can refer here for knowing what are these two star clusters.
 It can be very tiresome and time consuming for scientists to carefully classify between the two. And my model aims to decrease the classification time for these two categories of star clusters.</description>
@@ -181,77 +181,77 @@ It can be very tiresome and time consuming for scientists to carefully classify 
     
     <item>
       <title>Introduction to the Dark Web</title>
-      <link>https://whatisthat.tech/post/2018-06-03-dark-web-1/</link>
+      <link>https://abhishekarya1.github.io/post/2018-06-03-dark-web-1/</link>
       <pubDate>Sun, 03 Jun 2018 00:00:00 +0000</pubDate>
       <author>abhishekarya102@gmail.com (Abhishek Arya)</author>
-      <guid>https://whatisthat.tech/post/2018-06-03-dark-web-1/</guid>
+      <guid>https://abhishekarya1.github.io/post/2018-06-03-dark-web-1/</guid>
       <description>Introduction You hear about data leaks all the time in the media. Have you ever wondered where that data is leaked?
 You might&amp;rsquo;ve heard about the WannaCry ransomware attack last year. It is a program targeting Windows operating system as it installs and hijacks computers and demanding huge ransom, even ATM machines, personal computers as well as servers were not secure. It bought the US Healthcare System and French car maker, Renault to their knees.</description>
     </item>
     
     <item>
       <title>Bugs and Vulnerabilities</title>
-      <link>https://whatisthat.tech/post/2018-06-02-are-we-really-secure-4/</link>
+      <link>https://abhishekarya1.github.io/post/2018-06-02-are-we-really-secure-4/</link>
       <pubDate>Sat, 02 Jun 2018 00:00:00 +0000</pubDate>
       <author>abhishekarya102@gmail.com (Abhishek Arya)</author>
-      <guid>https://whatisthat.tech/post/2018-06-02-are-we-really-secure-4/</guid>
+      <guid>https://abhishekarya1.github.io/post/2018-06-02-are-we-really-secure-4/</guid>
       <description>No matter how much time is devoted to developing an app or a website, or under how many eyes it passes through during its development stages, they still have vulnerabilities. Some have more so than others and some are just unusable. Every vendor on this planet has a security issue with their product. It has now become a fact of modern-day life. Take Microsoft for instance. CVE Details, a site that chronicles publicly disclosed vulnerabilities shows that in the 10 years starting with 2006 the company has disclosed an astonishing 3,157 security flaws.</description>
     </item>
     
     <item>
       <title>Apps and Permissions</title>
-      <link>https://whatisthat.tech/post/2018-06-01-are-we-really-secure-3/</link>
+      <link>https://abhishekarya1.github.io/post/2018-06-01-are-we-really-secure-3/</link>
       <pubDate>Fri, 01 Jun 2018 00:00:00 +0000</pubDate>
       <author>abhishekarya102@gmail.com (Abhishek Arya)</author>
-      <guid>https://whatisthat.tech/post/2018-06-01-are-we-really-secure-3/</guid>
+      <guid>https://abhishekarya1.github.io/post/2018-06-01-are-we-really-secure-3/</guid>
       <description>Android is an operating system for handheld devices like smartphones. It was announced in 2007 and was the first commercial device was released in 2008. Today, after exactly a decade in the future, it has more than 2 billion monthly active devices. With such level of a userbase, sure comes a lot of prying eyes on your data. Though Google Play Store has restrictions on what you can install and what data your apps see, it is just a matter of a few permissions before these apps can start harvesting your data.</description>
     </item>
     
     <item>
       <title>Data Breaches</title>
-      <link>https://whatisthat.tech/post/2018-05-27-are-we-really-secure-2/</link>
+      <link>https://abhishekarya1.github.io/post/2018-05-27-are-we-really-secure-2/</link>
       <pubDate>Sun, 27 May 2018 00:00:00 +0000</pubDate>
       <author>abhishekarya102@gmail.com (Abhishek Arya)</author>
-      <guid>https://whatisthat.tech/post/2018-05-27-are-we-really-secure-2/</guid>
+      <guid>https://abhishekarya1.github.io/post/2018-05-27-are-we-really-secure-2/</guid>
       <description>In the last post, I talked about how people unknowingly give away the data which can be used to draw statistical inferences to a large degree of accuracy for a particular region or a country. There is another bigger threat to our data - &amp;lsquo;Data Breaches&amp;rsquo;.
 You store photos in the cloud and you save storage, you use online platforms that save your details and you are okay with it, you buy something online and all your online transactions are stored in a database.</description>
     </item>
     
     <item>
       <title>Data Protection</title>
-      <link>https://whatisthat.tech/post/2018-05-26-are-we-really-secure-1/</link>
+      <link>https://abhishekarya1.github.io/post/2018-05-26-are-we-really-secure-1/</link>
       <pubDate>Sat, 26 May 2018 00:00:00 +0000</pubDate>
       <author>abhishekarya102@gmail.com (Abhishek Arya)</author>
-      <guid>https://whatisthat.tech/post/2018-05-26-are-we-really-secure-1/</guid>
+      <guid>https://abhishekarya1.github.io/post/2018-05-26-are-we-really-secure-1/</guid>
       <description>Modern day technologies for sure provide much more efficient, convenient and sometimes creative solutions to our problems. Want to talk for free with a relative thousand miles away? Open an app and that&amp;rsquo;s it, talk as much as you want, this was not at all possible before. Solutions like these are all around us and we use them on a daily basis. Stuck in a new city? Open the map app and get going, it will track you in real time too.</description>
     </item>
     
     <item>
       <title>First post!</title>
-      <link>https://whatisthat.tech/post/2018-05-26-first-post/</link>
+      <link>https://abhishekarya1.github.io/post/2018-05-26-first-post/</link>
       <pubDate>Sat, 26 May 2018 00:00:00 +0000</pubDate>
       <author>abhishekarya102@gmail.com (Abhishek Arya)</author>
-      <guid>https://whatisthat.tech/post/2018-05-26-first-post/</guid>
+      <guid>https://abhishekarya1.github.io/post/2018-05-26-first-post/</guid>
       <description>This is my first post, how exciting!
 I always wanted a place to share my views and to post about things that I learn from the internet and a blog is a perfect place to do that.</description>
     </item>
     
     <item>
       <title>About me</title>
-      <link>https://whatisthat.tech/page/about/</link>
+      <link>https://abhishekarya1.github.io/page/about/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <author>abhishekarya102@gmail.com (Abhishek Arya)</author>
-      <guid>https://whatisthat.tech/page/about/</guid>
+      <guid>https://abhishekarya1.github.io/page/about/</guid>
       <description>img { max-width:300px; max-height:200px; width: auto; height: auto; }  My name is Abhishek Arya. Some things about me, including but not limited to, love for computers :
  I absolutely hate small talks and avoid them completely, no offence. 🙂 I am a typical neighbourhood geek - vsauce, xkcd, Cyanide &amp;amp; Happiness, watching rocket launches when I&amp;rsquo;m bored, paradoxes and thought experiments. I am on a journey to discover my true passion in computer sciences and technology, which hopefully I can find somewhere here on the internet.</description>
     </item>
     
     <item>
       <title>Documentaries</title>
-      <link>https://whatisthat.tech/page/documentaries/</link>
+      <link>https://abhishekarya1.github.io/page/documentaries/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <author>abhishekarya102@gmail.com (Abhishek Arya)</author>
-      <guid>https://whatisthat.tech/page/documentaries/</guid>
+      <guid>https://abhishekarya1.github.io/page/documentaries/</guid>
       <description>This is a list of all of my favourite documentaries and shows. I&amp;rsquo;ve learnt a lot from watching these and I hope the same with you.
 This page will be updated as I discover more stuff.
 

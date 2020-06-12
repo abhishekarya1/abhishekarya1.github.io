@@ -2,22 +2,22 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Web on Abhishek Arya | Blog</title>
-    <link>https://whatisthat.tech/tags/web/</link>
+    <link>https://abhishekarya1.github.io/tags/web/</link>
     <description>Recent content in Web on Abhishek Arya | Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <managingEditor>abhishekarya102@gmail.com (Abhishek Arya)</managingEditor>
     <webMaster>abhishekarya102@gmail.com (Abhishek Arya)</webMaster>
     <lastBuildDate>Fri, 26 Oct 2018 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="https://whatisthat.tech/tags/web/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://abhishekarya1.github.io/tags/web/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Markdown</title>
-      <link>https://whatisthat.tech/post/2018-10-26-markdown-syntax-usage/</link>
+      <link>https://abhishekarya1.github.io/post/2018-10-26-markdown-syntax-usage/</link>
       <pubDate>Fri, 26 Oct 2018 00:00:00 +0000</pubDate>
       <author>abhishekarya102@gmail.com (Abhishek Arya)</author>
-      <guid>https://whatisthat.tech/post/2018-10-26-markdown-syntax-usage/</guid>
+      <guid>https://abhishekarya1.github.io/post/2018-10-26-markdown-syntax-usage/</guid>
       <description>Markdown Markdown is a lightweight markup language that can be used to write plain text-format which can be converted to valid HTML. Using markdown you don&amp;rsquo;t need to write content within HTML tags, you can directly write text with markdown syntax and it&amp;rsquo;ll automatically get converted. You can also use HTML within markdown!
 Markdown files have an extension .md or .markdown.
 It is also different from your normal text editors like Word in which you click buttons to do the job.</description>

@@ -2,32 +2,32 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Deep Learning on Abhishek Arya | Blog</title>
-    <link>https://whatisthat.tech/tags/deep-learning/</link>
+    <link>https://abhishekarya1.github.io/tags/deep-learning/</link>
     <description>Recent content in Deep Learning on Abhishek Arya | Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <managingEditor>abhishekarya102@gmail.com (Abhishek Arya)</managingEditor>
     <webMaster>abhishekarya102@gmail.com (Abhishek Arya)</webMaster>
     <lastBuildDate>Fri, 14 Sep 2018 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="https://whatisthat.tech/tags/deep-learning/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://abhishekarya1.github.io/tags/deep-learning/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Building webpages with AI</title>
-      <link>https://whatisthat.tech/post/2018-09-14-sketch-2-code/</link>
+      <link>https://abhishekarya1.github.io/post/2018-09-14-sketch-2-code/</link>
       <pubDate>Fri, 14 Sep 2018 00:00:00 +0000</pubDate>
       <author>abhishekarya102@gmail.com (Abhishek Arya)</author>
-      <guid>https://whatisthat.tech/post/2018-09-14-sketch-2-code/</guid>
+      <guid>https://abhishekarya1.github.io/post/2018-09-14-sketch-2-code/</guid>
       <description>What seems to be the problem with building HTML pages? I think it has to do with the amount of work one has to do for building just the structural components. With machine learning, we can easily identify these components like lines, text, and boxes, and create code for it. But web designers can do that more efficiently.
 The problem is brainstorming designs. When having a lot of ideas in the mind, you can draw them on a paper or whiteboard in a jiffy, but the same is not true for code, which is a hefty amount of effort and not something designers want to do as it delays the design process.</description>
     </item>
     
     <item>
       <title>Image Classification using Convolutional Neural Networks - Transfer Learning</title>
-      <link>https://whatisthat.tech/post/2018-06-08-image-classification-transfer-learning/</link>
+      <link>https://abhishekarya1.github.io/post/2018-06-08-image-classification-transfer-learning/</link>
       <pubDate>Fri, 08 Jun 2018 00:00:00 +0000</pubDate>
       <author>abhishekarya102@gmail.com (Abhishek Arya)</author>
-      <guid>https://whatisthat.tech/post/2018-06-08-image-classification-transfer-learning/</guid>
+      <guid>https://abhishekarya1.github.io/post/2018-06-08-image-classification-transfer-learning/</guid>
       <description>Introduction Recently, I made a neural network image classifier that can be used by astronomers and scientists to classify whether an image is of a Globular Star Cluster or an Open Star Cluster. Here is the Project Link.
 You can refer here for knowing what are these two star clusters.
 It can be very tiresome and time consuming for scientists to carefully classify between the two. And my model aims to decrease the classification time for these two categories of star clusters.</description>
